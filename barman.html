@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🍸 Barman — co si můžu namíchat</title>
+<style>
+  :root {
+    --pozadi: #14181d; --panel: #1d232b; --panel2: #242c36;
+    --text: #e8e4da; --tlumeny: #93a1ad; --linka: #2f3a45;
+    --zelena: #4caf7d; --zluta: #e0b34c; --cervena: #d06a5f;
+    --akcent: #d99a4e; --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--pozadi); color: var(--text);
+    font: 16px/1.55 -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding-bottom: 60px;
+  }
+  header {
+    background: linear-gradient(180deg, #1a2027, var(--pozadi));
+    padding: 22px 16px 0; text-align: center;
+    border-bottom: 1px solid var(--linka);
+  }
+  header h1 { font-size: 26px; letter-spacing: .5px; }
+  header .stat { color: var(--tlumeny); font-size: 14px; margin: 6px 0 14px; }
+  nav { display: flex; justify-content: center; gap: 6px; }
+  nav button {
+    background: none; border: none; color: var(--tlumeny); cursor: pointer;
+    font-size: 16px; padding: 10px 22px; border-bottom: 3px solid transparent;
+  }
+  nav button.aktivni { color: var(--text); border-color: var(--akcent); font-weight: 600; }
+  main { max-width: 860px; margin: 0 auto; padding: 18px 14px; }
+  .zalozka { display: none; }
+  .zalozka.aktivni { display: block; }
+
+  /* ovládací lišta */
+  .listy { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 18px; }
+  input[type=search], select {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--linka);
+    border-radius: 8px; padding: 9px 12px; font-size: 15px;
+  }
+  input[type=search] { flex: 1; min-width: 160px; }
+  .tolerance { display: flex; align-items: center; gap: 8px; background: var(--panel2);
+    border: 1px solid var(--linka); border-radius: 8px; padding: 6px 12px; }
+  .tolerance input { accent-color: var(--akcent); }
+  label.prepinac { display: flex; align-items: center; gap: 6px; color: var(--tlumeny); font-size: 15px; cursor: pointer; }
+
+  /* sekce drinků */
+  h2 { font-size: 17px; margin: 22px 0 10px; display: flex; align-items: center; gap: 8px; }
+  h2 .tecka { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .mrizka { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .karta {
+    background: var(--panel); border: 1px solid var(--linka); border-radius: var(--radius);
+    padding: 10px; display: flex; gap: 12px; align-items: center; cursor: pointer;
+    transition: border-color .15s;
+  }
+  .karta:hover { border-color: var(--akcent); }
+  .karta img, .karta svg { width: 58px; height: 58px; border-radius: 8px; object-fit: cover; flex-shrink: 0; background: #0e1216; }
+  .karta .nazev { font-weight: 600; }
+  .karta .meta { color: var(--tlumeny); font-size: 13px; }
+  .chybi-chip { display: inline-block; background: #3a2a24; color: #e8b294;
+    border-radius: 6px; font-size: 12px; padding: 1px 7px; margin: 2px 3px 0 0; }
+  .trivia { color: var(--tlumeny); font-size: 13px; margin-top: 4px; font-style: italic; }
+  .trivia-detail { font-size: 14px; }
+  .zamena-chip { display: inline-block; background: #23333f; color: #9cc4e0;
+    border-radius: 6px; font-size: 12px; padding: 1px 7px; margin: 2px 3px 0 0; }
+  .detail .mam-zamena::before { content: "↔ "; color: #9cc4e0; }
+  .detail .mam-zamena { color: #9cc4e0; }
+  details { margin-top: 14px; }
+  details summary { cursor: pointer; color: var(--tlumeny); padding: 6px 0; }
+
+  /* rádce */
+  .radce { background: var(--panel); border: 1px solid var(--linka); border-radius: var(--radius); padding: 14px 16px; }
+  .radce li { list-style: none; padding: 5px 0; border-bottom: 1px dashed var(--linka); }
+  .radce li:last-child { border-bottom: none; }
+  .radce b { color: var(--zluta); }
+
+  /* můj bar */
+  .kategorie h3 { font-size: 15px; color: var(--tlumeny); text-transform: uppercase;
+    letter-spacing: .8px; margin: 20px 0 8px; }
+  .chipy { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    background: var(--panel); border: 1px solid var(--linka); border-radius: 20px;
+    padding: 7px 14px; cursor: pointer; font-size: 15px; user-select: none;
+    transition: background .12s, border-color .12s;
+  }
+  .chip.mam { background: #24402f; border-color: var(--zelena); }
+  .chip input { display: none; }
+  .zakladni-pozn { color: var(--tlumeny); font-size: 13px; margin-top: 22px; font-style: italic; }
+  .pridat-listy input[type=text] {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--linka);
+    border-radius: 8px; padding: 9px 12px; font-size: 15px; flex: 1; min-width: 200px;
+  }
+  .pridat-listy button {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--linka);
+    border-radius: 8px; padding: 9px 14px; cursor: pointer; font-size: 15px;
+  }
+  .pridat-listy button:hover { border-color: var(--akcent); }
+  .pridat-zprava { color: var(--zelena); font-size: 14px; min-height: 20px; margin: -8px 0 6px 2px; }
+  .chip .smazat-vlastni { color: var(--tlumeny); margin-left: 7px; font-weight: 700; }
+  .chip .smazat-vlastni:hover { color: var(--cervena); }
+  .nastroje { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  .nastroje button {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--linka);
+    border-radius: 8px; padding: 8px 14px; cursor: pointer; font-size: 14px;
+  }
+  .nastroje button:hover { border-color: var(--akcent); }
+
+  /* modal */
+  #modal { position: fixed; inset: 0; background: rgba(0,0,0,.65); display: none;
+    align-items: flex-start; justify-content: center; padding: 30px 14px; overflow-y: auto; z-index: 10; }
+  #modal.otevreny { display: flex; }
+  .detail {
+    background: var(--panel); border: 1px solid var(--linka); border-radius: 16px;
+    max-width: 520px; width: 100%; padding: 22px; position: relative;
+  }
+  .detail .zavrit { position: absolute; top: 10px; right: 14px; background: none;
+    border: none; color: var(--tlumeny); font-size: 26px; cursor: pointer; }
+  .detail .obrazek { text-align: center; margin-bottom: 14px; }
+  .detail .obrazek img, .detail .obrazek svg { width: 180px; height: 180px; border-radius: 12px; object-fit: cover; }
+  .detail h2 { margin: 0 0 2px; font-size: 22px; justify-content: center; }
+  .detail .alt { text-align: center; color: var(--tlumeny); font-size: 14px; margin-bottom: 12px; }
+  .detail h4 { margin: 14px 0 6px; font-size: 14px; text-transform: uppercase;
+    letter-spacing: .8px; color: var(--akcent); }
+  .detail ul { list-style: none; }
+  .detail ul li { padding: 3px 0; }
+  .detail .mam-ano::before { content: "✓ "; color: var(--zelena); }
+  .detail .mam-ne::before { content: "✗ "; color: var(--cervena); }
+  .detail .mam-ne { color: #e0a9a1; }
+  .detail .volitelna { color: var(--tlumeny); font-style: italic; }
+  .detail .poznamka { color: var(--tlumeny); font-style: italic; margin-top: 12px; font-size: 14px; }
+  .stitek { display: inline-block; font-size: 12px; border: 1px solid var(--linka);
+    color: var(--tlumeny); border-radius: 6px; padding: 1px 8px; margin-left: 6px; vertical-align: middle; }
+  .prazdno { color: var(--tlumeny); font-style: italic; padding: 8px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🍸 Barman</h1>
+  <div class="stat" id="statistika"></div>
+  <nav>
+    <button id="tab-drinky" class="aktivni">Drinky</button>
+    <button id="tab-bar">Můj bar</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ DRINKY ============ -->
+  <section id="zalozka-drinky" class="zalozka aktivni">
+    <div class="listy">
+      <input type="search" id="hledat-drink" placeholder="Hledat drink (i přezdívky — zkus „flusanec“)…">
+      <div class="tolerance" title="Kolik surovin je přípustné dokoupit">
+        🛒 Tolerance <input type="range" id="tolerance" min="0" max="3" step="1" value="1">
+        <b id="tolerance-hodnota">1</b>
+      </div>
+      <select id="filtr-typ">
+        <option value="">Všechny typy</option>
+        <option value="longdrink">Longdrinky</option>
+        <option value="koktejl">Koktejly</option>
+        <option value="shot">Panáky (shoty)</option>
+        <option value="pivni-mix">Pivní mixy</option>
+        <option value="horky">Horké</option>
+      </select>
+      <label class="prepinac"><input type="checkbox" id="filtr-nealko"> jen nealko</label>
+    </div>
+
+    <h2><span class="tecka" style="background:var(--zelena)"></span>Můžeš míchat hned <span id="pocet-hned" class="stitek"></span></h2>
+    <div class="mrizka" id="sekce-hned"></div>
+
+    <h2><span class="tecka" style="background:var(--zluta)"></span>Stačí dokoupit <span id="pocet-dokoupit" class="stitek"></span></h2>
+    <div class="mrizka" id="sekce-dokoupit"></div>
+
+    <h2><span class="tecka" style="background:var(--akcent)"></span>Nákupní rádce</h2>
+    <ul class="radce" id="sekce-radce"></ul>
+
+    <details>
+      <summary>Ostatní drinky (chybí toho víc) — <span id="pocet-ostatni"></span></summary>
+      <div class="mrizka" id="sekce-ostatni" style="margin-top:10px"></div>
+    </details>
+  </section>
+
+  <!-- ============ MŮJ BAR ============ -->
+  <section id="zalozka-bar" class="zalozka">
+    <div class="listy">
+      <input type="search" id="hledat-surovinu" placeholder="Hledat surovinu…">
+    </div>
+    <div class="listy pridat-listy">
+      <input type="text" id="nova-surovina" placeholder="Přidat surovinu — klidně značkou (Guinness, Sierra, domácí slivovice)…">
+      <button id="btn-pridat">➕ Přidat</button>
+    </div>
+    <div id="pridat-zprava" class="pridat-zprava"></div>
+    <div id="seznam-surovin"></div>
+    <div class="nastroje">
+      <button id="btn-export">⬇︎ Exportovat inventář</button>
+      <button id="btn-import">⬆︎ Importovat inventář</button>
+      <button id="btn-smazat">🗑 Vyprázdnit bar</button>
+      <input type="file" id="import-soubor" accept=".json" hidden>
+    </div>
+  </section>
+</main>
+
+<!-- ============ DETAIL DRINKU ============ -->
+<div id="modal">
+  <div class="detail">
+    <button class="zavrit" title="Zavřít">×</button>
+    <div id="detail-obsah"></div>
+  </div>
+</div>
+
+<script src="engine.js"></script>
+<script src="data/data.js"></script>
+<script>
+"use strict";
+const DATA = window.BARMAN_DATA;
+const DRINKY = DATA.drinky;
+const OBRAZKY = DATA.obrazky;
+
+/* ---------- uložení stavu (localStorage) ---------- */
+const uloz = () => localStorage.setItem("barman", JSON.stringify({
+  inventar: [...inventar], tolerance: +el("tolerance").value, vlastni
+}));
+const nactene = JSON.parse(localStorage.getItem("barman") || "{}");
+const inventar = new Set(nactene.inventar || []);
+const vlastni = nactene.vlastni || []; // uživatelovy suroviny: {id, nazev, kategorie, vlastni: true}
+
+/* slovník = dodané suroviny + vlastní přidané uživatelem */
+const SUROVINY = () => DATA.suroviny.concat(vlastni);
+let SLOVNIK = {};
+const prestavSlovnik = () =>
+  SLOVNIK = Object.fromEntries(SUROVINY().map(s => [s.id, s]));
+prestavSlovnik();
+
+/* ---------- pomocníci ---------- */
+const el = id => document.getElementById(id);
+const sklonuj = (n, tvary) => tvary[n === 1 ? 0 : n >= 2 && n <= 4 ? 1 : 2];
+const drinkuSlovo = n => sklonuj(n, ["drink", "drinky", "drinků"]);
+
+/* ---------- barvy surovin pro SVG fallback ---------- */
+const BARVY = {
+  zelena: "#2e9e63", griotka: "#8e1f33", "vajecny-liker": "#f0c04a",
+  fernet: "#3a2417", becherovka: "#c68a3a", "rum-tuzemsky": "#b06a2a",
+  "rum-tmavy": "#8a5424", bourbon: "#b5732f", "whiskey-irska": "#c08540",
+  konak: "#9a5c28", jagermeister: "#2f2013", "kavovy-liker": "#38251a",
+  "smetanovy-liker": "#e8d9bd", smetana: "#f3ead8", slehacka: "#f6f0e3",
+  mleko: "#f4efe6", "kokosovy-krem": "#efe6d2", campari: "#c22e3d",
+  aperol: "#e56a2b", cassis: "#4a1830", grenadina: "#b71f3b",
+  "dzus-pomerancovy": "#eda427", "dzus-ananasovy": "#e8cf4e",
+  "dzus-brusinkovy": "#a82743", "dzus-grapefruitovy": "#e88a7a",
+  "dzus-rajcatovy": "#bf3a2b", "broskvove-pyre": "#eeaa66", "broskvovy-liker": "#e59a55",
+  "vino-cervene": "#6d2434", "vino-bile": "#ddd08e", sekt: "#e7d9a0",
+  "pivo-svetle": "#dfa32c", "pivo-cerne": "#241408", kava: "#31221a",
+  cola: "#2e1d12", kofola: "#33200f", "energeticky-napoj": "#cfc44c",
+  tonik: "#dfe8ec", sodovka: "#dfe8ec", "zazvorove-pivo": "#d9c26a",
+  "zazvorova-limonada": "#e3d49a", "triple-sec": "#ecdcb8", amaretto: "#9c5a2c",
+  vodka: "#dde6ec", gin: "#dde6ec", "rum-bily": "#e3e8e4", tequila: "#e6e2c8",
+  cachaca: "#e2e6da", "vermut-suchy": "#ded7a8", "vermut-cerveny": "#7c3a2d",
+  limetka: "#b7d46a", citron: "#e8dc6a", pomeranc: "#eda427",
+  mata: "#5da96b", bazalka: "#4a8f56", med: "#d99a2e",
+  "cukrovy-sirup": "#eee8dc", orgeat: "#e9dfc8", "bezovy-sirup": "#e9e4cf"
+};
+
+/* tvar sklenice podle textu v poli "sklenice" -> vnitřek sklenice jako polygon */
+function tvarSklenice(text) {
+  const t = (text || "").toLowerCase();
+  if (t.includes("koktejlka") || t.includes("margarit"))
+    return { vnitrek: "15,35 85,35 50,72", stopka: "M50 72 L50 105 M32 108 L68 108" };
+  if (t.includes("flétna") || t.includes("sekt"))
+    return { vnitrek: "40,18 60,18 57,75 43,75", stopka: "M50 75 L50 105 M36 108 L64 108" };
+  if (t.includes("vinná") || t.includes("copa") || t.includes("balonová") || t.includes("džbán"))
+    return { vnitrek: "30,28 70,28 66,62 55,70 45,70 34,62", stopka: "M50 70 L50 103 M34 106 L66 106" };
+  if (t.includes("půllitr") || t.includes("třetinka"))
+    return { vnitrek: "28,25 66,25 66,105 28,105", ucho: true };
+  if (t.includes("panák") || t.includes("kolínko") || t.includes("sherry"))
+    return { vnitrek: "36,55 64,55 60,100 40,100" };
+  if (t.includes("hrnek") || t.includes("ouškem") || t.includes("pohárek"))
+    return { vnitrek: "30,35 68,35 68,100 30,100", ucho: true };
+  return { vnitrek: "32,25 68,25 64,105 36,105" }; // highball / tumbler
+}
+
+/* SVG silueta drinku: sklenice + barevné vrstvy podle surovin (odspodu dle receptu) */
+function svgDrinku(drink, velikost) {
+  const tvar = tvarSklenice(drink.sklenice);
+  const slozky = drink.suroviny.filter(s => !s.volitelne).slice(0, 5);
+  const body = tvar.vnitrek.split(" ").map(p => p.split(",").map(Number));
+  const ys = body.map(b => b[1]);
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const id = "clip" + Math.random().toString(36).slice(2, 8);
+  let vrstvy = "";
+  const n = slozky.length || 1;
+  for (let i = 0; i < n; i++) {
+    const barva = BARVY[slozky[n - 1 - i] ? slozky[n - 1 - i].id : ""] || "#7f8c99";
+    const y = minY + ((maxY - minY) / n) * i;
+    vrstvy += `<rect x="0" y="${y}" width="100" height="${(maxY - minY) / n + 1}" fill="${barva}"/>`;
+  }
+  const ucho = tvar.ucho ? `<path d="M68 45 Q88 45 88 65 Q88 85 68 85" fill="none" stroke="#9fb0bd" stroke-width="4"/>` : "";
+  const stopka = tvar.stopka ? `<path d="${tvar.stopka}" stroke="#9fb0bd" stroke-width="4" fill="none" stroke-linecap="round"/>` : "";
+  return `<svg viewBox="0 0 100 140" width="${velikost}" height="${velikost}" style="background:#10151a;border-radius:8px">
+    <clipPath id="${id}"><polygon points="${tvar.vnitrek}"/></clipPath>
+    <g clip-path="url(#${id})">${vrstvy}</g>
+    <polygon points="${tvar.vnitrek}" fill="none" stroke="#9fb0bd" stroke-width="3"/>
+    ${ucho}${stopka}</svg>`;
+}
+
+function obrazekDrinku(drink, velikost) {
+  const soubor = OBRAZKY[drink.nazev];
+  if (!soubor) return svgDrinku(drink, velikost);
+  // v distribuční verzi je obrázek vložen přímo jako data:URI
+  const src = soubor.startsWith("data:") ? soubor : "data/img/" + soubor;
+  return `<img src="${src}" alt="${drink.nazev}" loading="lazy">`;
+}
+
+/* ---------- záložky ---------- */
+function prepni(zalozka) {
+  ["drinky", "bar"].forEach(z => {
+    el("tab-" + z).classList.toggle("aktivni", z === zalozka);
+    el("zalozka-" + z).classList.toggle("aktivni", z === zalozka);
+  });
+}
+el("tab-drinky").onclick = () => prepni("drinky");
+el("tab-bar").onclick = () => prepni("bar");
+
+/* ---------- záložka Můj bar ---------- */
+function chipHtml(s) {
+  const mam = inventar.has(s.id);
+  const krizek = s.vlastni
+    ? `<span class="smazat-vlastni" data-smaz="${s.id}" title="Smazat vlastní surovinu">×</span>` : "";
+  return `<label class="chip ${mam ? "mam" : ""}" data-id="${s.id}">
+    <input type="checkbox" ${mam ? "checked" : ""}>${s.nazev}${krizek}</label>`;
+}
+
+/* normalizované značky pro hledání: id -> ["guinness", "kozel cerny", …] */
+const ZNACKY_HLEDANI = {};
+Object.entries(window.BARMAN_DATA.znacky || {}).forEach(([id, znacky]) => {
+  ZNACKY_HLEDANI[id] = znacky.map(z => Barman.normalizuj(z));
+});
+
+function vykresliBar() {
+  const filtr = Barman.normalizuj(el("hledat-surovinu").value);
+  const sedi = s => !filtr ||
+    Barman.normalizuj(s.nazev).includes(filtr) ||
+    (ZNACKY_HLEDANI[s.id] || []).some(z => z.includes(filtr));
+  const viditelne = SUROVINY()
+    .filter(s => !s.zakladni && sedi(s))
+    .sort((a, b) => a.nazev.localeCompare(b.nazev, "cs"));
+  const mam = viditelne.filter(s => inventar.has(s.id));
+  const nemam = viditelne.filter(s => !inventar.has(s.id));
+
+  let html = "";
+  html += `<div class="kategorie"><h3>✓ Mám v baru (${mam.length})</h3><div class="chipy">`;
+  html += mam.map(chipHtml).join("") ||
+    `<span class="prazdno">Zatím prázdno — klikni dole na to, co máš doma.</span>`;
+  html += `</div></div>`;
+  html += `<div class="kategorie"><h3>Klikni, co máš doma</h3><div class="chipy">`;
+  html += nemam.map(chipHtml).join("") ||
+    `<span class="prazdno">Nic dalšího nenalezeno.</span>`;
+  html += `</div></div>`;
+  html += `<p class="zakladni-pozn">Cukr, sůl, pepř, led a voda se berou jako samozřejmost — počítají se automaticky.</p>`;
+
+  el("seznam-surovin").innerHTML = html;
+  el("seznam-surovin").querySelectorAll("label.chip").forEach(chip => {
+    chip.querySelector("input").addEventListener("change", ev => {
+      const id = chip.dataset.id;
+      ev.target.checked ? inventar.add(id) : inventar.delete(id);
+      uloz(); vykresliBar(); vykresliDrinky();
+    });
+  });
+  el("seznam-surovin").querySelectorAll(".smazat-vlastni").forEach(x => {
+    x.addEventListener("click", ev => {
+      ev.preventDefault(); ev.stopPropagation();
+      const id = x.dataset.smaz;
+      const s = SLOVNIK[id];
+      if (!confirm(`Smazat vlastní surovinu „${s ? s.nazev : id}“?`)) return;
+      const i = vlastni.findIndex(v => v.id === id);
+      if (i !== -1) vlastni.splice(i, 1);
+      inventar.delete(id);
+      prestavSlovnik(); uloz(); vykresliBar(); vykresliDrinky();
+    });
+  });
+}
+el("hledat-surovinu").addEventListener("input", vykresliBar);
+
+/* rozpoznávání obchodních značek: „Guinness“ → černé pivo, „Sierra“ → tequila */
+function najdiZnacku(text) {
+  const q = Barman.normalizuj(text);
+  if (q.length < 3) return null;
+  const slovaVstupu = q.split(/[^a-z0-9]+/).filter(Boolean);
+  // skloňování: „sierry“ ~ „sierra“ — shoda kmene (slovo bez posledního znaku)
+  const kmenovaShoda = (a, b) =>
+    a.length >= 4 && b.length >= 4 &&
+    (a.startsWith(b.slice(0, -1)) || b.startsWith(a.slice(0, -1)));
+  for (const [id, znacky] of Object.entries(DATA.znacky || {})) {
+    for (const z of znacky) {
+      const n = Barman.normalizuj(z);
+      if (n.length >= 3 && (q.includes(n) || n.includes(q))) return { id, znacka: z };
+      const slovaZnacky = n.split(/[^a-z0-9]+/).filter(Boolean);
+      if (slovaVstupu.some(sv => slovaZnacky.some(sz => kmenovaShoda(sv, sz))))
+        return { id, znacka: z };
+    }
+  }
+  return null;
+}
+
+function zprava(text) {
+  el("pridat-zprava").textContent = text || "";
+}
+
+/* přidání suroviny: nejdřív zkusit značku, pak obecný název, pak vlastní */
+function pridejVlastniSurovinu() {
+  const nazev = el("nova-surovina").value.trim();
+  if (!nazev) return;
+
+  // 1) obchodní značka známé suroviny?
+  const znacka = najdiZnacku(nazev);
+  if (znacka && SLOVNIK[znacka.id]) {
+    const s = SLOVNIK[znacka.id];
+    el("nova-surovina").value = "";
+    if (inventar.has(znacka.id)) {
+      zprava(`„${nazev}“ znám — je to ${s.nazev} a tu už máš zaškrtnutou.`);
+      return;
+    }
+    inventar.add(znacka.id);
+    zprava(`„${nazev}“ jsem zařadil jako: ${s.nazev} ✓`);
+    uloz(); vykresliBar(); vykresliDrinky();
+    return;
+  }
+
+  // 2) přesný název už existující suroviny?
+  const existujici = SUROVINY().find(s =>
+    Barman.normalizuj(s.nazev) === Barman.normalizuj(nazev));
+  if (existujici) {
+    if (!existujici.zakladni) inventar.add(existujici.id);
+    el("nova-surovina").value = "";
+    zprava(`„${nazev}“ už v seznamu je — zaškrtl jsem ji. ✓`);
+    uloz(); vykresliBar(); vykresliDrinky();
+    return;
+  }
+
+  // 3) opravdu vlastní surovina
+  const id = "vlastni-" + Barman.normalizuj(nazev).replace(/[^a-z0-9]+/g, "-");
+  vlastni.push({ id, nazev, kategorie: "ostatni", vlastni: true });
+  inventar.add(id); // přidává se to, co má doma
+  el("nova-surovina").value = "";
+  zprava(`„${nazev}“ přidána jako vlastní surovina.`);
+  prestavSlovnik(); uloz(); vykresliBar(); vykresliDrinky();
+}
+el("btn-pridat").addEventListener("click", pridejVlastniSurovinu);
+el("nova-surovina").addEventListener("keydown", ev => {
+  if (ev.key === "Enter") pridejVlastniSurovinu();
+});
+
+/* export / import / smazání */
+el("btn-export").onclick = () => {
+  const blob = new Blob([JSON.stringify({ inventar: [...inventar], vlastni }, null, 2)],
+    { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "muj-bar.json";
+  a.click();
+};
+el("btn-import").onclick = () => el("import-soubor").click();
+el("import-soubor").addEventListener("change", ev => {
+  const soubor = ev.target.files[0];
+  if (!soubor) return;
+  soubor.text().then(text => {
+    try {
+      const data = JSON.parse(text);
+      // starý formát: pole id; nový: { inventar, vlastni }
+      const ids = Array.isArray(data) ? data : data.inventar;
+      if (!Array.isArray(ids)) throw new Error();
+      vlastni.length = 0;
+      (Array.isArray(data) ? [] : data.vlastni || []).forEach(v => {
+        if (v && v.id && v.nazev) vlastni.push({ ...v, vlastni: true });
+      });
+      prestavSlovnik();
+      inventar.clear();
+      ids.filter(id => SLOVNIK[id]).forEach(id => inventar.add(id));
+      uloz(); vykresliBar(); vykresliDrinky();
+    } catch { alert("Soubor se nepodařilo načíst — čekám zálohu z tlačítka Exportovat."); }
+    ev.target.value = "";
+  });
+});
+el("btn-smazat").onclick = () => {
+  if (confirm("Opravdu vyprázdnit celý bar? (Vlastní suroviny zůstanou v seznamu.)")) {
+    inventar.clear(); uloz(); vykresliBar(); vykresliDrinky();
+  }
+};
+
+/* ---------- záložka Drinky ---------- */
+function karta(zaznam, sTrivii) {
+  const d = zaznam.drink;
+  const chybi = zaznam.chybiNazvy.map(n => `<span class="chybi-chip">chybí: ${n}</span>`).join("");
+  const zameny = (zaznam.zameny || []).map(z =>
+    `<span class="zamena-chip">↔ ${z.nahradaNazev} místo: ${z.zaNazev}</span>`).join("");
+  const trivia = sTrivii && d.trivia ? `<div class="trivia">💡 ${d.trivia}</div>` : "";
+  return `<div class="karta" data-nazev="${d.nazev}">
+    ${obrazekDrinku(d, 58)}
+    <div><div class="nazev">${d.nazev}${d.nealko ? " 🥤" : ""}</div>
+    <div class="meta">${d.sklenice}</div>${chybi}${zameny}${trivia}</div></div>`;
+}
+
+function vykresliDrinky() {
+  const tolerance = +el("tolerance").value;
+  el("tolerance-hodnota").textContent = tolerance;
+  const dotaz = el("hledat-drink").value;
+  const vyber = Barman.najdiDrinky(DRINKY, dotaz);
+  const v = Barman.vyhodnot(vyber, SUROVINY(), inventar, tolerance, {
+    jenNealko: el("filtr-nealko").checked,
+    typ: el("filtr-typ").value || null,
+    nahrady: DATA.nahrady
+  });
+
+  el("pocet-hned").textContent = v.hned.length;
+  el("pocet-dokoupit").textContent = v.dokoupit.length;
+  el("pocet-ostatni").textContent = v.ostatni.length + " " + drinkuSlovo(v.ostatni.length);
+
+  // při aktivním hledání ukázat u výsledků trivii (uživatel hledá třeba „hemingway“)
+  const sTrivii = dotaz.trim().length > 0;
+  el("sekce-hned").innerHTML = v.hned.map(z => karta(z, sTrivii)).join("") ||
+    `<div class="prazdno">Zatím nic — zaškrtni v záložce „Můj bar“, co máš doma.</div>`;
+  el("sekce-dokoupit").innerHTML = v.dokoupit.map(z => karta(z, sTrivii)).join("") ||
+    `<div class="prazdno">Nic v dosahu ${tolerance} ${sklonuj(tolerance, ["suroviny", "surovin", "surovin"])} — zkus zvýšit toleranci.</div>`;
+  el("sekce-ostatni").innerHTML = v.ostatni.map(z => karta(z, sTrivii)).join("");
+
+  el("sekce-radce").innerHTML = v.radce.slice(0, 6).map(r => {
+    const casti = [];
+    if (r.odemkne) casti.push(`odemkne <b>${r.odemkne} ${drinkuSlovo(r.odemkne)}</b> hned`);
+    if (r.priblizi) casti.push(`přiblíží ${r.priblizi} ${sklonuj(r.priblizi, ["další", "další", "dalších"])}`);
+    return `<li>🛒 <b>${r.nazev}</b> — ${casti.join(", ")}</li>`;
+  }).join("") || `<li class="prazdno">Máš všechno — rádce nemá co doporučit!</li>`;
+
+  const hnedVse = Barman.vyhodnot(DRINKY, SUROVINY(), inventar, 0).hned.length;
+  el("statistika").textContent =
+    `V baru máš ${inventar.size} ${sklonuj(inventar.size, ["surovinu", "suroviny", "surovin"])} · umícháš ${hnedVse} ${drinkuSlovo(hnedVse)}`;
+
+  document.querySelectorAll(".karta").forEach(k =>
+    k.addEventListener("click", () => otevriDetail(k.dataset.nazev)));
+  uloz();
+}
+["tolerance", "filtr-typ", "filtr-nealko", "hledat-drink"].forEach(id =>
+  el(id).addEventListener("input", vykresliDrinky));
+
+/* ---------- detail drinku ---------- */
+const PUVODY = {
+  "iba": "oficiální IBA koktejl", "svetova-klasika": "světová klasika",
+  "ceska-klasika": "česká klasika", "party-neoficialni": "párty drink"
+};
+
+/* zaměnitelné suroviny (id -> pole náhradních id) pro detail drinku */
+const ZAMENITELNE = {};
+(DATA.nahrady || []).forEach(sk => sk.skupina.forEach(id => {
+  ZAMENITELNE[id] = (ZAMENITELNE[id] || []).concat(sk.skupina.filter(x => x !== id));
+}));
+
+function otevriDetail(nazev) {
+  const d = DRINKY.find(x => x.nazev === nazev);
+  if (!d) return;
+  const suroviny = d.suroviny.map(s => {
+    const info = SLOVNIK[s.id] || { nazev: s.id };
+    const mam = inventar.has(s.id) || info.zakladni;
+    const volit = s.volitelne ? ` <span class="volitelna">(volitelné)</span>` : "";
+    if (!mam) {
+      const alt = (ZAMENITELNE[s.id] || []).find(a =>
+        inventar.has(a) || (SLOVNIK[a] && SLOVNIK[a].zakladni));
+      if (alt) return `<li class="mam-zamena">${info.nazev} — ${s.mnozstvi}` +
+        ` <span class="volitelna">(nahraď: ${SLOVNIK[alt].nazev})</span>${volit}</li>`;
+    }
+    return `<li class="${mam ? "mam-ano" : "mam-ne"}">${info.nazev} — ${s.mnozstvi}${volit}</li>`;
+  }).join("");
+  el("detail-obsah").innerHTML = `
+    <div class="obrazek">${obrazekDrinku(d, 180)}</div>
+    <h2>${d.nazev}<span class="stitek">${PUVODY[d.puvod] || d.puvod}</span>${d.nealko ? `<span class="stitek">nealko</span>` : ""}</h2>
+    ${d.alt_nazvy ? `<div class="alt">též: ${d.alt_nazvy.join(", ")}</div>` : ""}
+    <h4>Suroviny</h4><ul>${suroviny}</ul>
+    <h4>Postup</h4><p>${d.postup}</p>
+    <h4>Servírování</h4>
+    <p>🥃 ${d.sklenice}${d.ozdoba && d.ozdoba !== "bez ozdoby" ? ` &nbsp;·&nbsp; 🍒 ${d.ozdoba}` : ""}</p>
+    ${d.trivia ? `<h4>Zajímavost</h4><p class="trivia-detail">💡 ${d.trivia}</p>` : ""}
+    ${d.poznamka ? `<p class="poznamka">${d.poznamka}</p>` : ""}`;
+  el("modal").classList.add("otevreny");
+}
+el("modal").addEventListener("click", ev => {
+  if (ev.target.id === "modal" || ev.target.classList.contains("zavrit"))
+    el("modal").classList.remove("otevreny");
+});
+document.addEventListener("keydown", ev => {
+  if (ev.key === "Escape") el("modal").classList.remove("otevreny");
+});
+
+/* ---------- start ---------- */
+el("tolerance").value = nactene.tolerance ?? 1;
+vykresliBar();
+vykresliDrinky();
+</script>
+</body>
+</html>

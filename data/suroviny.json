@@ -1,0 +1,532 @@
+{
+  "popis": "Slovník surovin pro projekt Barman. Pole 'zakladni' = považuje se za vždy dostupné doma (engine je nepočítá jako chybějící).",
+  "kategorie": [
+    "lihovina",
+    "liker",
+    "vino-vermut-sekt",
+    "pivo",
+    "nealko-mixer",
+    "stava",
+    "sirup-sladidlo",
+    "cerstve-mlecne",
+    "ostatni"
+  ],
+  "nahrady": [
+    {
+      "skupina": [
+        "limetka",
+        "citron"
+      ],
+      "poznamka": "citrusy lze doma zaměnit"
+    },
+    {
+      "skupina": [
+        "cukrovy-sirup",
+        "cukr",
+        "med"
+      ],
+      "poznamka": "sladidla lze zaměnit; sirup = cukr rozpuštěný ve vodě 1:1"
+    },
+    {
+      "skupina": [
+        "rum-bily",
+        "rum-tmavy",
+        "rum-tuzemsky"
+      ],
+      "poznamka": "rumy lze doma zaměnit — změní se barva a říz"
+    },
+    {
+      "skupina": [
+        "cola",
+        "kofola"
+      ],
+      "poznamka": "kolové nápoje lze zaměnit"
+    },
+    {
+      "skupina": [
+        "zazvorove-pivo",
+        "zazvorova-limonada"
+      ],
+      "poznamka": "zázvorové mixéry lze zaměnit, ginger ale je jemnější"
+    },
+    {
+      "skupina": [
+        "smetana",
+        "mleko",
+        "slehacka"
+      ],
+      "poznamka": "mléčné složky lze zaměnit, změní se hustota"
+    },
+    {
+      "skupina": [
+        "bourbon",
+        "whiskey-irska"
+      ],
+      "poznamka": "whiskey lze doma zaměnit"
+    },
+    {
+      "skupina": [
+        "dzus-pomerancovy",
+        "pomeranc"
+      ],
+      "poznamka": "džus jde nahradit čerstvě vymačkaným pomerančem"
+    }
+  ],
+  "suroviny": [
+    {
+      "id": "vodka",
+      "nazev": "Vodka",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "gin",
+      "nazev": "Gin",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "rum-bily",
+      "nazev": "Bílý rum",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "rum-tmavy",
+      "nazev": "Tmavý rum",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "rum-tuzemsky",
+      "nazev": "Tuzemský rum (tuzemák)",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "tequila",
+      "nazev": "Tequila",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "bourbon",
+      "nazev": "Bourbon / americká whiskey",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "whiskey-irska",
+      "nazev": "Irská whiskey",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "konak",
+      "nazev": "Koňak / brandy",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "cachaca",
+      "nazev": "Cachaça",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "jagermeister",
+      "nazev": "Jägermeister",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "becherovka",
+      "nazev": "Becherovka",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "fernet",
+      "nazev": "Fernet (bylinný)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "zelena",
+      "nazev": "Zelená (peprmintový likér)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "griotka",
+      "nazev": "Griotka (višňový likér)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "vajecny-liker",
+      "nazev": "Vaječný likér (vaječňák)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "kavovy-liker",
+      "nazev": "Kávový likér (Kahlúa)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "smetanovy-liker",
+      "nazev": "Smetanový likér (Baileys)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "triple-sec",
+      "nazev": "Triple sec / Cointreau (pomerančový likér)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "amaretto",
+      "nazev": "Amaretto (mandlový likér)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "campari",
+      "nazev": "Campari",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "aperol",
+      "nazev": "Aperol",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "cassis",
+      "nazev": "Crème de cassis (černorybízový likér)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "kakaovy-liker",
+      "nazev": "Kakaový likér (bílý)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "broskvovy-liker",
+      "nazev": "Broskvový likér",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "vermut-suchy",
+      "nazev": "Suchý vermut",
+      "kategorie": "vino-vermut-sekt",
+      "alko": true
+    },
+    {
+      "id": "vermut-cerveny",
+      "nazev": "Červený (sladký) vermut",
+      "kategorie": "vino-vermut-sekt",
+      "alko": true
+    },
+    {
+      "id": "sekt",
+      "nazev": "Sekt / prosecco / šampaňské",
+      "kategorie": "vino-vermut-sekt",
+      "alko": true
+    },
+    {
+      "id": "vino-bile",
+      "nazev": "Bílé víno",
+      "kategorie": "vino-vermut-sekt",
+      "alko": true
+    },
+    {
+      "id": "vino-cervene",
+      "nazev": "Červené víno",
+      "kategorie": "vino-vermut-sekt",
+      "alko": true
+    },
+    {
+      "id": "pivo-svetle",
+      "nazev": "Světlé pivo",
+      "kategorie": "pivo",
+      "alko": true
+    },
+    {
+      "id": "pivo-cerne",
+      "nazev": "Černé pivo",
+      "kategorie": "pivo",
+      "alko": true
+    },
+    {
+      "id": "tonik",
+      "nazev": "Tonik",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "cola",
+      "nazev": "Cola",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "kofola",
+      "nazev": "Kofola",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "sodovka",
+      "nazev": "Sodovka / perlivá voda",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "zazvorove-pivo",
+      "nazev": "Zázvorové pivo (ginger beer, nealko)",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "zazvorova-limonada",
+      "nazev": "Zázvorová limonáda (ginger ale)",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "energeticky-napoj",
+      "nazev": "Energetický nápoj (Red Bull, Semtex…)",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "kava",
+      "nazev": "Káva (espresso / silná černá)",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "dzus-pomerancovy",
+      "nazev": "Pomerančový džus",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "dzus-ananasovy",
+      "nazev": "Ananasový džus",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "dzus-brusinkovy",
+      "nazev": "Brusinkový džus",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "dzus-grapefruitovy",
+      "nazev": "Grapefruitový džus",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "dzus-rajcatovy",
+      "nazev": "Rajčatový džus",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "broskvove-pyre",
+      "nazev": "Broskvové pyré / hustý broskvový džus",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "cukrovy-sirup",
+      "nazev": "Cukrový sirup (1:1 cukr a voda, dá se uvařit doma)",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "grenadina",
+      "nazev": "Grenadina (granátové jablko)",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "bezovy-sirup",
+      "nazev": "Bezový sirup",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "orgeat",
+      "nazev": "Mandlový sirup (orgeat)",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "kokosovy-krem",
+      "nazev": "Kokosový krém (Coco López)",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "med",
+      "nazev": "Med",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "limetka",
+      "nazev": "Limetka (i šťáva)",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "citron",
+      "nazev": "Citron (i šťáva)",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "pomeranc",
+      "nazev": "Pomeranč (i šťáva na čerstvo)",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "mata",
+      "nazev": "Čerstvá máta",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "bazalka",
+      "nazev": "Čerstvá bazalka",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "smetana",
+      "nazev": "Smetana (ke šlehání / do kávy)",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "slehacka",
+      "nazev": "Šlehačka (našlehaná)",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "mleko",
+      "nazev": "Mléko",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "angostura",
+      "nazev": "Angostura bitters",
+      "kategorie": "ostatni",
+      "alko": true
+    },
+    {
+      "id": "worcester",
+      "nazev": "Worcesterová omáčka",
+      "kategorie": "ostatni",
+      "alko": false
+    },
+    {
+      "id": "tabasco",
+      "nazev": "Tabasco",
+      "kategorie": "ostatni",
+      "alko": false
+    },
+    {
+      "id": "cukr",
+      "nazev": "Cukr",
+      "kategorie": "ostatni",
+      "alko": false,
+      "zakladni": true
+    },
+    {
+      "id": "sul",
+      "nazev": "Sůl",
+      "kategorie": "ostatni",
+      "alko": false,
+      "zakladni": true
+    },
+    {
+      "id": "pepr",
+      "nazev": "Pepř",
+      "kategorie": "ostatni",
+      "alko": false,
+      "zakladni": true
+    },
+    {
+      "id": "led",
+      "nazev": "Led",
+      "kategorie": "ostatni",
+      "alko": false,
+      "zakladni": true
+    },
+    {
+      "id": "voda",
+      "nazev": "Voda",
+      "kategorie": "ostatni",
+      "alko": false,
+      "zakladni": true
+    },
+    {
+      "id": "starorezna",
+      "nazev": "Starorežná (anýzový likér)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "absint",
+      "nazev": "Absint",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "borovicka",
+      "nazev": "Borovička",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "dzus-jahodovy",
+      "nazev": "Jahodový džus/nektar",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "citronova-limonada",
+      "nazev": "Citronová limonáda (Sprite, 7Up…)",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "nanuk",
+      "nazev": "Vanilkový (bílý) nanuk",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "koreni-svarak",
+      "nazev": "Koření na svařák (skořice, hřebíček)",
+      "kategorie": "ostatni",
+      "alko": false
+    }
+  ]
+}

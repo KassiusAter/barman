@@ -1,0 +1,2525 @@
+{
+  "popis": "Databáze drinků pro projekt Barman. puvod: iba (oficiální IBA koktejl), svetova-klasika, ceska-klasika, party-neoficialni. typ: koktejl, longdrink, shot, pivni-mix, horky. nealko: true = bezalkoholový. Pole 'volitelne' u suroviny = engine ji nepočítá jako chybějící.",
+  "drinky": [
+    {
+      "nazev": "Mojito",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "rum-bily",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "šťáva z poloviny + 2 klínky"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "2 lžičky"
+        },
+        {
+          "id": "mata",
+          "mnozstvi": "6–8 lístků"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "dolít"
+        }
+      ],
+      "postup": "V highballu rozmíchej cukr s limetkovou šťávou, přidej mátu a jemně ji promni lžící (nedrtit). Naplň sklenici drceným ledem, nalij rum, promíchej a dolij sodovkou.",
+      "ozdoba": "snítka máty, klínek limetky"
+    },
+    {
+      "nazev": "Daiquiri",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "rum-bily",
+          "mnozstvi": "60 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "25 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "15 ml"
+        }
+      ],
+      "postup": "Vše protřepej v shakeru s ledem a sceď do vychlazené koktejlky.",
+      "ozdoba": "kolečko limetky"
+    },
+    {
+      "nazev": "Margarita",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka / margaritová sklenice",
+      "suroviny": [
+        {
+          "id": "tequila",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "triple-sec",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "15 ml šťávy"
+        },
+        {
+          "id": "sul",
+          "mnozstvi": "na okraj sklenice",
+          "volitelne": true
+        }
+      ],
+      "postup": "Okraj sklenice navlhči limetkou a otoč v soli. Tequilu, triple sec a šťávu protřepej s ledem a sceď do sklenice.",
+      "ozdoba": "solený okraj, kolečko limetky"
+    },
+    {
+      "nazev": "Piña Colada",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "hurricane / highball",
+      "suroviny": [
+        {
+          "id": "rum-bily",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "kokosovy-krem",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "dzus-ananasovy",
+          "mnozstvi": "50 ml"
+        }
+      ],
+      "postup": "Vše rozmixuj s drceným ledem (nebo silně protřepej v shakeru) a nalij do sklenice.",
+      "ozdoba": "klínek ananasu, koktejlová třešeň"
+    },
+    {
+      "nazev": "Cuba Libre",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "rum-bily",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "cola",
+          "mnozstvi": "120 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "10 ml šťávy + klínek"
+        }
+      ],
+      "postup": "Do sklenice s ledem vymačkej limetku, nalij rum a dolij colou. Lehce promíchej.",
+      "ozdoba": "klínek limetky"
+    },
+    {
+      "nazev": "Negroni",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "campari",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "vermut-cerveny",
+          "mnozstvi": "30 ml"
+        }
+      ],
+      "postup": "Míchej s ledem přímo ve sklenici nebo v míchací sklenici a sceď na čerstvý led.",
+      "ozdoba": "plátek pomeranče"
+    },
+    {
+      "nazev": "Americano",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "campari",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "vermut-cerveny",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "střik"
+        }
+      ],
+      "postup": "Campari a vermut nalij do sklenice s ledem, dolij sodovkou a promíchej.",
+      "ozdoba": "půlplátek pomeranče"
+    },
+    {
+      "nazev": "Aperol Spritz",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "velká vinná sklenice (copa)",
+      "suroviny": [
+        {
+          "id": "aperol",
+          "mnozstvi": "60 ml"
+        },
+        {
+          "id": "sekt",
+          "mnozstvi": "90 ml"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "střik"
+        }
+      ],
+      "postup": "Sklenici naplň ledem, nalij prosecco, pak Aperol a dolij střikem sodovky. Jemně promíchej.",
+      "ozdoba": "plátek pomeranče"
+    },
+    {
+      "nazev": "Hugo",
+      "alt_nazvy": [
+        "Hugo Spritz"
+      ],
+      "puvod": "party-neoficialni",
+      "typ": "longdrink",
+      "sklenice": "velká vinná sklenice",
+      "suroviny": [
+        {
+          "id": "bezovy-sirup",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "sekt",
+          "mnozstvi": "90 ml"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "mata",
+          "mnozstvi": "snítka"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "2 plátky"
+        }
+      ],
+      "postup": "Do sklenice s ledem dej mátu a plátky limetky, nalij bezový sirup, dolij proseccem a sodovkou. Jemně promíchej.",
+      "ozdoba": "snítka máty, plátek limetky"
+    },
+    {
+      "nazev": "Old Fashioned",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "bourbon",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "1 kostka"
+        },
+        {
+          "id": "angostura",
+          "mnozstvi": "2 střiky"
+        },
+        {
+          "id": "voda",
+          "mnozstvi": "pár kapek"
+        }
+      ],
+      "postup": "Kostku cukru pokap Angosturou a trochou vody, rozmačkej. Přidej led a bourbon, míchej, dokud se drink nevychladí.",
+      "ozdoba": "pomerančová kůra, koktejlová třešeň"
+    },
+    {
+      "nazev": "Whiskey Sour",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "bourbon",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "30 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Protřepej s ledem a sceď na čerstvý led. Volitelně přidej do shakeru bílek pro pěnu (Boston Sour).",
+      "ozdoba": "půlplátek pomeranče, třešeň"
+    },
+    {
+      "nazev": "Manhattan",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "bourbon",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "vermut-cerveny",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "angostura",
+          "mnozstvi": "střik"
+        }
+      ],
+      "postup": "Míchej s ledem v míchací sklenici a sceď do vychlazené koktejlky.",
+      "ozdoba": "koktejlová třešeň"
+    },
+    {
+      "nazev": "Dry Martini",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "60 ml"
+        },
+        {
+          "id": "vermut-suchy",
+          "mnozstvi": "10 ml"
+        }
+      ],
+      "postup": "Míchej s ledem v míchací sklenici (netřepat) a sceď do vychlazené koktejlky.",
+      "ozdoba": "oliva nebo citronová kůra"
+    },
+    {
+      "nazev": "Cosmopolitan",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "triple-sec",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "15 ml šťávy"
+        },
+        {
+          "id": "dzus-brusinkovy",
+          "mnozstvi": "30 ml"
+        }
+      ],
+      "postup": "Vše protřepej s ledem a sceď do vychlazené koktejlky.",
+      "ozdoba": "limetková nebo pomerančová kůra"
+    },
+    {
+      "nazev": "Sex on the Beach",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "broskvovy-liker",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "dzus-brusinkovy",
+          "mnozstvi": "40 ml"
+        }
+      ],
+      "postup": "Vše protřepej s ledem a sceď do sklenice s ledem.",
+      "ozdoba": "půlplátek pomeranče"
+    },
+    {
+      "nazev": "Tequila Sunrise",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "tequila",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "90 ml"
+        },
+        {
+          "id": "grenadina",
+          "mnozstvi": "15 ml"
+        }
+      ],
+      "postup": "Do sklenice s ledem nalij tequilu a džus, promíchej. Grenadinu nech pomalu stéct ke dnu — vytvoří efekt východu slunce. Nemíchat.",
+      "ozdoba": "plátek pomeranče, třešeň"
+    },
+    {
+      "nazev": "Sea Breeze",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "dzus-brusinkovy",
+          "mnozstvi": "120 ml"
+        },
+        {
+          "id": "dzus-grapefruitovy",
+          "mnozstvi": "30 ml"
+        }
+      ],
+      "postup": "Vše nalij do sklenice s ledem a promíchej.",
+      "ozdoba": "klínek limetky"
+    },
+    {
+      "nazev": "Long Island Iced Tea",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "gin",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "rum-bily",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "tequila",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "triple-sec",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "25 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "cola",
+          "mnozstvi": "střik"
+        }
+      ],
+      "postup": "Vše kromě coly protřepej s ledem, sceď do sklenice s ledem a dolij střikem coly.",
+      "ozdoba": "klínek citronu"
+    },
+    {
+      "nazev": "Mai Tai",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "rum-bily",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "rum-tmavy",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "triple-sec",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "orgeat",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "30 ml šťávy"
+        }
+      ],
+      "postup": "Vše protřepej s ledem a sceď do sklenice plné drceného ledu.",
+      "ozdoba": "snítka máty, klínek limetky"
+    },
+    {
+      "nazev": "Bloody Mary",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "dzus-rajcatovy",
+          "mnozstvi": "90 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "15 ml šťávy"
+        },
+        {
+          "id": "worcester",
+          "mnozstvi": "2–3 střiky",
+          "volitelne": true
+        },
+        {
+          "id": "tabasco",
+          "mnozstvi": "dle chuti",
+          "volitelne": true
+        },
+        {
+          "id": "sul",
+          "mnozstvi": "špetka",
+          "volitelne": true
+        },
+        {
+          "id": "pepr",
+          "mnozstvi": "špetka",
+          "volitelne": true
+        }
+      ],
+      "postup": "Vše jemně promíchej ve sklenici s ledem (netřepat, džus by zpěnil). Dochuť solí, pepřem, worcesterem a tabascem.",
+      "ozdoba": "stonek řapíkatého celeru, klínek citronu"
+    },
+    {
+      "nazev": "Moscow Mule",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "měděný hrnek / highball",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "zazvorove-pivo",
+          "mnozstvi": "120 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "10 ml šťávy + klínek"
+        }
+      ],
+      "postup": "Do hrnku s ledem nalij vodku a limetkovou šťávu, dolij zázvorovým pivem a promíchej.",
+      "ozdoba": "klínek limetky, plátek zázvoru"
+    },
+    {
+      "nazev": "Dark 'n' Stormy",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "rum-tmavy",
+          "mnozstvi": "60 ml"
+        },
+        {
+          "id": "zazvorove-pivo",
+          "mnozstvi": "100 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "klínek"
+        }
+      ],
+      "postup": "Sklenici naplň ledem, dolij zázvorovým pivem a tmavý rum nech plavat navrchu (lij přes lžičku).",
+      "ozdoba": "klínek limetky"
+    },
+    {
+      "nazev": "Espresso Martini",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "kavovy-liker",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "kava",
+          "mnozstvi": "1 espresso (30 ml)"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "10 ml",
+          "volitelne": true
+        }
+      ],
+      "postup": "Vše silně protřepej s ledem (čerstvé espresso vytvoří pěnu) a sceď do vychlazené koktejlky.",
+      "ozdoba": "3 kávová zrna na pěně"
+    },
+    {
+      "nazev": "White Russian",
+      "puvod": "svetova-klasika",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "kavovy-liker",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "smetana",
+          "mnozstvi": "30 ml"
+        }
+      ],
+      "postup": "Do sklenice s ledem nalij vodku a kávový likér, promíchej. Smetanu nalij navrch přes lžičku.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Black Russian",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "kavovy-liker",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Nalij do sklenice s ledem a promíchej.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Irish Coffee",
+      "puvod": "iba",
+      "typ": "horky",
+      "sklenice": "sklenice na horké nápoje (s ouškem)",
+      "suroviny": [
+        {
+          "id": "whiskey-irska",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "kava",
+          "mnozstvi": "90 ml horké"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "2 lžičky (třtinový)"
+        },
+        {
+          "id": "slehacka",
+          "mnozstvi": "vrstva navrch"
+        }
+      ],
+      "postup": "V nahřáté sklenici rozpusť cukr v horké kávě, přidej whiskey. Navrch přes lžičku opatrně polož vrstvu jemně našlehané smetany. Nemíchat — pije se přes smetanu.",
+      "ozdoba": "vrstva šlehačky"
+    },
+    {
+      "nazev": "B52",
+      "puvod": "svetova-klasika",
+      "typ": "shot",
+      "sklenice": "panák (sherry sklenka)",
+      "suroviny": [
+        {
+          "id": "kavovy-liker",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "smetanovy-liker",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "triple-sec",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Vrstvi v pořadí: kávový likér na dno, přes lžičku smetanový likér, navrch triple sec. Vrstvy se nesmí smíchat.",
+      "ozdoba": "bez ozdoby; navrch se dá zapálit (opatrně!)"
+    },
+    {
+      "nazev": "Grasshopper",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "kakaovy-liker",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "smetana",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Vše protřepej s ledem a sceď do vychlazené koktejlky.",
+      "ozdoba": "lístek máty",
+      "poznamka": "Originál používá zelený crème de menthe — česká zelená funguje jako náhrada."
+    },
+    {
+      "nazev": "Brandy Alexander",
+      "alt_nazvy": [
+        "Alexander"
+      ],
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "konak",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "kakaovy-liker",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "smetana",
+          "mnozstvi": "30 ml"
+        }
+      ],
+      "postup": "Vše protřepej s ledem a sceď do vychlazené koktejlky.",
+      "ozdoba": "strouhaný muškátový oříšek"
+    },
+    {
+      "nazev": "Sidecar",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "konak",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "triple-sec",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "20 ml šťávy"
+        }
+      ],
+      "postup": "Vše protřepej s ledem a sceď do vychlazené koktejlky.",
+      "ozdoba": "citronová kůra, volitelně cukrový okraj"
+    },
+    {
+      "nazev": "White Lady",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "triple-sec",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "20 ml šťávy"
+        }
+      ],
+      "postup": "Vše protřepej s ledem a sceď do vychlazené koktejlky.",
+      "ozdoba": "citronová kůra"
+    },
+    {
+      "nazev": "French 75",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "flétna",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "15 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "sekt",
+          "mnozstvi": "60 ml"
+        }
+      ],
+      "postup": "Gin, šťávu a sirup protřepej s ledem, sceď do flétny a dolij sektem.",
+      "ozdoba": "citronová kůra"
+    },
+    {
+      "nazev": "Bellini",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "flétna",
+      "suroviny": [
+        {
+          "id": "broskvove-pyre",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "sekt",
+          "mnozstvi": "100 ml"
+        }
+      ],
+      "postup": "Do flétny nalij vychlazené broskvové pyré a pomalu dolij proseccem. Jemně promíchej.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Mimosa",
+      "alt_nazvy": [
+        "Mimóza"
+      ],
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "flétna",
+      "suroviny": [
+        {
+          "id": "sekt",
+          "mnozstvi": "75 ml"
+        },
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "75 ml"
+        }
+      ],
+      "postup": "Do flétny nalij vychlazený džus a dolij sektem. Jemně promíchej.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Kir",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "vinná sklenice",
+      "suroviny": [
+        {
+          "id": "vino-bile",
+          "mnozstvi": "90 ml (suché, vychlazené)"
+        },
+        {
+          "id": "cassis",
+          "mnozstvi": "10 ml"
+        }
+      ],
+      "postup": "Do sklenice nalij cassis a dolij vychlazeným bílým vínem.",
+      "ozdoba": "bez ozdoby",
+      "poznamka": "Varianta Kir Royal: místo vína sekt."
+    },
+    {
+      "nazev": "Gin Fizz",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "30 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "10 ml"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "80 ml"
+        }
+      ],
+      "postup": "Gin, šťávu a sirup protřepej s ledem, sceď do sklenice bez ledu a dolij sodovkou.",
+      "ozdoba": "plátek citronu"
+    },
+    {
+      "nazev": "Tom Collins",
+      "alt_nazvy": [
+        "John Collins"
+      ],
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "collins (vysoká úzká)",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "30 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "15 ml"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "60 ml"
+        }
+      ],
+      "postup": "Gin, šťávu a sirup nalij do sklenice s ledem, promíchej a dolij sodovkou.",
+      "ozdoba": "plátek citronu, třešeň"
+    },
+    {
+      "nazev": "Gin Basil Smash",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "25 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "bazalka",
+          "mnozstvi": "hrst lístků"
+        }
+      ],
+      "postup": "Bazalku rozdrť v shakeru, přidej ostatní suroviny a led, silně protřepej a sceď přes jemné sítko na čerstvý led.",
+      "ozdoba": "lístek bazalky"
+    },
+    {
+      "nazev": "Southside",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "25 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "mata",
+          "mnozstvi": "5–6 lístků"
+        }
+      ],
+      "postup": "Vše protřepej s ledem a sceď přes jemné sítko do vychlazené koktejlky.",
+      "ozdoba": "lístek máty"
+    },
+    {
+      "nazev": "Paloma",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "tequila",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "dzus-grapefruitovy",
+          "mnozstvi": "100 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "10 ml šťávy"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "střik"
+        },
+        {
+          "id": "sul",
+          "mnozstvi": "na okraj",
+          "volitelne": true
+        }
+      ],
+      "postup": "Do sklenice s ledem (volitelně se soleným okrajem) nalij tequilu a šťávy, dolij sodovkou a promíchej.",
+      "ozdoba": "klínek limetky nebo grapefruitu"
+    },
+    {
+      "nazev": "Caipirinha",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "cachaca",
+          "mnozstvi": "60 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "1 celá, na klínky"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "2 lžičky (třtinový)"
+        }
+      ],
+      "postup": "Limetku s cukrem rozdrť přímo ve sklenici, naplň drceným ledem, zalij cachaçou a promíchej.",
+      "ozdoba": "klínek limetky"
+    },
+    {
+      "nazev": "Mint Julep",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "cínový/měděný pohárek nebo tumbler",
+      "suroviny": [
+        {
+          "id": "bourbon",
+          "mnozstvi": "60 ml"
+        },
+        {
+          "id": "mata",
+          "mnozstvi": "4–5 lístků"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "10 ml"
+        }
+      ],
+      "postup": "Mátu jemně promni se sirupem na dně pohárku, naplň drceným ledem, zalij bourbonem a míchej, dokud pohárek neomrzne.",
+      "ozdoba": "bohatá snítka máty"
+    },
+    {
+      "nazev": "Boulevardier",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "bourbon",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "campari",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "vermut-cerveny",
+          "mnozstvi": "30 ml"
+        }
+      ],
+      "postup": "Míchej s ledem a sceď na čerstvý led (nebo do koktejlky).",
+      "ozdoba": "pomerančová kůra"
+    },
+    {
+      "nazev": "Garibaldi",
+      "puvod": "iba",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "campari",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "100 ml (ideálně čerstvý, našlehaný)"
+        }
+      ],
+      "postup": "Campari nalij do sklenice s ledem a dolij pomerančovým džusem. Promíchej.",
+      "ozdoba": "klínek pomeranče"
+    },
+    {
+      "nazev": "Screwdriver",
+      "alt_nazvy": [
+        "Vodka s džusem"
+      ],
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "100 ml"
+        }
+      ],
+      "postup": "Nalij do sklenice s ledem a promíchej.",
+      "ozdoba": "plátek pomeranče"
+    },
+    {
+      "nazev": "Gin & Tonic",
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "sklenice": "highball / balonová sklenice",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "tonik",
+          "mnozstvi": "150 ml"
+        },
+        {
+          "id": "limetka",
+          "mnozstvi": "klínek"
+        }
+      ],
+      "postup": "Sklenici naplň ledem, nalij gin, dolij tonikem a jemně promíchej. Vymačkej klínek limetky.",
+      "ozdoba": "klínek limetky nebo plátek citronu/okurky"
+    },
+    {
+      "nazev": "Bee's Knees",
+      "puvod": "iba",
+      "typ": "koktejl",
+      "sklenice": "koktejlka",
+      "suroviny": [
+        {
+          "id": "gin",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "20 ml šťávy"
+        },
+        {
+          "id": "med",
+          "mnozstvi": "20 ml (medový sirup 2:1 s vodou)"
+        }
+      ],
+      "postup": "Med rozmíchej s trochou teplé vody na sirup. Vše protřepej s ledem a sceď do vychlazené koktejlky.",
+      "ozdoba": "citronová kůra"
+    },
+    {
+      "nazev": "Amaretto Sour",
+      "puvod": "party-neoficialni",
+      "typ": "koktejl",
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "amaretto",
+          "mnozstvi": "45 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "25 ml šťávy"
+        },
+        {
+          "id": "cukrovy-sirup",
+          "mnozstvi": "10 ml"
+        }
+      ],
+      "postup": "Protřepej s ledem a sceď na čerstvý led. Volitelně s bílkem pro pěnu.",
+      "ozdoba": "plátek citronu, třešeň"
+    },
+    {
+      "nazev": "Sangria",
+      "puvod": "party-neoficialni",
+      "typ": "longdrink",
+      "sklenice": "džbán + vinné sklenice",
+      "suroviny": [
+        {
+          "id": "vino-cervene",
+          "mnozstvi": "750 ml"
+        },
+        {
+          "id": "pomeranc",
+          "mnozstvi": "1 na kolečka + 100 ml šťávy"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "1 na kolečka"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "2 lžíce"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "200 ml"
+        },
+        {
+          "id": "konak",
+          "mnozstvi": "50 ml",
+          "volitelne": true
+        }
+      ],
+      "postup": "Víno, ovoce a cukr nech v džbánu aspoň 2 hodiny odležet v lednici. Před podáváním přidej led a dolij sodovkou.",
+      "ozdoba": "kolečka citrusů v drinku"
+    },
+    {
+      "nazev": "Jägerbomb",
+      "puvod": "party-neoficialni",
+      "typ": "shot",
+      "sklenice": "panák + sklenice",
+      "suroviny": [
+        {
+          "id": "jagermeister",
+          "mnozstvi": "40 ml (vychlazený)"
+        },
+        {
+          "id": "energeticky-napoj",
+          "mnozstvi": "150 ml"
+        }
+      ],
+      "postup": "Do sklenice nalij energetický nápoj, panák Jägermeisteru do ní spusť i se sklenkou (bomb). Pije se naráz.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Vodka Semtex",
+      "alt_nazvy": [
+        "Vodka s energeťákem"
+      ],
+      "puvod": "party-neoficialni",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "energeticky-napoj",
+          "mnozstvi": "250 ml"
+        }
+      ],
+      "postup": "Do sklenice s ledem nalij vodku a dolij vychlazeným energetickým nápojem.",
+      "ozdoba": "klínek limetky"
+    },
+    {
+      "nazev": "Beton",
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "becherovka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "tonik",
+          "mnozstvi": "100 ml"
+        }
+      ],
+      "postup": "Sklenici naplň ledem, nalij Becherovku, dolij tonikem a lehce promíchej.",
+      "ozdoba": "plátek citronu",
+      "poznamka": "BEcherovka + TONik. Hit 80. let, považován za český národní koktejl."
+    },
+    {
+      "nazev": "Bavorák",
+      "alt_nazvy": [
+        "Bavorské pivo"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "highball (350 ml)",
+      "suroviny": [
+        {
+          "id": "fernet",
+          "mnozstvi": "50 ml"
+        },
+        {
+          "id": "tonik",
+          "mnozstvi": "200 ml"
+        }
+      ],
+      "postup": "Sklenici naplň ledem, přidej fernet, dolij tonikem a promíchej barovou lžičkou.",
+      "ozdoba": "plátek citronu",
+      "poznamka": "Barvou připomíná pivo — odtud název."
+    },
+    {
+      "nazev": "Houba",
+      "alt_nazvy": [
+        "Polejvák",
+        "Bambus",
+        "Kopačka",
+        "Mičuda",
+        "Kalimčo"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "vinná sklenice / highball",
+      "suroviny": [
+        {
+          "id": "vino-cervene",
+          "mnozstvi": "100 ml"
+        },
+        {
+          "id": "cola",
+          "mnozstvi": "100 ml (nebo Kofola)"
+        }
+      ],
+      "postup": "Slij víno s colou v poměru 1:1 (nebo 2:3 dle chuti) a lehce promíchej.",
+      "ozdoba": "bez ozdoby",
+      "poznamka": "Španělská obdoba: calimocho. Funguje i s Kofolou."
+    },
+    {
+      "nazev": "Rudé kladivo",
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "sklenice / tumbler",
+      "suroviny": [
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "fernet",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "vino-cervene",
+          "mnozstvi": "dolít (nebo ovocné víno)"
+        }
+      ],
+      "postup": "Do sklenice nalij panák rumu a panák fernetu, dolij červeným vínem.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Lední medvěd",
+      "puvod": "ceska-klasika",
+      "typ": "koktejl",
+      "sklenice": "flétna / sklenice na sekt",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "sekt",
+          "mnozstvi": "dolít"
+        }
+      ],
+      "postup": "Panák vodky vlij do sklenice se sektem.",
+      "ozdoba": "bez ozdoby",
+      "poznamka": "Stupňování podle síly: „V-2“ (2 panáky vodky), „Sojuz 3“ (3 panáky).",
+      "alt_nazvy": [
+        "Bílý medvěd",
+        "Fau Zwei",
+        "Sojuz 3"
+      ]
+    },
+    {
+      "nazev": "Vodníkovo sperma",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "smetana",
+          "mnozstvi": "20 ml (nebo mléko či vaječňák)"
+        }
+      ],
+      "postup": "Do panáku nalij zelenou, pak pomalu přilévej smetanu „jako do kávy“, aby se vrstvy nesmíchaly.",
+      "ozdoba": "bez ozdoby",
+      "poznamka": "Vizuální drink; mléko peprmint překvapivě zjemní. Jeden z nejlevnějších hospodských panáků.",
+      "alt_nazvy": [
+        "Vodníkovo semeno",
+        "Predátorova krev"
+      ]
+    },
+    {
+      "nazev": "Mozek",
+      "alt_nazvy": [
+        "Mozek v krvi",
+        "Newtonův mozek"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "griotka",
+          "mnozstvi": "do poloviny sklenky"
+        },
+        {
+          "id": "vajecny-liker",
+          "mnozstvi": "do plna"
+        }
+      ],
+      "postup": "Sklenku do poloviny naplň griotkou. Vaječňák nalévej tenkým pramínkem krouživými pohyby — čím pomaleji, tím lepší „mozkové záhyby“.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Zelený mozek",
+      "alt_nazvy": [
+        "Mozek vojenský",
+        "Četař"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "do poloviny sklenky"
+        },
+        {
+          "id": "vajecny-liker",
+          "mnozstvi": "do plna"
+        }
+      ],
+      "postup": "Do zelené velmi zvolna vlévej vaječný likér (obrácený postup než u Žabího hlenu).",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Žabí hlen",
+      "alt_nazvy": [
+        "Flusanec",
+        "Vejce se špenátem",
+        "Afghánský chrchel"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "vajecny-liker",
+          "mnozstvi": "do poloviny sklenky"
+        },
+        {
+          "id": "zelena",
+          "mnozstvi": "do plna"
+        }
+      ],
+      "postup": "Sklenku do poloviny naplň vaječňákem, zelenou přilévej pomalu po obvodu sklenice nebo do středu.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Semafor",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák / kolínko",
+      "suroviny": [
+        {
+          "id": "griotka",
+          "mnozstvi": "třetina"
+        },
+        {
+          "id": "vajecny-liker",
+          "mnozstvi": "třetina"
+        },
+        {
+          "id": "zelena",
+          "mnozstvi": "třetina"
+        }
+      ],
+      "postup": "Pečlivě a zvolna vrstvi po lžičce či tyčince: dole griotka (červená), uprostřed vaječňák (žlutá), navrch zelená. Tři barvy semaforu.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Šavle meče",
+      "alt_nazvy": [
+        "Čert",
+        "Táta s mámou",
+        "Vrtule",
+        "Bramboračka"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "2 díly (40 ml)"
+        },
+        {
+          "id": "griotka",
+          "mnozstvi": "1 díl (20 ml)"
+        }
+      ],
+      "postup": "Slij rum s griotkou do panáku; poměr sladkosti dle chuti.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Cikán v jeteli",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák / kolínko",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "fernet",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Panák zelené zlehka přelej fernetem, aby se vrstvy nesmíchaly.",
+      "ozdoba": "bez ozdoby",
+      "poznamka": "Ostravská legenda.",
+      "alt_nazvy": [
+        "Cikán v trávě",
+        "Cikán v rákosí",
+        "Hovno v trávě"
+      ]
+    },
+    {
+      "nazev": "Hornická vlajka",
+      "alt_nazvy": [
+        "Havířská vlajka"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "fernet",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Do sklenky nalij nejdřív zelenou, na ni opatrně panáka fernetu — zelená a černá jako hornické barvy. Nemíchat.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Koně v trávě",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák / kolínko",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Zelenou opatrně přelij rumem, aby vznikly dvě vrstvy.",
+      "ozdoba": "bez ozdoby",
+      "alt_nazvy": [
+        "Halí belí"
+      ]
+    },
+    {
+      "nazev": "Vetřelec",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák / kolínko",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "třetina"
+        },
+        {
+          "id": "fernet",
+          "mnozstvi": "třetina"
+        },
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "třetina"
+        }
+      ],
+      "postup": "Opatrně vrstvi v pořadí zelená, fernet, rum.",
+      "ozdoba": "bez ozdoby",
+      "alt_nazvy": [
+        "Cesta do pravěku"
+      ]
+    },
+    {
+      "nazev": "Polská vlajka",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "griotka",
+          "mnozstvi": "1 díl"
+        },
+        {
+          "id": "vodka",
+          "mnozstvi": "2 díly"
+        }
+      ],
+      "postup": "Na griotku opatrně vlij vodku — červená a bílá vrstva.",
+      "ozdoba": "bez ozdoby",
+      "alt_nazvy": [
+        "Utopený komunista"
+      ]
+    },
+    {
+      "nazev": "Krvavá záda",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "2 panáky",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "1 panák"
+        },
+        {
+          "id": "griotka",
+          "mnozstvi": "1 panák"
+        }
+      ],
+      "postup": "Dva panáky se drží u sebe; pije se z vodky a griotka do ní postupně přetéká. Podle jiné školy se před vypitím obrací tričko naruby.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Magické oko",
+      "alt_nazvy": [
+        "Tygří oko",
+        "Bludička",
+        "Rybí oko",
+        "Magické zelené oko"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "pivni-mix",
+      "sklenice": "půllitr",
+      "suroviny": [
+        {
+          "id": "pivo-svetle",
+          "mnozstvi": "0,5 l"
+        },
+        {
+          "id": "zelena",
+          "mnozstvi": "1 panák"
+        }
+      ],
+      "postup": "Do půllitru piva opatrně spusť celý panák zelené i se sklenkou. Nemíchat — na dně svítí „oko“.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Žabinec",
+      "puvod": "ceska-klasika",
+      "typ": "pivni-mix",
+      "sklenice": "půllitr",
+      "suroviny": [
+        {
+          "id": "griotka",
+          "mnozstvi": "20 ml na dno"
+        },
+        {
+          "id": "pivo-cerne",
+          "mnozstvi": "natočit půllitr"
+        },
+        {
+          "id": "zelena",
+          "mnozstvi": "20 ml do pěny"
+        }
+      ],
+      "postup": "Na griotku v půllitru natoč černé pivo a do jeho pěny zašlehej zelenou.",
+      "ozdoba": "zelená pěna"
+    },
+    {
+      "nazev": "Cesta do lesa",
+      "alt_nazvy": [
+        "Cesta z lesa"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "pivni-mix",
+      "sklenice": "třetinka",
+      "suroviny": [
+        {
+          "id": "pivo-svetle",
+          "mnozstvi": "0,33 l"
+        },
+        {
+          "id": "zelena",
+          "mnozstvi": "průběžně dolévat"
+        }
+      ],
+      "postup": "Z třetinky piva upíjej a vypité doplňuj zelenou — drink postupně „zelená“ (cesta do lesa). Obrácený postup (ze zelené k pivu) je cesta z lesa.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Virgin Mojito",
+      "alt_nazvy": [
+        "Nojito"
+      ],
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "nealko": true,
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "limetka",
+          "mnozstvi": "šťáva z poloviny + 2 klínky"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "2 lžičky"
+        },
+        {
+          "id": "mata",
+          "mnozstvi": "6–8 lístků"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "dolít"
+        }
+      ],
+      "postup": "Jako Mojito, jen bez rumu: cukr rozmíchej s limetkovou šťávou, přidej mátu, drcený led a dolij sodovkou.",
+      "ozdoba": "snítka máty, klínek limetky"
+    },
+    {
+      "nazev": "Shirley Temple",
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "nealko": true,
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "zazvorova-limonada",
+          "mnozstvi": "150 ml"
+        },
+        {
+          "id": "grenadina",
+          "mnozstvi": "15 ml"
+        }
+      ],
+      "postup": "Do sklenice s ledem nalij limonádu a grenadinu, jemně promíchej.",
+      "ozdoba": "koktejlová třešeň"
+    },
+    {
+      "nazev": "Virgin Colada",
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "nealko": true,
+      "sklenice": "hurricane / highball",
+      "suroviny": [
+        {
+          "id": "dzus-ananasovy",
+          "mnozstvi": "100 ml"
+        },
+        {
+          "id": "kokosovy-krem",
+          "mnozstvi": "30 ml"
+        },
+        {
+          "id": "smetana",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Rozmixuj s drceným ledem a nalij do sklenice.",
+      "ozdoba": "klínek ananasu"
+    },
+    {
+      "nazev": "Virgin Sunrise",
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "nealko": true,
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "150 ml"
+        },
+        {
+          "id": "grenadina",
+          "mnozstvi": "15 ml"
+        }
+      ],
+      "postup": "Do sklenice s ledem nalij džus, grenadinu nech stéct ke dnu. Nemíchat — efekt východu slunce.",
+      "ozdoba": "plátek pomeranče"
+    },
+    {
+      "nazev": "Cinderella",
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "nealko": true,
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "dzus-ananasovy",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "20 ml šťávy"
+        },
+        {
+          "id": "grenadina",
+          "mnozstvi": "10 ml"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "dolít"
+        }
+      ],
+      "postup": "Džusy, šťávu a grenadinu protřepej s ledem, sceď do sklenice s ledem a dolij sodovkou.",
+      "ozdoba": "plátek pomeranče, třešeň"
+    },
+    {
+      "nazev": "Ipanema",
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "nealko": true,
+      "sklenice": "old fashioned (tumbler)",
+      "suroviny": [
+        {
+          "id": "limetka",
+          "mnozstvi": "1 celá, na klínky"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "2 lžičky (třtinový)"
+        },
+        {
+          "id": "zazvorova-limonada",
+          "mnozstvi": "dolít"
+        }
+      ],
+      "postup": "Nealko caipirinha: limetku s cukrem rozdrť ve sklenici, přidej drcený led a dolij zázvorovou limonádou.",
+      "ozdoba": "klínek limetky"
+    },
+    {
+      "nazev": "Střik",
+      "alt_nazvy": [
+        "Střikanec",
+        "Bílý střik",
+        "Červený střik",
+        "Calambre"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "vinná sklenice",
+      "suroviny": [
+        {
+          "id": "vino-bile",
+          "mnozstvi": "100 ml (nebo červené)"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "100 ml"
+        }
+      ],
+      "postup": "Víno dolij jemně perlivou vodou; poměr dle chuti. Podle vinařského zákona se má míchat až u stolu.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Svařák",
+      "alt_nazvy": [
+        "Svařené víno"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "horky",
+      "sklenice": "hrnek",
+      "suroviny": [
+        {
+          "id": "vino-cervene",
+          "mnozstvi": "200 ml"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "1–2 lžíce"
+        },
+        {
+          "id": "koreni-svarak",
+          "mnozstvi": "skořice, hřebíček"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "plátek",
+          "volitelne": true
+        }
+      ],
+      "postup": "Víno s cukrem a kořením prohřej těsně pod bod varu (nevařit, ať se nevyvaří alkohol) a přeceď do hrnku.",
+      "ozdoba": "plátek citronu či pomeranče"
+    },
+    {
+      "nazev": "Grog",
+      "puvod": "ceska-klasika",
+      "typ": "horky",
+      "sklenice": "sklenice s ouškem",
+      "suroviny": [
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "voda",
+          "mnozstvi": "150 ml vřící"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "dle chuti"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "plátek",
+          "volitelne": true
+        }
+      ],
+      "postup": "Rum zalij vřící vodou, doslaď, přidej citron. Varianta Grog kapitána Silvera: místo vody svařák; „maximální vylepšení“ — rum ohřát s kouskem másla.",
+      "ozdoba": "plátek citronu"
+    },
+    {
+      "nazev": "Bambus s motorem",
+      "alt_nazvy": [
+        "Hypermičuda"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "půllitr / vinná sklenice",
+      "suroviny": [
+        {
+          "id": "vino-cervene",
+          "mnozstvi": "200 ml"
+        },
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "velký panák (40–80 ml)"
+        }
+      ],
+      "postup": "Do vína vlij velký panák rumu. S dvojnásobnou dávkou rumu jde o hypermičudu.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Dech mrtvé milenky",
+      "puvod": "ceska-klasika",
+      "typ": "koktejl",
+      "sklenice": "sklenice dle nálady",
+      "suroviny": [
+        {
+          "id": "vino-cervene",
+          "mnozstvi": "150 ml"
+        },
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "fernet",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Rum s fernetem dolij červeným vínem a lehce promíchej.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Griton",
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "highball",
+      "suroviny": [
+        {
+          "id": "griotka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "tonik",
+          "mnozstvi": "100 ml"
+        }
+      ],
+      "postup": "Do sklenice s ledem nalij griotku a dolij tonikem.",
+      "ozdoba": "plátek citronu"
+    },
+    {
+      "nazev": "TGV",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "3 panáky",
+      "suroviny": [
+        {
+          "id": "tonik",
+          "mnozstvi": "1 panák"
+        },
+        {
+          "id": "gin",
+          "mnozstvi": "1 panák"
+        },
+        {
+          "id": "vodka",
+          "mnozstvi": "1 panák"
+        }
+      ],
+      "postup": "Tonik, gin a vodka se nemíchají — pijí se zvlášť v rychlém sledu. V každém kole se hlásí města, kam rychlovlak zajíždí; podnik je nádraží a nápojový lístek jízdní řád.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Prskavka",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák / sklenička",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "½ sklenice"
+        },
+        {
+          "id": "tonik",
+          "mnozstvi": "½ sklenice"
+        }
+      ],
+      "postup": "Vodku s tonikem těsně před vypitím řádně třískni o stůl a rozbouřený nápoj hned vypij.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Indiánský flus",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "vajecny-liker",
+          "mnozstvi": "do poloviny"
+        },
+        {
+          "id": "griotka",
+          "mnozstvi": "do plna"
+        }
+      ],
+      "postup": "Do vaječňáku přilévej po obvodu či do středu griotku — vznikne červenožlutá abstrakce. (Opačné pořadí lití = Mozek!)",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Karkulka v lese",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "griotka",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Zelenou opatrně podlij či přelij griotkou — červená Karkulka v zeleném lese.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Pampeliška",
+      "puvod": "ceska-klasika",
+      "typ": "koktejl",
+      "sklenice": "tumbler",
+      "suroviny": [
+        {
+          "id": "vajecny-liker",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "80 ml"
+        },
+        {
+          "id": "vodka",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Vaječňák rozmíchej s pomerančovým džusem a zesil vodkou (chuťově i barevně neutrální). Varianta s rumem existuje.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Kominíček",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "vajecny-liker",
+          "mnozstvi": "velký panák"
+        },
+        {
+          "id": "kava",
+          "mnozstvi": "lžička mleté"
+        }
+      ],
+      "postup": "Na hladinu vaječňáku nasyp lžičku mleté kávy. Kdo se při pití chytne za knoflík, tomu kominíček přinese štěstí.",
+      "ozdoba": "vrstva mleté kávy"
+    },
+    {
+      "nazev": "Červenáček",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "griotka",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "gin",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Griotku slij s ginem — červená barva se ginem ještě násobí.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Plameňák",
+      "alt_nazvy": [
+        "Růžovka"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "griotka",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "vodka",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Griotku s vodkou smíchej v jedné sklenici — červená se zmírní do plameňákově růžové. (Nesmíchaná vrstvená verze = Polská vlajka / Utopený komunista.)",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Krvesaj",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "zkumavka / panák",
+      "suroviny": [
+        {
+          "id": "griotka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "pepr",
+          "mnozstvi": "štipec mletého"
+        },
+        {
+          "id": "tabasco",
+          "mnozstvi": "zákap",
+          "volitelne": true
+        }
+      ],
+      "postup": "Sladkou griotku přebij mletým pepřem, případně zakápni tabascem. Stylově se servíruje ve zkumavce v dřevěném stojánku.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Stereo",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "2 malé panáky",
+      "suroviny": [
+        {
+          "id": "zelena",
+          "mnozstvi": "malý panák"
+        },
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "malý panák"
+        }
+      ],
+      "postup": "Obě skleničky do jedné ruky: mezi palcem a ukazováčkem rum, mezi ukazováčkem a prostředníčkem zelená. Při pití se zelená přelévá do rumu a rum do úst; nakonec doteče dvakrát přelitá peprmintka.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Medvěd",
+      "alt_nazvy": [
+        "Kožich"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "pivni-mix",
+      "sklenice": "půllitr",
+      "suroviny": [
+        {
+          "id": "pivo-svetle",
+          "mnozstvi": "½ půllitru"
+        },
+        {
+          "id": "kofola",
+          "mnozstvi": "½ půllitru"
+        }
+      ],
+      "postup": "Do půllitru natoč půl piva a dolij Kofolou. S velkým rumem navrch jde o medvěda se zubama; s 80% rumem Stroh o grizzlyho tlapičku.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Ropa",
+      "alt_nazvy": [
+        "Ropák"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "pivni-mix",
+      "sklenice": "půllitr",
+      "suroviny": [
+        {
+          "id": "pivo-svetle",
+          "mnozstvi": "300 ml"
+        },
+        {
+          "id": "cola",
+          "mnozstvi": "150 ml"
+        },
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "40 ml"
+        }
+      ],
+      "postup": "Pivo s colou a rumem slij v půllitru — barva jak z vrtné plošiny.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Vozembouch",
+      "puvod": "ceska-klasika",
+      "typ": "pivni-mix",
+      "sklenice": "půllitr / PET lahev",
+      "suroviny": [
+        {
+          "id": "vino-cervene",
+          "mnozstvi": "½"
+        },
+        {
+          "id": "pivo-svetle",
+          "mnozstvi": "½ (dvanáctka)"
+        }
+      ],
+      "postup": "Těžké červené víno slij s dvanáctkou. Na Pardubicku se obě složky slévají do PET lahve a tímto „stylovým shakerem“ se před podáváním několikrát třískne o podlahu.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Bostonský škrtič",
+      "puvod": "ceska-klasika",
+      "typ": "pivni-mix",
+      "sklenice": "půllitr + flétna",
+      "suroviny": [
+        {
+          "id": "pivo-svetle",
+          "mnozstvi": "celovečerní"
+        },
+        {
+          "id": "sekt",
+          "mnozstvi": "půlnoční přípitek"
+        }
+      ],
+      "postup": "Vzniká sám o silvestrovské noci: celý večer pivo, o půlnoci přípitek sektem. Smíchání proběhne až v konzumentovi.",
+      "ozdoba": "ohňostroj"
+    },
+    {
+      "nazev": "Krvavé kombiné",
+      "puvod": "ceska-klasika",
+      "typ": "koktejl",
+      "sklenice": "tumbler",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "dzus-jahodovy",
+          "mnozstvi": "100 ml"
+        }
+      ],
+      "postup": "Vodku zalij jahodovým džusem — sladká a barevně efektní party varianta vodky s džusem.",
+      "ozdoba": "jahoda"
+    },
+    {
+      "nazev": "Supercloumák",
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "větší sklenice",
+      "suroviny": [
+        {
+          "id": "vodka",
+          "mnozstvi": "100 ml"
+        },
+        {
+          "id": "dzus-pomerancovy",
+          "mnozstvi": "100 ml (libovolný džus)"
+        },
+        {
+          "id": "vino-bile",
+          "mnozstvi": "100 ml"
+        }
+      ],
+      "postup": "Deci vodky, deci džusu a deci bílého vína slij dohromady. Pozemská náhražka pangalaktického megacloumáku.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Zednická",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "starorezna",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Rum slij se starorežnou — dělnická klasika.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Kafe se šutrem",
+      "alt_nazvy": [
+        "Kafe s chladičem",
+        "Vlčí dech",
+        "Šakalí dech"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "horky",
+      "sklenice": "hrnek",
+      "suroviny": [
+        {
+          "id": "kava",
+          "mnozstvi": "šálek"
+        },
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "40 ml"
+        }
+      ],
+      "postup": "Do kávy vlij panák rumu (kafe se šutrem). Obráceně — poctivý turek zalitý horkým rumem — vznikne vlčí dech. Pozor: káva zpomalí vstřebání a panáky pak dorazí naráz.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Koksák",
+      "alt_nazvy": [
+        "Koks",
+        "Koksík"
+      ],
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "kava",
+          "mnozstvi": "lžička mleté"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "kolečko"
+        }
+      ],
+      "postup": "Do rumu vmíchej mletou kávu a směsí zalij kolečko citronu vložené do úst. S pepřem jde o dřevorubce; bez kávy (rum + citron + cukr) o kopičku.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Kofila",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "kava",
+          "mnozstvi": "lžička mleté na hladinu"
+        },
+        {
+          "id": "cukr",
+          "mnozstvi": "lžička do úst"
+        }
+      ],
+      "postup": "Kávu nasyp na hladinu rumu. Do úst vlož lžičku cukru, promís se slinami, zalij rumem s kávou, zatřes hlavou a spolkni — chutná jako tyčinka Kofila.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Béžovice",
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "půllitr",
+      "suroviny": [
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "velký panák"
+        },
+        {
+          "id": "fernet",
+          "mnozstvi": "velký panák"
+        },
+        {
+          "id": "kava",
+          "mnozstvi": "šálek"
+        },
+        {
+          "id": "vino-cervene",
+          "mnozstvi": "200 ml"
+        },
+        {
+          "id": "nanuk",
+          "mnozstvi": "1 bílý, bez čokolády"
+        }
+      ],
+      "postup": "Rum s fernetem zalij kávou, dolij dvojkou červeného a v půllitru nech pozvolna rozpustit bílý nanuk — simuluje led a sladce dochutí.",
+      "ozdoba": "rozpouštějící se nanuk"
+    },
+    {
+      "nazev": "Medvědí mléko",
+      "puvod": "ceska-klasika",
+      "typ": "horky",
+      "sklenice": "hrnek",
+      "suroviny": [
+        {
+          "id": "mleko",
+          "mnozstvi": "200 ml horkého"
+        },
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "med",
+          "mnozstvi": "lžička"
+        }
+      ],
+      "postup": "Horké mléko promíchej s rumem a dochuť medem — krkonošský recept proti nachlazení.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Turbotequila",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák / sklenička",
+      "suroviny": [
+        {
+          "id": "tequila",
+          "mnozstvi": "1 díl"
+        },
+        {
+          "id": "sekt",
+          "mnozstvi": "1 díl"
+        }
+      ],
+      "postup": "Tequilu slij se sektem 1:1.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Mexická bomba",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "tequila",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "gin",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Tequilu slij s ginem; přidáním vodky vznikne jedna z variant TGV.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Bouchaná tequila",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "sklenička + pivní tácek",
+      "suroviny": [
+        {
+          "id": "tequila",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "citronova-limonada",
+          "mnozstvi": "40 ml šumivé"
+        }
+      ],
+      "postup": "Tequilu s limonádou přiklop pivním táckem, bouchni o stůl a vypij rozbouřené — bublinky urychlí vstřebání.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Highway to Hell",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "absint",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "borovicka",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Absint slij s borovičkou — dálnice do inferna pojmenovaná po písni AC/DC.",
+      "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Pomeje",
+      "puvod": "ceska-klasika",
+      "typ": "longdrink",
+      "sklenice": "půllitr",
+      "suroviny": [
+        {
+          "id": "vino-bile",
+          "mnozstvi": "½ půllitru"
+        },
+        {
+          "id": "kofola",
+          "mnozstvi": "½ půllitru"
+        }
+      ],
+      "postup": "Bílé víno dolij nápojem kofolového typu.",
+      "ozdoba": "bez ozdoby"
+    }
+  ]
+}
