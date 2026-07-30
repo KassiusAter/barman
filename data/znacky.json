@@ -323,6 +323,25 @@
     "kava": [
       "espresso",
       "turek"
+    ],
+    "curacao": [
+      "Bols Blue Curaçao",
+      "Blue Curacao",
+      "curaçao",
+      "curacao"
+    ],
+    "slivovice": [
+      "Rudolf Jelínek",
+      "Jelínek slivovice",
+      "R. Jelínek"
+    ],
+    "myslivec": [
+      "Myslivec"
+    ],
+    "vycepni-lihovina": [
+      "režná",
+      "rezna",
+      "výčepní lihovina"
     ]
   }
 }

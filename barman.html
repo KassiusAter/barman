@@ -130,6 +130,8 @@
   .detail .mam-ne { color: #e0a9a1; }
   .detail .volitelna { color: var(--tlumeny); font-style: italic; }
   .detail .poznamka { color: var(--tlumeny); font-style: italic; margin-top: 12px; font-size: 14px; }
+  .detail .varovani { background: #3b2a24; border: 1px solid var(--cervena); color: #efc0b6;
+    border-radius: 8px; padding: 8px 12px; font-size: 14px; margin-top: 12px; }
   .stitek { display: inline-block; font-size: 12px; border: 1px solid var(--linka);
     color: var(--tlumeny); border-radius: 6px; padding: 1px 8px; margin-left: 6px; vertical-align: middle; }
   .prazdno { color: var(--tlumeny); font-style: italic; padding: 8px 0; }
@@ -161,6 +163,7 @@
         <option value="koktejl">Koktejly</option>
         <option value="shot">Panáky (shoty)</option>
         <option value="pivni-mix">Pivní mixy</option>
+        <option value="multimichacka">Multimíchačky</option>
         <option value="horky">Horké</option>
       </select>
       <label class="prepinac"><input type="checkbox" id="filtr-nealko"> jen nealko</label>
@@ -528,7 +531,7 @@ function karta(zaznam, sTrivii) {
   const trivia = sTrivii && d.trivia ? `<div class="trivia">💡 ${d.trivia}</div>` : "";
   return `<div class="karta" data-nazev="${d.nazev}">
     ${obrazekDrinku(d, 58)}
-    <div><div class="nazev">${d.nazev}${d.nealko ? " 🥤" : ""}</div>
+    <div><div class="nazev">${d.nazev}${d.nealko ? " 🥤" : ""}${d.varovani ? " ⚠️" : ""}</div>
     <div class="meta">${d.sklenice}</div>${chybi}${zameny}${trivia}</div></div>`;
 }
 
@@ -604,6 +607,7 @@ function otevriDetail(nazev) {
     <div class="obrazek">${obrazekDrinku(d, 180)}</div>
     <h2>${d.nazev}<span class="stitek">${PUVODY[d.puvod] || d.puvod}</span>${d.nealko ? `<span class="stitek">nealko</span>` : ""}</h2>
     ${d.alt_nazvy ? `<div class="alt">též: ${d.alt_nazvy.join(", ")}</div>` : ""}
+    ${d.varovani ? `<p class="varovani">⚠️ ${d.varovani}</p>` : ""}
     <h4>Suroviny</h4><ul>${suroviny}</ul>
     <h4>Postup</h4><p>${d.postup}</p>
     <h4>Servírování</h4>

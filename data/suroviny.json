@@ -533,6 +533,30 @@
       "nazev": "Ocet",
       "kategorie": "ostatni",
       "alko": false
+    },
+    {
+      "id": "curacao",
+      "nazev": "Blue Curaçao (modrý pomerančový likér)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "slivovice",
+      "nazev": "Slivovice",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "myslivec",
+      "nazev": "Myslivec (bylinný likér)",
+      "kategorie": "liker",
+      "alko": true
+    },
+    {
+      "id": "vycepni-lihovina",
+      "nazev": "Výčepní lihovina (levná režná)",
+      "kategorie": "lihovina",
+      "alko": true
     }
   ]
 }

@@ -461,6 +461,30 @@ window.BARMAN_DATA = {
    "nazev": "Ocet",
    "kategorie": "ostatni",
    "alko": false
+  },
+  {
+   "id": "curacao",
+   "nazev": "Blue Curaçao (modrý pomerančový likér)",
+   "kategorie": "liker",
+   "alko": true
+  },
+  {
+   "id": "slivovice",
+   "nazev": "Slivovice",
+   "kategorie": "lihovina",
+   "alko": true
+  },
+  {
+   "id": "myslivec",
+   "nazev": "Myslivec (bylinný likér)",
+   "kategorie": "liker",
+   "alko": true
+  },
+  {
+   "id": "vycepni-lihovina",
+   "nazev": "Výčepní lihovina (levná režná)",
+   "kategorie": "lihovina",
+   "alko": true
   }
  ],
  "nahrady": [
@@ -3933,6 +3957,339 @@ window.BARMAN_DATA = {
     "parátko",
     "nejhorsi drink"
    ]
+  },
+  {
+   "nazev": "Poblitej pošťák",
+   "puvod": "ceska-klasika",
+   "typ": "koktejl",
+   "sklenice": "tumbler",
+   "suroviny": [
+    {
+     "id": "curacao",
+     "mnozstvi": "30 ml"
+    },
+    {
+     "id": "rum-tuzemsky",
+     "mnozstvi": "30 ml"
+    },
+    {
+     "id": "mleko",
+     "mnozstvi": "60 ml"
+    }
+   ],
+   "postup": "Curaçao slij s tuzemákem a dolij mlékem — barva ospravedlní název.",
+   "ozdoba": "bez ozdoby",
+   "poznamka": "Česká mutace koktejlu Caribic Shake: kokosový rum Malibu nahradil tuzemák, mléko zůstalo.",
+   "trivia": "Ukázka „koktejlové folklorizace“: světový Caribic Shake si v Česku našel nového partnera — tuzemák. Přívlastek v názvu podle knihy „neskrývaně reflektuje vomitální důsledek přílišné konzumace“.",
+   "klicova_slova": [
+    "curacao",
+    "modry",
+    "postak",
+    "caribic shake",
+    "malibu",
+    "disko"
+   ]
+  },
+  {
+   "nazev": "Rákosníček",
+   "alt_nazvy": [
+    "Šmoula",
+    "Green Day"
+   ],
+   "puvod": "ceska-klasika",
+   "typ": "longdrink",
+   "sklenice": "highball",
+   "suroviny": [
+    {
+     "id": "curacao",
+     "mnozstvi": "40 ml"
+    },
+    {
+     "id": "dzus-pomerancovy",
+     "mnozstvi": "120 ml"
+    }
+   ],
+   "postup": "Do sklenice s ledem nalij modré Curaçao a dolij pomerančovým džusem — modrá se žlutou dá zelenou.",
+   "ozdoba": "plátek pomeranče",
+   "poznamka": "Samotné Curaçao smíchané s čímkoli je „šmoula“; teprve se žlutým džusem vzniká zelený Rákosníček.",
+   "trivia": "Modré Curaçao dobylo české bary v 90. letech; smíchané s čímkoli dá „šmoulu“, se žlutým džusem zezelená v Rákosníčka — punkeři mu říkají Green Day.",
+   "klicova_slova": [
+    "curacao",
+    "modry",
+    "zeleny",
+    "smoula",
+    "green day",
+    "vecernicek"
+   ]
+  },
+  {
+   "nazev": "Horníkův zával",
+   "puvod": "ceska-klasika",
+   "typ": "pivni-mix",
+   "sklenice": "půllitr",
+   "suroviny": [
+    {
+     "id": "vodka",
+     "mnozstvi": "velký panák"
+    },
+    {
+     "id": "rum-tuzemsky",
+     "mnozstvi": "velký panák"
+    },
+    {
+     "id": "fernet",
+     "mnozstvi": "velký panák"
+    },
+    {
+     "id": "slivovice",
+     "mnozstvi": "velký panák"
+    },
+    {
+     "id": "pivo-svetle",
+     "mnozstvi": "malé pivo na zalití"
+    }
+   ],
+   "postup": "Do půllitru vlij čtyři velké panáky libovolných destilátů nad 40 % (likéry jsou vyloučeny) a celé to, jak určuje název, zalij malým pivem.",
+   "ozdoba": "bez ozdoby",
+   "varovani": "Ostravská kuriozita pro celou společnost, ne pro jednoho. Čtyři panáky a pivo naráz jsou hodně alkoholu.",
+   "poznamka": "Nejmírnější zástupce multimíchaček. Destiláty lze zaměnit za jakékoli jiné nad 40 %.",
+   "trivia": "Ostravská multimíchačka: čtyři velké panáky tvrdého zalité malým pivem — likéry jsou z principu vyloučeny. Nejmírnější zástupce kategorie „co stůl dal“.",
+   "klicova_slova": [
+    "ostrava",
+    "havir",
+    "sachta",
+    "zaval",
+    "ctyri panaky",
+    "multimichacka"
+   ]
+  },
+  {
+   "nazev": "Klapzubova jedenáctka",
+   "puvod": "ceska-klasika",
+   "typ": "multimichacka",
+   "sklenice": "půllitr",
+   "suroviny": [
+    {
+     "id": "rum-tuzemsky",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "fernet",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "vodka",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "slivovice",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "starorezna",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "vycepni-lihovina",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "becherovka",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "zelena",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "griotka",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "myslivec",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "vajecny-liker",
+     "mnozstvi": "1 panák"
+    }
+   ],
+   "postup": "Do pivního půllitru postupně vlévej jedenáct panáků různých lihovin. Kumšt je v tom, aby se ten jedenáctý vešel přesně nad rysku, aniž by půllitr přetekl.",
+   "ozdoba": "bez ozdoby",
+   "varovani": "Společná kuriozita pro partu — jedenáct panáků nemá vypít jeden člověk.",
+   "poznamka": "Podle knihy Eduarda Basse. Na rozdíl od Horníkova závalu bez omezení na procenta, takže lze zapojit i likéry.",
+   "trivia": "Podle Bassovy knihy o fotbalové jedenáctce z chudé chalupy: jedenáct panáků do půllitru, přičemž ten poslední se musí vejít přesně nad rysku.",
+   "klicova_slova": [
+    "bass",
+    "fotbal",
+    "jedenactka",
+    "kniha",
+    "ryska",
+    "multimichacka"
+   ]
+  },
+  {
+   "nazev": "Čambavamba",
+   "alt_nazvy": [
+    "Co stůl dal",
+    "Lokiho pomsta",
+    "Černá sjezdovka"
+   ],
+   "puvod": "ceska-klasika",
+   "typ": "multimichacka",
+   "sklenice": "půllitr",
+   "suroviny": [
+    {
+     "id": "rum-tuzemsky",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "fernet",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "vodka",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "slivovice",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "starorezna",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "vycepni-lihovina",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "becherovka",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "zelena",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "griotka",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "myslivec",
+     "mnozstvi": "1 panák"
+    },
+    {
+     "id": "vajecny-liker",
+     "mnozstvi": "1 panák"
+    }
+   ],
+   "postup": "Do půllitru vraž panáka od každého druhu, který je na stole. Nemíchá se podle chuti, ale podle toho, co zbylo.",
+   "ozdoba": "bez ozdoby",
+   "varovani": "Závěrečná kuriozita pro celou společnost. Nepít o samotě ani na ex.",
+   "poznamka": "Souhrnný název pro směsi bez ohledu na druh; heslo kategorie zní „Není důležité co pijeme, hlavně že se motáme.“",
+   "trivia": "Souhrnný název pro „co stůl dal“ — odkazuje na velmi početnou hudební skupinu. Další jména: Lokiho pomsta (lstivá jako severský polobůh) a černá sjezdovka.",
+   "klicova_slova": [
+    "co stul dal",
+    "loki",
+    "cerna sjezdovka",
+    "kapela",
+    "multimichacka",
+    "zbytky"
+   ]
+  },
+  {
+   "nazev": "MIG-21",
+   "alt_nazvy": [
+    "MIG-9",
+    "MIG-18",
+    "MIG-27",
+    "MIGy"
+   ],
+   "puvod": "ceska-klasika",
+   "typ": "multimichacka",
+   "sklenice": "půllitr / džbán",
+   "suroviny": [
+    {
+     "id": "vodka",
+     "mnozstvi": "panáky dle čísla letounu"
+    },
+    {
+     "id": "rum-tuzemsky",
+     "mnozstvi": "panáky dle čísla"
+    },
+    {
+     "id": "fernet",
+     "mnozstvi": "panáky dle čísla"
+    },
+    {
+     "id": "zelena",
+     "mnozstvi": "panáky dle čísla"
+    },
+    {
+     "id": "griotka",
+     "mnozstvi": "panáky dle čísla"
+    }
+   ],
+   "postup": "Číslo v názvu udává počet panáků: MIG-9 devět, MIG-21 jedenadvacet. Lihoviny se do společné nádoby slévají a při vyšších číslech se opakují — variabilita klesá, takže se obvykle prostě slije všechno dostupné.",
+   "ozdoba": "bez ozdoby",
+   "varovani": "Krajní hospodská kuriozita pro velkou společnost. Jedenadvacet panáků na jednoho je otrava alkoholem — kniha sama u MIGu-27 mluví o balancování na hraně života a smrti.",
+   "poznamka": "Pojmenováno podle pořadových čísel sovětských stíhaček; nejběžnější byl „nejzprofanovanější“ MIG-21.",
+   "trivia": "Numerologické míchání podle sovětských stíhaček: kolik panáků, takové letadlo. MIG-27 nevznikne „vývojem MIGu-23“, ale ztrojnásobením MIGu-9; požadavek na prototyp MIG I-320 naštěstí nepadá.",
+   "klicova_slova": [
+    "stihacka",
+    "letadlo",
+    "sovetsky",
+    "migy",
+    "numerologie",
+    "multimichacka"
+   ]
+  },
+  {
+   "nazev": "Prasečí polévka",
+   "puvod": "ceska-klasika",
+   "typ": "multimichacka",
+   "sklenice": "hluboký polévkový talíř",
+   "suroviny": [
+    {
+     "id": "rum-tuzemsky",
+     "mnozstvi": "zbytek lahve"
+    },
+    {
+     "id": "vodka",
+     "mnozstvi": "zbytek lahve"
+    },
+    {
+     "id": "fernet",
+     "mnozstvi": "zbytek lahve"
+    },
+    {
+     "id": "zelena",
+     "mnozstvi": "zbytek lahve"
+    },
+    {
+     "id": "griotka",
+     "mnozstvi": "zbytek lahve"
+    },
+    {
+     "id": "vajecny-liker",
+     "mnozstvi": "zbytek lahve"
+    }
+   ],
+   "postup": "Ráno po prohýřené noci slij do hlubokého polévkového talíře vše, co v lahvích zbylo, zamíchej a konzumuj lžící.",
+   "ozdoba": "lžíce",
+   "varovani": "Totální mixáž na ráno po mejdanu — spíš doklad folklóru než nápoj k pití.",
+   "poznamka": "Na rozdíl od Horníkova závalu a MIGů, což jsou společné long-drinky, by měl talíř dostat každý svůj.",
+   "trivia": "Jediná míchačka, která se jí lžící z polévkového talíře. Její chvíle přichází ráno, kdy se do talíře slije všechno, co v lahvích zbylo po mejdanu.",
+   "klicova_slova": [
+    "lzice",
+    "talir",
+    "rano",
+    "zbytky",
+    "mejdan",
+    "multimichacka",
+    "nechutny"
+   ]
   }
  ],
  "obrazky": {
@@ -4307,6 +4664,25 @@ window.BARMAN_DATA = {
   "kava": [
    "espresso",
    "turek"
+  ],
+  "curacao": [
+   "Bols Blue Curaçao",
+   "Blue Curacao",
+   "curaçao",
+   "curacao"
+  ],
+  "slivovice": [
+   "Rudolf Jelínek",
+   "Jelínek slivovice",
+   "R. Jelínek"
+  ],
+  "myslivec": [
+   "Myslivec"
+  ],
+  "vycepni-lihovina": [
+   "režná",
+   "rezna",
+   "výčepní lihovina"
   ]
  }
 };

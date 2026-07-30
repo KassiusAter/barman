@@ -1091,5 +1091,83 @@
       "parátko",
       "nejhorsi drink"
     ]
+  },
+  "Poblitej pošťák": {
+    "trivia": "Ukázka „koktejlové folklorizace“: světový Caribic Shake si v Česku našel nového partnera — tuzemák. Přívlastek v názvu podle knihy „neskrývaně reflektuje vomitální důsledek přílišné konzumace“.",
+    "klicova_slova": [
+      "curacao",
+      "modry",
+      "postak",
+      "caribic shake",
+      "malibu",
+      "disko"
+    ]
+  },
+  "Rákosníček": {
+    "trivia": "Modré Curaçao dobylo české bary v 90. letech; smíchané s čímkoli dá „šmoulu“, se žlutým džusem zezelená v Rákosníčka — punkeři mu říkají Green Day.",
+    "klicova_slova": [
+      "curacao",
+      "modry",
+      "zeleny",
+      "smoula",
+      "green day",
+      "vecernicek"
+    ]
+  },
+  "Horníkův zával": {
+    "trivia": "Ostravská multimíchačka: čtyři velké panáky tvrdého zalité malým pivem — likéry jsou z principu vyloučeny. Nejmírnější zástupce kategorie „co stůl dal“.",
+    "klicova_slova": [
+      "ostrava",
+      "havir",
+      "sachta",
+      "zaval",
+      "ctyri panaky",
+      "multimichacka"
+    ]
+  },
+  "Klapzubova jedenáctka": {
+    "trivia": "Podle Bassovy knihy o fotbalové jedenáctce z chudé chalupy: jedenáct panáků do půllitru, přičemž ten poslední se musí vejít přesně nad rysku.",
+    "klicova_slova": [
+      "bass",
+      "fotbal",
+      "jedenactka",
+      "kniha",
+      "ryska",
+      "multimichacka"
+    ]
+  },
+  "Čambavamba": {
+    "trivia": "Souhrnný název pro „co stůl dal“ — odkazuje na velmi početnou hudební skupinu. Další jména: Lokiho pomsta (lstivá jako severský polobůh) a černá sjezdovka.",
+    "klicova_slova": [
+      "co stul dal",
+      "loki",
+      "cerna sjezdovka",
+      "kapela",
+      "multimichacka",
+      "zbytky"
+    ]
+  },
+  "MIG-21": {
+    "trivia": "Numerologické míchání podle sovětských stíhaček: kolik panáků, takové letadlo. MIG-27 nevznikne „vývojem MIGu-23“, ale ztrojnásobením MIGu-9; požadavek na prototyp MIG I-320 naštěstí nepadá.",
+    "klicova_slova": [
+      "stihacka",
+      "letadlo",
+      "sovetsky",
+      "migy",
+      "numerologie",
+      "multimichacka"
+    ]
+  },
+  "Prasečí polévka": {
+    "trivia": "Jediná míchačka, která se jí lžící z polévkového talíře. Její chvíle přichází ráno, kdy se do talíře slije všechno, co v lahvích zbylo po mejdanu.",
+    "klicova_slova": [
+      "lzice",
+      "talir",
+      "rano",
+      "zbytky",
+      "mejdan",
+      "multimichacka",
+      "nechutny"
+    ]
   }
 }
