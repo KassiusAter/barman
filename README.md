@@ -37,8 +37,11 @@ drinků.
 
 ## Spuštění
 
-Stáhni repozitář a otevři **`barman.html`** v prohlížeči. Hotovo — žádná
-instalace, žádný build, žádný server.
+**Nejrychleji online:** <https://kassiusater.github.io/barman/> — otevře se
+rovnou v prohlížeči, i na mobilu, nic se nestahuje.
+
+Nebo si stáhni repozitář a otevři **`barman.html`** v prohlížeči. Hotovo —
+žádná instalace, žádný build, žádný server.
 
 Pro poslání kamarádovi jedním souborem slouží **`barman_komplet.html`**
 (vše včetně fotek vloženo dovnitř, ~1,4 MB); generuje se skriptem
