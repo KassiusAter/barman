@@ -4417,7 +4417,10 @@ window.BARMAN_DATA = {
    "Plantation 3 Stars",
    "Flor de Caña 4",
    "Santa Teresa Claro",
-   "Brugal Blanco"
+   "Brugal Blanco",
+   "Blue Mauritius Silver",
+   "Old Pascas White",
+   "Cubana bílý"
   ],
   "rum-tmavy": [
    "Captain Morgan",
@@ -4449,7 +4452,17 @@ window.BARMAN_DATA = {
    "Flor de Caña",
    "Angostura 1919",
    "Ron Centenario",
-   "Malibu"
+   "Malibu",
+   "Blue Mauritius",
+   "Blue Mauritius Gold",
+   "Božkov Republica",
+   "Republica Exclusive",
+   "Dead Man's Fingers",
+   "Old Pascas",
+   "Havana Club Especial",
+   "Cubaney",
+   "Ron Cartavio",
+   "Millonario"
   ],
   "rum-tuzemsky": [
    "Božkov Tuzemský",
