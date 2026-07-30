@@ -60,9 +60,10 @@
     {
       "skupina": [
         "bourbon",
-        "whiskey-irska"
+        "whiskey-irska",
+        "whisky"
       ],
-      "poznamka": "whiskey lze doma zaměnit"
+      "poznamka": "whisky lze doma zaměnit, liší se kouřovost a sladkost"
     },
     {
       "skupina": [
@@ -555,6 +556,12 @@
     {
       "id": "vycepni-lihovina",
       "nazev": "Výčepní lihovina (levná režná)",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "whisky",
+      "nazev": "Whisky (skotská, japonská…)",
       "kategorie": "lihovina",
       "alko": true
     }

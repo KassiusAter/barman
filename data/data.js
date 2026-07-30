@@ -485,6 +485,12 @@ window.BARMAN_DATA = {
    "nazev": "Výčepní lihovina (levná režná)",
    "kategorie": "lihovina",
    "alko": true
+  },
+  {
+   "id": "whisky",
+   "nazev": "Whisky (skotská, japonská…)",
+   "kategorie": "lihovina",
+   "alko": true
   }
  ],
  "nahrady": [
@@ -536,9 +542,10 @@ window.BARMAN_DATA = {
   {
    "skupina": [
     "bourbon",
-    "whiskey-irska"
+    "whiskey-irska",
+    "whisky"
    ],
-   "poznamka": "whiskey lze doma zaměnit"
+   "poznamka": "whisky lze doma zaměnit, liší se kouřovost a sladkost"
   },
   {
    "skupina": [
@@ -4353,7 +4360,23 @@ window.BARMAN_DATA = {
    "Grey Goose",
    "Koskenkorva",
    "Žubrówka",
-   "Zubrowka"
+   "Zubrowka",
+   "Belvedere",
+   "Beluga",
+   "Chopin",
+   "Cîroc",
+   "Ciroc",
+   "Danzka",
+   "Eristoff",
+   "Nemiroff",
+   "Stolichnaya",
+   "Stoli",
+   "Wyborowa",
+   "Sobieski",
+   "Three Sixty",
+   "Hanácká vodka",
+   "Puškin",
+   "Puskin"
   ],
   "gin": [
    "Beefeater",
@@ -4364,13 +4387,37 @@ window.BARMAN_DATA = {
    "Hendrick's",
    "Hendricks",
    "Dynybyl gin",
-   "OMG gin"
+   "OMG gin",
+   "Bulldog",
+   "Brockmans",
+   "Citadelle",
+   "Malfy",
+   "Monkey 47",
+   "Plymouth gin",
+   "Roku",
+   "Sipsmith",
+   "The Botanist",
+   "Whitley Neill",
+   "Larios",
+   "Seagram's",
+   "Aviation gin",
+   "Gin Mare",
+   "Elephant gin",
+   "Nordés",
+   "Nordes",
+   "Žufánek gin",
+   "Zufanek gin"
   ],
   "rum-bily": [
    "Bacardi",
    "Havana Club 3",
    "Havana bílý",
-   "Captain Morgan White"
+   "Captain Morgan White",
+   "Bacardi Carta Blanca",
+   "Plantation 3 Stars",
+   "Flor de Caña 4",
+   "Santa Teresa Claro",
+   "Brugal Blanco"
   ],
   "rum-tmavy": [
    "Captain Morgan",
@@ -4384,7 +4431,25 @@ window.BARMAN_DATA = {
    "Barcelo",
    "Stroh",
    "Legendario",
-   "Appleton"
+   "Appleton",
+   "Plantation",
+   "Mount Gay",
+   "Bumbu",
+   "Doorly's",
+   "El Dorado",
+   "Pusser's",
+   "Goslings",
+   "Gosling's Black Seal",
+   "Dictador",
+   "Botucal",
+   "Matusalem",
+   "Brugal",
+   "Chairman's Reserve",
+   "Foursquare",
+   "Flor de Caña",
+   "Angostura 1919",
+   "Ron Centenario",
+   "Malibu"
   ],
   "rum-tuzemsky": [
    "Božkov Tuzemský",
@@ -4400,7 +4465,18 @@ window.BARMAN_DATA = {
    "Patrón",
    "Patron",
    "Don Julio",
-   "El Jimador"
+   "El Jimador",
+   "Espolòn",
+   "Espolon",
+   "Herradura",
+   "1800 tequila",
+   "Cazadores",
+   "Corralejo",
+   "Milagro",
+   "Casamigos",
+   "Clase Azul",
+   "Altos",
+   "Sauza"
   ],
   "bourbon": [
    "Jack Daniel's",
@@ -4411,13 +4487,31 @@ window.BARMAN_DATA = {
    "Maker's Mark",
    "Makers Mark",
    "Wild Turkey",
-   "Buffalo Trace"
+   "Buffalo Trace",
+   "Bulleit",
+   "Knob Creek",
+   "Woodford Reserve",
+   "Elijah Craig",
+   "Evan Williams",
+   "Old Forester",
+   "Michter's",
+   "Eagle Rare",
+   "Blanton's",
+   "Gentleman Jack"
   ],
   "whiskey-irska": [
    "Jameson",
    "Tullamore",
    "Bushmills",
-   "Paddy"
+   "Paddy",
+   "Redbreast",
+   "Green Spot",
+   "Powers",
+   "Teeling",
+   "Writers' Tears",
+   "Connemara",
+   "Kilbeggan",
+   "Slane"
   ],
   "konak": [
    "Hennessy",
@@ -4427,7 +4521,18 @@ window.BARMAN_DATA = {
    "Metaxa",
    "Courvoisier",
    "Napoleon brandy",
-   "Stock 84"
+   "Stock 84",
+   "Camus",
+   "Otard",
+   "Delamain",
+   "Torres brandy",
+   "Osborne",
+   "Vecchia Romagna",
+   "Asbach",
+   "Fundador",
+   "Ararat",
+   "Hennessy VS",
+   "Kvint"
   ],
   "cachaca": [
    "Cachaça 51",
@@ -4477,21 +4582,33 @@ window.BARMAN_DATA = {
    "Kahlua",
    "Tia Maria",
    "Mr. Black",
-   "Mr Black"
+   "Mr Black",
+   "Borghetti",
+   "Patrón XO Cafe",
+   "Patron XO Cafe"
   ],
   "smetanovy-liker": [
    "Baileys",
    "Carolans",
-   "Amarula"
+   "Amarula",
+   "Sheridan's",
+   "Coole Swan",
+   "Five Farms"
   ],
   "triple-sec": [
    "Cointreau",
    "Grand Marnier",
    "De Kuyper Triple Sec",
-   "curaçao triple sec"
+   "curaçao triple sec",
+   "Combier",
+   "Luxardo Triplum",
+   "Bols Triple Sec",
+   "Pierre Ferrand"
   ],
   "amaretto": [
-   "Disaronno"
+   "Disaronno",
+   "Luxardo Amaretto",
+   "Lazzaroni"
   ],
   "campari": [
    "Campari"
@@ -4501,30 +4618,41 @@ window.BARMAN_DATA = {
   ],
   "cassis": [
    "cassis",
-   "černorybízový likér"
+   "černorybízový likér",
+   "Lejay",
+   "Giffard Cassis",
+   "Bols Cassis"
   ],
   "kakaovy-liker": [
    "crème de cacao",
    "creme de cacao",
-   "Bols Cacao"
+   "Bols Cacao",
+   "Mozart White",
+   "Giffard cacao"
   ],
   "broskvovy-liker": [
    "Archers",
    "Peach Tree",
    "peach schnapps",
-   "Bols Peach"
+   "Bols Peach",
+   "Giffard pêche",
+   "Giffard peche"
   ],
   "vermut-suchy": [
    "Martini Extra Dry",
    "Cinzano Extra Dry",
    "Noilly Prat",
-   "suchý vermut"
+   "suchý vermut",
+   "Dolin Dry",
+   "Lillet"
   ],
   "vermut-cerveny": [
    "Martini Rosso",
    "Cinzano Rosso",
    "Carpano",
-   "sladký vermut"
+   "sladký vermut",
+   "Punt e Mes",
+   "Dolin Rouge"
   ],
   "sekt": [
    "Bohemia Sekt",
@@ -4535,7 +4663,15 @@ window.BARMAN_DATA = {
    "Moët",
    "Moet",
    "crémant",
-   "cremant"
+   "cremant",
+   "Mumm",
+   "Veuve Clicquot",
+   "Dom Pérignon",
+   "Ferrari sekt",
+   "Freixenet",
+   "Codorníu",
+   "Hubert sekt",
+   "Louis Roederer"
   ],
   "vino-bile": [
    "Müller Thurgau",
@@ -4572,7 +4708,21 @@ window.BARMAN_DATA = {
    "Svijany",
    "Bernard",
    "desítka",
-   "dvanáctka"
+   "dvanáctka",
+   "Krušovice světlé",
+   "Starobrno",
+   "Litovel",
+   "Zubr",
+   "Holba",
+   "Poutník",
+   "Únětické",
+   "Matuška",
+   "Heineken",
+   "Stella Artois",
+   "Corona",
+   "Braník",
+   "Branik",
+   "Primátor"
   ],
   "pivo-cerne": [
    "Guinness",
@@ -4582,7 +4732,12 @@ window.BARMAN_DATA = {
    "Krusovice cerne",
    "Master tmavý",
    "tmavé pivo",
-   "tmavý ležák"
+   "tmavý ležák",
+   "Kelt",
+   "Primátor tmavý",
+   "Bernard tmavý",
+   "Kozel 10 černý",
+   "Guinness Draught"
   ],
   "tonik": [
    "Kinley",
@@ -4590,7 +4745,11 @@ window.BARMAN_DATA = {
    "Fever-Tree",
    "Fever Tree",
    "Thomas Henry",
-   "Fentimans tonic"
+   "Fentimans tonic",
+   "Royal Bliss",
+   "Franklin & Sons",
+   "1724 tonic",
+   "Indi tonic"
   ],
   "cola": [
    "Coca-Cola",
@@ -4611,7 +4770,11 @@ window.BARMAN_DATA = {
    "Korunní",
    "Korunni",
    "perlivá voda",
-   "perlivá minerálka"
+   "perlivá minerálka",
+   "Perrier",
+   "San Pellegrino",
+   "Poděbradka",
+   "Bonaqua perlivá"
   ],
   "zazvorove-pivo": [
    "Fentimans Ginger Beer",
@@ -4633,19 +4796,30 @@ window.BARMAN_DATA = {
    "Monster",
    "Big Shock",
    "Tiger energy",
-   "energeťák"
+   "energeťák",
+   "Rockstar",
+   "Hell energy",
+   "Kamikaze energy"
   ],
   "absint": [
    "Hill's",
    "Hills absinth",
    "King of Spirits",
    "La Fée",
-   "La Fee"
+   "La Fee",
+   "Pernod Absinthe",
+   "Mansinthe",
+   "Absente",
+   "Sebor",
+   "Fruko absinth"
   ],
   "borovicka": [
    "Spišská borovička",
    "Spisska borovicka",
-   "Koniferum"
+   "Koniferum",
+   "Slovenská borovička",
+   "Juniperus",
+   "Karpatská borovička"
   ],
   "starorezna": [
    "Prostějovská starorežná",
@@ -4674,7 +4848,11 @@ window.BARMAN_DATA = {
   "slivovice": [
    "Rudolf Jelínek",
    "Jelínek slivovice",
-   "R. Jelínek"
+   "R. Jelínek",
+   "Žufánek slivovice",
+   "Zufanek slivovice",
+   "Bošácka slivovica",
+   "Bosacka slivovica"
   ],
   "myslivec": [
    "Myslivec"
@@ -4683,6 +4861,46 @@ window.BARMAN_DATA = {
    "režná",
    "rezna",
    "výčepní lihovina"
+  ],
+  "whisky": [
+   "Johnnie Walker",
+   "Ballantine's",
+   "Ballantines",
+   "Chivas Regal",
+   "Famous Grouse",
+   "Grant's",
+   "Dewar's",
+   "Glenfiddich",
+   "Glenlivet",
+   "Glenmorangie",
+   "Macallan",
+   "Talisker",
+   "Lagavulin",
+   "Laphroaig",
+   "Ardbeg",
+   "Bowmore",
+   "Highland Park",
+   "Oban",
+   "Dalwhinnie",
+   "Cardhu",
+   "Aberlour",
+   "Balvenie",
+   "Caol Ila",
+   "Springbank",
+   "Monkey Shoulder",
+   "Cutty Sark",
+   "White Horse",
+   "Teacher's",
+   "Auchentoshan",
+   "Glen Grant",
+   "Tullibardine",
+   "Suntory",
+   "Nikka",
+   "Yamazaki",
+   "Hibiki",
+   "Toki whisky",
+   "Tomatin",
+   "Isle of Jura"
   ]
  }
 };

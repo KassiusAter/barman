@@ -10,10 +10,11 @@ drinků.
 
 ## Funkce
 
-- **110 receptů**: oficiální IBA koktejly (Mojito, Negroni, Espresso Martini…),
+- **118 receptů**: oficiální IBA koktejly (Mojito, Negroni, Espresso Martini…),
   světová klasika (Gin & Tonic, White Russian, B52…) a zejména **česká
   hospodská a retro klasika** — Beton, Bavorák, Magické oko, Semafor, Mozek,
-  Vodníkovo sperma, Cesta do lesa, TGV, Kofila, Béžovice a další.
+  Vodníkovo sperma, Cesta do lesa, TGV, Kofila, Béžovice, multimíchačky
+  i Drátěnka.
 - **Tolerance nákupu 0–3**: posuvníkem určíš, kolik surovin jsi ochoten
   dokoupit; aplikace vypíše, co přesně chybí.
 - **Nákupní rádce**: „Kup Becherovku — odemkne 2 drinky hned, přiblíží 3 další.“
@@ -21,7 +22,7 @@ drinků.
   se zřetelně vyznačenou domácí záměnou (citron ↔ limetka, cukr ↔ sirup ↔ med,
   rumy mezi sebou, smetana ↔ mléko…).
 - **Rozpoznávání obchodních značek**: napiš „Guinness“ a aplikace ví, že máš
-  černé pivo; „zlatá Sierra“ znamená tequilu. ~230 značek, toleruje překlepy
+  černé pivo; „zlatá Sierra“ znamená tequilu. Přes 450 značek, toleruje překlepy
   i skloňování.
 - **Vlastní suroviny**: domácí slivovice, meruňkovice, ořechovka — cokoli si
   přidáš, eviduje se v inventáři.
@@ -49,8 +50,8 @@ Pro poslání kamarádovi jedním souborem slouží **`barman_komplet.html`**
 |---|---|
 | `barman.html` | celá aplikace (UI) |
 | `engine.js` | logika: vyhodnocení inventáře, záměny, nákupní rádce, hledání |
-| `data/suroviny.json` | slovník 75 surovin + skupiny logických záměn |
-| `data/drinky.json` | 110 receptů (zdroj pravdy) |
+| `data/suroviny.json` | slovník 81 surovin + skupiny logických záměn |
+| `data/drinky.json` | 118 receptů (zdroj pravdy) |
 | `data/trivia.json` | zajímavosti a klíčová slova pro asociativní hledání |
 | `data/znacky.json` | obchodní názvy → obecné suroviny |
 | `data/data.js` | vygenerovaný balík dat pro prohlížeč (`sestav_data.py`) |
