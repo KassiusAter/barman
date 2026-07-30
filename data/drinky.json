@@ -2520,6 +2520,25 @@
       ],
       "postup": "Bílé víno dolij nápojem kofolového typu.",
       "ozdoba": "bez ozdoby"
+    },
+    {
+      "nazev": "Drátěnka",
+      "puvod": "ceska-klasika",
+      "typ": "shot",
+      "sklenice": "panák",
+      "suroviny": [
+        {
+          "id": "rum-tuzemsky",
+          "mnozstvi": "20 ml"
+        },
+        {
+          "id": "ocet",
+          "mnozstvi": "20 ml"
+        }
+      ],
+      "postup": "Rum slij s octem v poměru 1:1. Pije se na ex — a s velkou rozvahou.",
+      "ozdoba": "bez ozdoby",
+      "poznamka": "Nápoj na samotné hranici pitelnosti; kniha ho uvádí jako odstrašující kuriozitu, ne jako doporučení."
     }
   ]
 }

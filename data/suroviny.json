@@ -527,6 +527,12 @@
       "nazev": "Koření na svařák (skořice, hřebíček)",
       "kategorie": "ostatni",
       "alko": false
+    },
+    {
+      "id": "ocet",
+      "nazev": "Ocet",
+      "kategorie": "ostatni",
+      "alko": false
     }
   ]
 }

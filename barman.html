@@ -382,24 +382,48 @@ function vykresliBar() {
 el("hledat-surovinu").addEventListener("input", vykresliBar);
 
 /* rozpoznávání obchodních značek: „Guinness“ → černé pivo, „Sierra“ → tequila */
+const naSlova = text => Barman.normalizuj(text).split(/[^a-z0-9]+/).filter(Boolean);
+
+/* Shoda dvou slov: shodná, nebo lišící se koncovkou („sierry“ ~ „sierra“).
+   Porovnává se po celých slovech — jinak by „rum“ sedělo na „KonifeRUM“. */
+function shodaSlov(a, b) {
+  if (a === b) return true;
+  if (a.length < 5 || b.length < 5) return false;
+  const kmen = Math.min(a.length, b.length) - 1;
+  return a.slice(0, kmen) === b.slice(0, kmen);
+}
+
 function najdiZnacku(text) {
-  const q = Barman.normalizuj(text);
-  if (q.length < 3) return null;
-  const slovaVstupu = q.split(/[^a-z0-9]+/).filter(Boolean);
-  // skloňování: „sierry“ ~ „sierra“ — shoda kmene (slovo bez posledního znaku)
-  const kmenovaShoda = (a, b) =>
-    a.length >= 4 && b.length >= 4 &&
-    (a.startsWith(b.slice(0, -1)) || b.startsWith(a.slice(0, -1)));
+  const slovaVstupu = naSlova(text);
+  if (!slovaVstupu.length) return null;
+  let nej = null; // vyhrává nejpodrobnější značka: „Kinley Ginger Ale“ > „Kinley“
   for (const [id, znacky] of Object.entries(DATA.znacky || {})) {
     for (const z of znacky) {
-      const n = Barman.normalizuj(z);
-      if (n.length >= 3 && (q.includes(n) || n.includes(q))) return { id, znacka: z };
-      const slovaZnacky = n.split(/[^a-z0-9]+/).filter(Boolean);
-      if (slovaVstupu.some(sv => slovaZnacky.some(sz => kmenovaShoda(sv, sz))))
-        return { id, znacka: z };
+      const slovaZnacky = naSlova(z);
+      if (!slovaZnacky.length) continue;
+      // víceslovná značka musí sedět celá („tmavé pivo“ ≠ „rum tmavý“)
+      const sedi = slovaZnacky.every(sz =>
+        slovaVstupu.some(sv => shodaSlov(sv, sz)));
+      if (!sedi) continue;
+      // krátká jednoslovná značka (7Up) jen když je zadáním celá
+      const kratka = slovaZnacky.length === 1 && slovaZnacky[0].length < 4;
+      if (kratka && !(slovaVstupu.length === 1 && slovaVstupu[0] === slovaZnacky[0]))
+        continue;
+      if (!nej || slovaZnacky.length > nej.slov)
+        nej = { id: id, znacka: z, slov: slovaZnacky.length };
     }
   }
-  return null;
+  return nej ? { id: nej.id, znacka: nej.znacka } : null;
+}
+
+/* Obecné suroviny podle názvu: „rum“ → Bílý/Tmavý/Tuzemský rum */
+function najdiSuroviny(text) {
+  const slovaVstupu = naSlova(text);
+  if (!slovaVstupu.length) return [];
+  return SUROVINY().filter(s => {
+    const slovaNazvu = naSlova(s.nazev);
+    return slovaVstupu.every(sv => slovaNazvu.some(sn => shodaSlov(sv, sn)));
+  });
 }
 
 function zprava(text) {
@@ -426,14 +450,22 @@ function pridejVlastniSurovinu() {
     return;
   }
 
-  // 2) přesný název už existující suroviny?
-  const existujici = SUROVINY().find(s =>
-    Barman.normalizuj(s.nazev) === Barman.normalizuj(nazev));
-  if (existujici) {
-    if (!existujici.zakladni) inventar.add(existujici.id);
+  // 2) obecná surovina podle názvu („rum“, „tmavý rum“, „ocet“…)
+  const nalezene = najdiSuroviny(nazev);
+  if (nalezene.length === 1) {
+    const s = nalezene[0];
+    if (!s.zakladni) inventar.add(s.id);
     el("nova-surovina").value = "";
-    zprava(`„${nazev}“ už v seznamu je — zaškrtl jsem ji. ✓`);
+    zprava(`„${nazev}“ už v seznamu je jako ${s.nazev} — zaškrtl jsem ji. ✓`);
     uloz(); vykresliBar(); vykresliDrinky();
+    return;
+  }
+  if (nalezene.length > 1) {
+    // víc možností → ukázat je v seznamu a nechat vybrat
+    el("hledat-surovinu").value = nazev;
+    zprava(`„${nazev}“ může být: ${nalezene.map(s => s.nazev).join(", ")}` +
+      ` — vyber dole, co máš doma.`);
+    vykresliBar();
     return;
   }
 

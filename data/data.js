@@ -455,6 +455,12 @@ window.BARMAN_DATA = {
    "nazev": "Koření na svařák (skořice, hřebíček)",
    "kategorie": "ostatni",
    "alko": false
+  },
+  {
+   "id": "ocet",
+   "nazev": "Ocet",
+   "kategorie": "ostatni",
+   "alko": false
   }
  ],
  "nahrady": [
@@ -3899,6 +3905,34 @@ window.BARMAN_DATA = {
     "vinarna",
     "alena"
    ]
+  },
+  {
+   "nazev": "Drátěnka",
+   "puvod": "ceska-klasika",
+   "typ": "shot",
+   "sklenice": "panák",
+   "suroviny": [
+    {
+     "id": "rum-tuzemsky",
+     "mnozstvi": "20 ml"
+    },
+    {
+     "id": "ocet",
+     "mnozstvi": "20 ml"
+    }
+   ],
+   "postup": "Rum slij s octem v poměru 1:1. Pije se na ex — a s velkou rozvahou.",
+   "ozdoba": "bez ozdoby",
+   "poznamka": "Nápoj na samotné hranici pitelnosti; kniha ho uvádí jako odstrašující kuriozitu, ne jako doporučení.",
+   "trivia": "Rum s octem jedna ku jedné — „jen pro skutečné odvážlivce, už samotný název je odstrašující“. Drsnější verze prý mísila ocet s vodkou, pepřem a nalámaným párátkem.",
+   "klicova_slova": [
+    "ocet",
+    "rum s octem",
+    "odstrasujici",
+    "kuriozita",
+    "parátko",
+    "nejhorsi drink"
+   ]
   }
  ],
  "obrazky": {
@@ -4060,9 +4094,7 @@ window.BARMAN_DATA = {
   "fernet": [
    "Fernet Stock",
    "Fernet Branca",
-   "Fernet Citrus",
-   "fernet z",
-   "stock"
+   "Fernet Citrus"
   ],
   "zelena": [
    "Božkov Peprmint",

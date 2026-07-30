@@ -1,50 +1,328 @@
 {
   "popis": "Obchodní názvy a značky mapované na obecné suroviny. Když uživatel zadá značku (Guinness, Sierra…), aplikace pozná, o jakou surovinu jde. Porovnává se bez diakritiky a velikosti písmen; stačí, aby se značka objevila v zadaném textu.",
   "znacky": {
-    "vodka": ["Amundsen", "Absolut", "Finlandia", "Smirnoff", "Božkov vodka", "Pražská vodka", "Russian Standard", "Grey Goose", "Koskenkorva", "Žubrówka", "Zubrowka"],
-    "gin": ["Beefeater", "Bombay Sapphire", "Tanqueray", "Gordon's", "Gordons", "Hendrick's", "Hendricks", "Dynybyl gin", "OMG gin"],
-    "rum-bily": ["Bacardi", "Havana Club 3", "Havana bílý", "Captain Morgan White"],
-    "rum-tmavy": ["Captain Morgan", "Havana Club 7", "Diplomático", "Diplomatico", "Zacapa", "Don Papa", "Kraken", "Barceló", "Barcelo", "Stroh", "Legendario", "Appleton"],
-    "rum-tuzemsky": ["Božkov Tuzemský", "Božkov tuzemák", "tuzemák", "tuzemsky"],
-    "tequila": ["Olmeca", "Sierra", "Jose Cuervo", "Cuervo", "Patrón", "Patron", "Don Julio", "El Jimador"],
-    "bourbon": ["Jack Daniel's", "Jack Daniels", "jack", "Jim Beam", "Four Roses", "Maker's Mark", "Makers Mark", "Wild Turkey", "Buffalo Trace"],
-    "whiskey-irska": ["Jameson", "Tullamore", "Bushmills", "Paddy"],
-    "konak": ["Hennessy", "Martell", "Rémy Martin", "Remy Martin", "Metaxa", "Courvoisier", "Napoleon brandy", "Stock 84"],
-    "cachaca": ["Cachaça 51", "Cachaca 51", "Pitú", "Pitu", "Velho Barreiro"],
-    "jagermeister": ["Jägermeister", "Jagermeister", "jägermajstr", "jégr", "jegr"],
-    "becherovka": ["Becherovka Original", "becher", "becherka"],
-    "fernet": ["Fernet Stock", "Fernet Branca", "Fernet Citrus", "fernet z", "stock"],
-    "zelena": ["Božkov Peprmint", "peprmintka", "peprmintový likér", "zelená Božkov"],
-    "griotka": ["Božkov Griotka", "višňový likér", "griotte"],
-    "vajecny-liker": ["vaječný koňak", "Advocaat", "Warninks", "ajerkoňak", "ajrkoňak", "vaječňák"],
-    "kavovy-liker": ["Kahlúa", "Kahlua", "Tia Maria", "Mr. Black", "Mr Black"],
-    "smetanovy-liker": ["Baileys", "Carolans", "Amarula"],
-    "triple-sec": ["Cointreau", "Grand Marnier", "De Kuyper Triple Sec", "curaçao triple sec"],
-    "amaretto": ["Disaronno"],
-    "campari": ["Campari"],
-    "aperol": ["Aperol"],
-    "cassis": ["cassis", "černorybízový likér"],
-    "kakaovy-liker": ["crème de cacao", "creme de cacao", "Bols Cacao"],
-    "broskvovy-liker": ["Archers", "Peach Tree", "peach schnapps", "Bols Peach"],
-    "vermut-suchy": ["Martini Extra Dry", "Cinzano Extra Dry", "Noilly Prat", "suchý vermut"],
-    "vermut-cerveny": ["Martini Rosso", "Cinzano Rosso", "Carpano", "sladký vermut"],
-    "sekt": ["Bohemia Sekt", "prosecco", "cava", "šampaňské", "champagne", "Moët", "Moet", "crémant", "cremant"],
-    "vino-bile": ["Müller Thurgau", "Muller Thurgau", "ryzlink", "veltlínské", "veltlinske", "chardonnay", "sauvignon", "pálava", "palava"],
-    "vino-cervene": ["frankovka", "svatovavřinecké", "svatovavrinecke", "modrý portugal", "modry portugal", "merlot", "cabernet", "rulandské modré", "rulandske modre"],
-    "pivo-svetle": ["Pilsner Urquell", "plzeň", "Gambrinus", "gambáč", "Staropramen", "Budvar", "Budweiser", "Kozel světlý", "Radegast", "Svijany", "Bernard", "desítka", "dvanáctka"],
-    "pivo-cerne": ["Guinness", "Guiness", "Kozel černý", "Krušovice černé", "Krusovice cerne", "Master tmavý", "tmavé pivo", "tmavý ležák"],
-    "tonik": ["Kinley", "Schweppes tonic", "Fever-Tree", "Fever Tree", "Thomas Henry", "Fentimans tonic"],
-    "cola": ["Coca-Cola", "Coca Cola", "coca", "Pepsi", "RC Cola"],
-    "kofola": ["Kofola Original", "kofča"],
-    "sodovka": ["Mattoni", "Magnesia", "Ondrášovka", "Ondrasovka", "Korunní", "Korunni", "perlivá voda", "perlivá minerálka"],
-    "zazvorove-pivo": ["Fentimans Ginger Beer", "Crabbie's", "Crabbies", "Bundaberg", "ginger beer"],
-    "zazvorova-limonada": ["Canada Dry", "Schweppes Ginger Ale", "Kinley Ginger Ale", "ginger ale"],
-    "energeticky-napoj": ["Red Bull", "Redbull", "Semtex", "Monster", "Big Shock", "Tiger energy", "energeťák"],
-    "absint": ["Hill's", "Hills absinth", "King of Spirits", "La Fée", "La Fee"],
-    "borovicka": ["Spišská borovička", "Spisska borovicka", "Koniferum"],
-    "starorezna": ["Prostějovská starorežná", "Prostejovska starorezna", "starorežná"],
-    "citronova-limonada": ["Sprite", "7Up", "Seven Up"],
-    "grenadina": ["Monin Grenadine", "Bols Grenadine"],
-    "kava": ["espresso", "turek"]
+    "vodka": [
+      "Amundsen",
+      "Absolut",
+      "Finlandia",
+      "Smirnoff",
+      "Božkov vodka",
+      "Pražská vodka",
+      "Russian Standard",
+      "Grey Goose",
+      "Koskenkorva",
+      "Žubrówka",
+      "Zubrowka"
+    ],
+    "gin": [
+      "Beefeater",
+      "Bombay Sapphire",
+      "Tanqueray",
+      "Gordon's",
+      "Gordons",
+      "Hendrick's",
+      "Hendricks",
+      "Dynybyl gin",
+      "OMG gin"
+    ],
+    "rum-bily": [
+      "Bacardi",
+      "Havana Club 3",
+      "Havana bílý",
+      "Captain Morgan White"
+    ],
+    "rum-tmavy": [
+      "Captain Morgan",
+      "Havana Club 7",
+      "Diplomático",
+      "Diplomatico",
+      "Zacapa",
+      "Don Papa",
+      "Kraken",
+      "Barceló",
+      "Barcelo",
+      "Stroh",
+      "Legendario",
+      "Appleton"
+    ],
+    "rum-tuzemsky": [
+      "Božkov Tuzemský",
+      "Božkov tuzemák",
+      "tuzemák",
+      "tuzemsky"
+    ],
+    "tequila": [
+      "Olmeca",
+      "Sierra",
+      "Jose Cuervo",
+      "Cuervo",
+      "Patrón",
+      "Patron",
+      "Don Julio",
+      "El Jimador"
+    ],
+    "bourbon": [
+      "Jack Daniel's",
+      "Jack Daniels",
+      "jack",
+      "Jim Beam",
+      "Four Roses",
+      "Maker's Mark",
+      "Makers Mark",
+      "Wild Turkey",
+      "Buffalo Trace"
+    ],
+    "whiskey-irska": [
+      "Jameson",
+      "Tullamore",
+      "Bushmills",
+      "Paddy"
+    ],
+    "konak": [
+      "Hennessy",
+      "Martell",
+      "Rémy Martin",
+      "Remy Martin",
+      "Metaxa",
+      "Courvoisier",
+      "Napoleon brandy",
+      "Stock 84"
+    ],
+    "cachaca": [
+      "Cachaça 51",
+      "Cachaca 51",
+      "Pitú",
+      "Pitu",
+      "Velho Barreiro"
+    ],
+    "jagermeister": [
+      "Jägermeister",
+      "Jagermeister",
+      "jägermajstr",
+      "jégr",
+      "jegr"
+    ],
+    "becherovka": [
+      "Becherovka Original",
+      "becher",
+      "becherka"
+    ],
+    "fernet": [
+      "Fernet Stock",
+      "Fernet Branca",
+      "Fernet Citrus"
+    ],
+    "zelena": [
+      "Božkov Peprmint",
+      "peprmintka",
+      "peprmintový likér",
+      "zelená Božkov"
+    ],
+    "griotka": [
+      "Božkov Griotka",
+      "višňový likér",
+      "griotte"
+    ],
+    "vajecny-liker": [
+      "vaječný koňak",
+      "Advocaat",
+      "Warninks",
+      "ajerkoňak",
+      "ajrkoňak",
+      "vaječňák"
+    ],
+    "kavovy-liker": [
+      "Kahlúa",
+      "Kahlua",
+      "Tia Maria",
+      "Mr. Black",
+      "Mr Black"
+    ],
+    "smetanovy-liker": [
+      "Baileys",
+      "Carolans",
+      "Amarula"
+    ],
+    "triple-sec": [
+      "Cointreau",
+      "Grand Marnier",
+      "De Kuyper Triple Sec",
+      "curaçao triple sec"
+    ],
+    "amaretto": [
+      "Disaronno"
+    ],
+    "campari": [
+      "Campari"
+    ],
+    "aperol": [
+      "Aperol"
+    ],
+    "cassis": [
+      "cassis",
+      "černorybízový likér"
+    ],
+    "kakaovy-liker": [
+      "crème de cacao",
+      "creme de cacao",
+      "Bols Cacao"
+    ],
+    "broskvovy-liker": [
+      "Archers",
+      "Peach Tree",
+      "peach schnapps",
+      "Bols Peach"
+    ],
+    "vermut-suchy": [
+      "Martini Extra Dry",
+      "Cinzano Extra Dry",
+      "Noilly Prat",
+      "suchý vermut"
+    ],
+    "vermut-cerveny": [
+      "Martini Rosso",
+      "Cinzano Rosso",
+      "Carpano",
+      "sladký vermut"
+    ],
+    "sekt": [
+      "Bohemia Sekt",
+      "prosecco",
+      "cava",
+      "šampaňské",
+      "champagne",
+      "Moët",
+      "Moet",
+      "crémant",
+      "cremant"
+    ],
+    "vino-bile": [
+      "Müller Thurgau",
+      "Muller Thurgau",
+      "ryzlink",
+      "veltlínské",
+      "veltlinske",
+      "chardonnay",
+      "sauvignon",
+      "pálava",
+      "palava"
+    ],
+    "vino-cervene": [
+      "frankovka",
+      "svatovavřinecké",
+      "svatovavrinecke",
+      "modrý portugal",
+      "modry portugal",
+      "merlot",
+      "cabernet",
+      "rulandské modré",
+      "rulandske modre"
+    ],
+    "pivo-svetle": [
+      "Pilsner Urquell",
+      "plzeň",
+      "Gambrinus",
+      "gambáč",
+      "Staropramen",
+      "Budvar",
+      "Budweiser",
+      "Kozel světlý",
+      "Radegast",
+      "Svijany",
+      "Bernard",
+      "desítka",
+      "dvanáctka"
+    ],
+    "pivo-cerne": [
+      "Guinness",
+      "Guiness",
+      "Kozel černý",
+      "Krušovice černé",
+      "Krusovice cerne",
+      "Master tmavý",
+      "tmavé pivo",
+      "tmavý ležák"
+    ],
+    "tonik": [
+      "Kinley",
+      "Schweppes tonic",
+      "Fever-Tree",
+      "Fever Tree",
+      "Thomas Henry",
+      "Fentimans tonic"
+    ],
+    "cola": [
+      "Coca-Cola",
+      "Coca Cola",
+      "coca",
+      "Pepsi",
+      "RC Cola"
+    ],
+    "kofola": [
+      "Kofola Original",
+      "kofča"
+    ],
+    "sodovka": [
+      "Mattoni",
+      "Magnesia",
+      "Ondrášovka",
+      "Ondrasovka",
+      "Korunní",
+      "Korunni",
+      "perlivá voda",
+      "perlivá minerálka"
+    ],
+    "zazvorove-pivo": [
+      "Fentimans Ginger Beer",
+      "Crabbie's",
+      "Crabbies",
+      "Bundaberg",
+      "ginger beer"
+    ],
+    "zazvorova-limonada": [
+      "Canada Dry",
+      "Schweppes Ginger Ale",
+      "Kinley Ginger Ale",
+      "ginger ale"
+    ],
+    "energeticky-napoj": [
+      "Red Bull",
+      "Redbull",
+      "Semtex",
+      "Monster",
+      "Big Shock",
+      "Tiger energy",
+      "energeťák"
+    ],
+    "absint": [
+      "Hill's",
+      "Hills absinth",
+      "King of Spirits",
+      "La Fée",
+      "La Fee"
+    ],
+    "borovicka": [
+      "Spišská borovička",
+      "Spisska borovicka",
+      "Koniferum"
+    ],
+    "starorezna": [
+      "Prostějovská starorežná",
+      "Prostejovska starorezna",
+      "starorežná"
+    ],
+    "citronova-limonada": [
+      "Sprite",
+      "7Up",
+      "Seven Up"
+    ],
+    "grenadina": [
+      "Monin Grenadine",
+      "Bols Grenadine"
+    ],
+    "kava": [
+      "espresso",
+      "turek"
+    ]
   }
 }
