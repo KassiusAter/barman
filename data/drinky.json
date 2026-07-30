@@ -2808,6 +2808,37 @@
       "ozdoba": "lžíce",
       "varovani": "Totální mixáž na ráno po mejdanu — spíš doklad folklóru než nápoj k pití.",
       "poznamka": "Na rozdíl od Horníkova závalu a MIGů, což jsou společné long-drinky, by měl talíř dostat každý svůj."
+    },
+    {
+      "nazev": "Limoncello Spritz",
+      "puvod": "svetova-klasika",
+      "typ": "longdrink",
+      "sklenice": "velká vinná sklenice",
+      "suroviny": [
+        {
+          "id": "limoncello",
+          "mnozstvi": "60 ml"
+        },
+        {
+          "id": "sekt",
+          "mnozstvi": "90 ml"
+        },
+        {
+          "id": "sodovka",
+          "mnozstvi": "střik"
+        },
+        {
+          "id": "citron",
+          "mnozstvi": "plátek"
+        },
+        {
+          "id": "mata",
+          "mnozstvi": "snítka",
+          "volitelne": true
+        }
+      ],
+      "postup": "Sklenici naplň ledem, nalij limoncello, dolij vychlazeným proseccem a dolaď střikem sodovky. Jemně promíchej.",
+      "ozdoba": "plátek citronu, snítka máty"
     }
   ]
 }

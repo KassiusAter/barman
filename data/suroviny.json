@@ -564,6 +564,12 @@
       "nazev": "Whisky (skotská, japonská…)",
       "kategorie": "lihovina",
       "alko": true
+    },
+    {
+      "id": "limoncello",
+      "nazev": "Limoncello (citronový likér)",
+      "kategorie": "liker",
+      "alko": true
     }
   ]
 }

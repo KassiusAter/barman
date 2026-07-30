@@ -491,6 +491,12 @@ window.BARMAN_DATA = {
    "nazev": "Whisky (skotská, japonská…)",
    "kategorie": "lihovina",
    "alko": true
+  },
+  {
+   "id": "limoncello",
+   "nazev": "Limoncello (citronový likér)",
+   "kategorie": "liker",
+   "alko": true
   }
  ],
  "nahrady": [
@@ -4297,6 +4303,48 @@ window.BARMAN_DATA = {
     "multimichacka",
     "nechutny"
    ]
+  },
+  {
+   "nazev": "Limoncello Spritz",
+   "puvod": "svetova-klasika",
+   "typ": "longdrink",
+   "sklenice": "velká vinná sklenice",
+   "suroviny": [
+    {
+     "id": "limoncello",
+     "mnozstvi": "60 ml"
+    },
+    {
+     "id": "sekt",
+     "mnozstvi": "90 ml"
+    },
+    {
+     "id": "sodovka",
+     "mnozstvi": "střik"
+    },
+    {
+     "id": "citron",
+     "mnozstvi": "plátek"
+    },
+    {
+     "id": "mata",
+     "mnozstvi": "snítka",
+     "volitelne": true
+    }
+   ],
+   "postup": "Sklenici naplň ledem, nalij limoncello, dolij vychlazeným proseccem a dolaď střikem sodovky. Jemně promíchej.",
+   "ozdoba": "plátek citronu, snítka máty",
+   "trivia": "Žlutá odpověď jižní Itálie na Aperol Spritz. Limoncello se dodnes vyrábí hlavně na pobřeží Amalfi a na Capri z kůry citronů odrůdy sfusato — macerací v lihu, nikoli vymačkáním šťávy.",
+   "klicova_slova": [
+    "limoncello",
+    "citron",
+    "italie",
+    "amalfi",
+    "capri",
+    "sorrento",
+    "zluty spritz",
+    "leto"
+   ]
   }
  ],
  "obrazky": {
@@ -4406,7 +4454,23 @@ window.BARMAN_DATA = {
    "Nordés",
    "Nordes",
    "Žufánek gin",
-   "Zufanek gin"
+   "Zufanek gin",
+   "135 East",
+   "An Dúlamán",
+   "Broker's",
+   "Canaima",
+   "Cruzloma",
+   "Engine gin",
+   "Generous gin",
+   "Mermaid gin",
+   "Oyster gin",
+   "Portofino",
+   "Puro gin",
+   "Saigon Baigur",
+   "Santa Ana",
+   "Scapegrace",
+   "The Barmaster",
+   "Xibal"
   ],
   "rum-bily": [
    "Bacardi",
@@ -4420,7 +4484,11 @@ window.BARMAN_DATA = {
    "Brugal Blanco",
    "Blue Mauritius Silver",
    "Old Pascas White",
-   "Cubana bílý"
+   "Cubana bílý",
+   "Wray & Nephew",
+   "Veritas rum",
+   "Clairin",
+   "Charrette"
   ],
   "rum-tmavy": [
    "Captain Morgan",
@@ -4462,7 +4530,60 @@ window.BARMAN_DATA = {
    "Havana Club Especial",
    "Cubaney",
    "Ron Cartavio",
-   "Millonario"
+   "Millonario",
+   "Altabruma",
+   "Appleton Estate",
+   "Arcane",
+   "Barbancourt",
+   "Barbosa",
+   "Beach House rum",
+   "Black Tot",
+   "Blackwell",
+   "Botran",
+   "Boukman",
+   "Canerock",
+   "Chalong Bay",
+   "Cihuatán",
+   "Contrabando",
+   "Demons Share",
+   "Don Q",
+   "El Amparo",
+   "English Harbour",
+   "Equiano",
+   "Gold Of Mauritius",
+   "Hampden Estate",
+   "Isautier",
+   "Lazy Dodo",
+   "Mauricia",
+   "Mezan",
+   "Mhoba",
+   "Miracielo",
+   "Mount Gilboa",
+   "Nativo Autentico",
+   "Neisson",
+   "New Grove",
+   "Nine Leaves",
+   "Orinoco",
+   "Pampero",
+   "Papa Rouyo",
+   "Papalin",
+   "Paranubes",
+   "Planteray",
+   "Privateer",
+   "Providence",
+   "Riise",
+   "Rum Nation",
+   "Rum Shark",
+   "Santos Dumont",
+   "Savanna",
+   "Skunk rum",
+   "The Real McCoy",
+   "Transcontinental Rum Line",
+   "Trois Rivieres",
+   "Turquoise Bay",
+   "Velier",
+   "Worthy Park",
+   "Zafra"
   ],
   "rum-tuzemsky": [
    "Božkov Tuzemský",
@@ -4524,7 +4645,9 @@ window.BARMAN_DATA = {
    "Writers' Tears",
    "Connemara",
    "Kilbeggan",
-   "Slane"
+   "Slane",
+   "Proper Twelve",
+   "Silkie"
   ],
   "konak": [
    "Hennessy",
@@ -4913,7 +5036,27 @@ window.BARMAN_DATA = {
    "Hibiki",
    "Toki whisky",
    "Tomatin",
-   "Isle of Jura"
+   "Isle of Jura",
+   "Akkeshi",
+   "Amrut",
+   "Arran",
+   "Chichibu",
+   "Compass Box",
+   "Glenkinchie",
+   "Hatozaki",
+   "Ichiro's",
+   "Mossburn",
+   "Robert Burns",
+   "Singleton",
+   "Ruotker's"
+  ],
+  "limoncello": [
+   "Pallini",
+   "Villa Massa",
+   "Luxardo Limoncello",
+   "Caravella",
+   "Limoncè",
+   "Limonce"
   ]
  }
 };
