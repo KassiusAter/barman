@@ -391,7 +391,8 @@ const naSlova = text => Barman.normalizuj(text).split(/[^a-z0-9]+/).filter(Boole
    Porovnává se po celých slovech — jinak by „rum“ sedělo na „KonifeRUM“. */
 function shodaSlov(a, b) {
   if (a === b) return true;
-  if (a.length < 5 || b.length < 5) return false;
+  // skloňování mění konec slova, ne jeho délku: „Scapa“ ≠ „Scapegrace“
+  if (a.length < 5 || b.length < 5 || Math.abs(a.length - b.length) > 2) return false;
   const kmen = Math.min(a.length, b.length) - 1;
   return a.slice(0, kmen) === b.slice(0, kmen);
 }

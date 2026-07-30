@@ -2839,6 +2839,25 @@
       ],
       "postup": "Sklenici naplň ledem, nalij limoncello, dolij vychlazeným proseccem a dolaď střikem sodovky. Jemně promíchej.",
       "ozdoba": "plátek citronu, snítka máty"
+    },
+    {
+      "nazev": "Bibione",
+      "puvod": "ceska-klasika",
+      "typ": "pivni-mix",
+      "sklenice": "půllitr / vysoká sklenice",
+      "suroviny": [
+        {
+          "id": "grappa",
+          "mnozstvi": "40 ml"
+        },
+        {
+          "id": "pivo-nealko",
+          "mnozstvi": "0,3–0,5 l (jakýkoli Birell)"
+        }
+      ],
+      "postup": "Do sklenice nalij panák grappy a dolij vychlazeným nealkoholickým pivem. Poměr si každý ladí podle sebe — grappa se dá přidat i průběžně.",
+      "ozdoba": "bez ozdoby",
+      "poznamka": "Funguje s libovolnou variantou Birellu (světlý, polotmavý, ochucený) i s jiným nealkoholickým pivem."
     }
   ]
 }

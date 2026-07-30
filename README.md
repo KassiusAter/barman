@@ -10,7 +10,7 @@ drinků.
 
 ## Funkce
 
-- **119 receptů**: oficiální IBA koktejly (Mojito, Negroni, Espresso Martini…),
+- **120 receptů**: oficiální IBA koktejly (Mojito, Negroni, Espresso Martini…),
   světová klasika (Gin & Tonic, White Russian, B52…) a zejména **česká
   hospodská a retro klasika** — Beton, Bavorák, Magické oko, Semafor, Mozek,
   Vodníkovo sperma, Cesta do lesa, TGV, Kofila, Béžovice, multimíchačky
@@ -22,7 +22,7 @@ drinků.
   se zřetelně vyznačenou domácí záměnou (citron ↔ limetka, cukr ↔ sirup ↔ med,
   rumy mezi sebou, smetana ↔ mléko…).
 - **Rozpoznávání obchodních značek**: napiš „Guinness“ a aplikace ví, že máš
-  černé pivo; „zlatá Sierra“ znamená tequilu. Přes 550 značek, toleruje překlepy
+  černé pivo; „zlatá Sierra“ znamená tequilu. Přes 820 značek, toleruje překlepy
   i skloňování.
 - **Vlastní suroviny**: domácí slivovice, meruňkovice, ořechovka — cokoli si
   přidáš, eviduje se v inventáři.
@@ -53,8 +53,8 @@ Pro poslání kamarádovi jedním souborem slouží **`barman_komplet.html`**
 |---|---|
 | `barman.html` | celá aplikace (UI) |
 | `engine.js` | logika: vyhodnocení inventáře, záměny, nákupní rádce, hledání |
-| `data/suroviny.json` | slovník 82 surovin + skupiny logických záměn |
-| `data/drinky.json` | 119 receptů (zdroj pravdy) |
+| `data/suroviny.json` | slovník 84 surovin + skupiny logických záměn |
+| `data/drinky.json` | 120 receptů (zdroj pravdy) |
 | `data/trivia.json` | zajímavosti a klíčová slova pro asociativní hledání |
 | `data/znacky.json` | obchodní názvy → obecné suroviny |
 | `data/data.js` | vygenerovaný balík dat pro prohlížeč (`sestav_data.py`) |
@@ -76,8 +76,9 @@ Pro poslání kamarádovi jedním souborem slouží **`barman_komplet.html`**
 - Oficiální světové koktejly vycházejí ze seznamu **IBA** (International
   Bartenders Association).
 - Fotografie drinků pocházejí z databáze **TheCocktailDB**.
-- Část seznamu obchodních značek vychází z veřejného katalogu e-shopu
-  **Warehouse #1** (warehouse1.cz).
+- Část seznamu obchodních značek vychází z veřejných katalogů e-shopů
+  **Warehouse #1** (warehouse1.cz), **Bestdrink** (bestdrink.cz),
+  **La-Vin** (la-vin.cz) a **Don Pealo** (donpealo.cz).
 
 ## Licence
 

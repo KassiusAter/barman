@@ -570,6 +570,18 @@
       "nazev": "Limoncello (citronový likér)",
       "kategorie": "liker",
       "alko": true
+    },
+    {
+      "id": "grappa",
+      "nazev": "Grappa",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "pivo-nealko",
+      "nazev": "Nealkoholické pivo",
+      "kategorie": "pivo",
+      "alko": false
     }
   ]
 }

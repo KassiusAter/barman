@@ -497,6 +497,18 @@ window.BARMAN_DATA = {
    "nazev": "Limoncello (citronový likér)",
    "kategorie": "liker",
    "alko": true
+  },
+  {
+   "id": "grappa",
+   "nazev": "Grappa",
+   "kategorie": "lihovina",
+   "alko": true
+  },
+  {
+   "id": "pivo-nealko",
+   "nazev": "Nealkoholické pivo",
+   "kategorie": "pivo",
+   "alko": false
   }
  ],
  "nahrady": [
@@ -4345,6 +4357,36 @@ window.BARMAN_DATA = {
     "zluty spritz",
     "leto"
    ]
+  },
+  {
+   "nazev": "Bibione",
+   "puvod": "ceska-klasika",
+   "typ": "pivni-mix",
+   "sklenice": "půllitr / vysoká sklenice",
+   "suroviny": [
+    {
+     "id": "grappa",
+     "mnozstvi": "40 ml"
+    },
+    {
+     "id": "pivo-nealko",
+     "mnozstvi": "0,3–0,5 l (jakýkoli Birell)"
+    }
+   ],
+   "postup": "Do sklenice nalij panák grappy a dolij vychlazeným nealkoholickým pivem. Poměr si každý ladí podle sebe — grappa se dá přidat i průběžně.",
+   "ozdoba": "bez ozdoby",
+   "poznamka": "Funguje s libovolnou variantou Birellu (světlý, polotmavý, ochucený) i s jiným nealkoholickým pivem.",
+   "trivia": "Italsko-česká dovolenková kombinace pojmenovaná po benátském letovisku Bibione, oblíbeném cíli českých rodin: italská grappa se dolévá českým nealkoholickým pivem.",
+   "klicova_slova": [
+    "bibione",
+    "grappa",
+    "birell",
+    "italie",
+    "dovolena",
+    "more",
+    "benatsko",
+    "nealko pivo"
+   ]
   }
  ],
  "obrazky": {
@@ -4424,7 +4466,17 @@ window.BARMAN_DATA = {
    "Three Sixty",
    "Hanácká vodka",
    "Puškin",
-   "Puskin"
+   "Puskin",
+   "Crystal Head",
+   "Skyy",
+   "Pravda vodka",
+   "Tovaritch",
+   "Snow Queen",
+   "Goral",
+   "Legend of Kremlin",
+   "Hlibny Dar",
+   "Vodka Carská",
+   "Staritsky & Levitsky"
   ],
   "gin": [
    "Beefeater",
@@ -4470,7 +4522,23 @@ window.BARMAN_DATA = {
    "Santa Ana",
    "Scapegrace",
    "The Barmaster",
-   "Xibal"
+   "Xibal",
+   "Bluecoat",
+   "Boutique Gin Company",
+   "Cotswolds",
+   "Darnley's",
+   "Drumshanbo",
+   "Ginza Gin",
+   "Jodhpur",
+   "Le Tribute",
+   "Mayfair gin",
+   "McQueen Violet Fog",
+   "Ornabrak",
+   "Sabatini",
+   "Sloane's",
+   "Squadron 303",
+   "Toison",
+   "Barkleys"
   ],
   "rum-bily": [
    "Bacardi",
@@ -4488,7 +4556,8 @@ window.BARMAN_DATA = {
    "Wray & Nephew",
    "Veritas rum",
    "Clairin",
-   "Charrette"
+   "Charrette",
+   "Kuna bílá"
   ],
   "rum-tmavy": [
    "Captain Morgan",
@@ -4583,7 +4652,70 @@ window.BARMAN_DATA = {
    "Turquoise Bay",
    "Velier",
    "Worthy Park",
-   "Zafra"
+   "Zafra",
+   "Abuelo",
+   "Arehucas",
+   "Austrian Empire",
+   "Baoruco",
+   "Black Jamaica",
+   "Bocatheva",
+   "Bolivar",
+   "Bucanero",
+   "Centenario",
+   "Chamarel",
+   "Companero",
+   "Coruba",
+   "Cubay",
+   "Deadhead",
+   "Depaz",
+   "Dillon",
+   "Dos Maderas",
+   "Duppy Share",
+   "El Comandante",
+   "El General",
+   "Eminente",
+   "Emperor rum",
+   "Espero",
+   "Guajiro",
+   "Heffron",
+   "Kirk and Sweeney",
+   "La Hechicera",
+   "La Progresiva",
+   "Malecon",
+   "Malteco",
+   "Mauritius Dodo",
+   "Mauritius Imperial",
+   "Mocambo",
+   "Naga rum",
+   "Navy Island",
+   "Old Bert",
+   "Oliver & Oliver",
+   "Panama Pacific",
+   "Papa's Pilar",
+   "Patridom",
+   "Pearl of Mauritius",
+   "Providencia 1878",
+   "Pyrat",
+   "Relicario",
+   "Ron Cristobal",
+   "Ron de Jeremy",
+   "Rum Box",
+   "Rumbullion",
+   "Sailor Jerry",
+   "Saint James",
+   "Santiago de Cuba",
+   "Six Saints",
+   "Summum rum",
+   "Takamaka",
+   "Tanduay",
+   "Toucan rum",
+   "Vizcaya",
+   "Zaya",
+   "Rum&Cane",
+   "Rum Explorer",
+   "Quorhum",
+   "Ronson",
+   "Cortés rum"
   ],
   "rum-tuzemsky": [
    "Božkov Tuzemský",
@@ -4610,7 +4742,18 @@ window.BARMAN_DATA = {
    "Casamigos",
    "Clase Azul",
    "Altos",
-   "Sauza"
+   "Sauza",
+   "Cazcabel",
+   "Excellia",
+   "Maracame",
+   "Padre Azul",
+   "Rooster Rojo",
+   "Topanito",
+   "Volcan",
+   "Gusano Rojo",
+   "Montelobos",
+   "Bozal mezcal",
+   "Espadin Joven"
   ],
   "bourbon": [
    "Jack Daniel's",
@@ -4631,7 +4774,13 @@ window.BARMAN_DATA = {
    "Michter's",
    "Eagle Rare",
    "Blanton's",
-   "Gentleman Jack"
+   "Gentleman Jack",
+   "George Dickel",
+   "Gold Bar",
+   "Rowans Creek",
+   "Tincup",
+   "Platte Valley",
+   "Papa's Pilar bourbon"
   ],
   "whiskey-irska": [
    "Jameson",
@@ -4647,7 +4796,17 @@ window.BARMAN_DATA = {
    "Kilbeggan",
    "Slane",
    "Proper Twelve",
-   "Silkie"
+   "Silkie",
+   "Clontarf",
+   "Irishman",
+   "Midleton",
+   "Pogues",
+   "Sexton",
+   "The Quiet Man",
+   "Tyrconnell",
+   "West Cork",
+   "Yellow Spot",
+   "Tullamore Dew"
   ],
   "konak": [
    "Hennessy",
@@ -4668,14 +4827,49 @@ window.BARMAN_DATA = {
    "Fundador",
    "Ararat",
    "Hennessy VS",
-   "Kvint"
+   "Kvint",
+   "A.E.Dor",
+   "ABK6",
+   "Bache Gabrielsen",
+   "Boulard",
+   "Braastad",
+   "Cardenal Mendoza",
+   "Chabot",
+   "Clés des Ducs",
+   "Cognac Park",
+   "Deau",
+   "Delord",
+   "Dupuy",
+   "Frapin",
+   "Grand Breuil",
+   "Hardy cognac",
+   "Leopold Gourmel",
+   "Ménard",
+   "Meukow",
+   "Paul Giraud",
+   "Peyrot",
+   "Samalens",
+   "Sarajishvili",
+   "Thomas Hine",
+   "Ysabel Regina",
+   "Davidoff cognac",
+   "Dupeyron",
+   "Papidoux",
+   "Prince D´Arignac",
+   "Marcel Trépout",
+   "Coquerel",
+   "Lemorton",
+   "Baron Hildprandt",
+   "Magnífica"
   ],
   "cachaca": [
    "Cachaça 51",
    "Cachaca 51",
    "Pitú",
    "Pitu",
-   "Velho Barreiro"
+   "Velho Barreiro",
+   "Velho Bareiro",
+   "Saison cachaca"
   ],
   "jagermeister": [
    "Jägermeister",
@@ -4687,12 +4881,14 @@ window.BARMAN_DATA = {
   "becherovka": [
    "Becherovka Original",
    "becher",
-   "becherka"
+   "becherka",
+   "Jan Becher"
   ],
   "fernet": [
    "Fernet Stock",
    "Fernet Branca",
-   "Fernet Citrus"
+   "Fernet Citrus",
+   "Altfernet"
   ],
   "zelena": [
    "Božkov Peprmint",
@@ -4788,7 +4984,8 @@ window.BARMAN_DATA = {
    "Carpano",
    "sladký vermut",
    "Punt e Mes",
-   "Dolin Rouge"
+   "Dolin Rouge",
+   "Martini"
   ],
   "sekt": [
    "Bohemia Sekt",
@@ -4807,7 +5004,24 @@ window.BARMAN_DATA = {
    "Freixenet",
    "Codorníu",
    "Hubert sekt",
-   "Louis Roederer"
+   "Louis Roederer",
+   "Bollinger",
+   "Krug",
+   "Piper Heidsieck",
+   "Pommery",
+   "Taittinger",
+   "Deutz",
+   "Jacquesson",
+   "Billecart Salmon",
+   "Perrier Jouët",
+   "Salon champagne",
+   "Gruet",
+   "Mionetto",
+   "Bottega",
+   "Canevel",
+   "Follador",
+   "Carpene Malvolti",
+   "Cava Jaume Serra"
   ],
   "vino-bile": [
    "Müller Thurgau",
@@ -4947,7 +5161,9 @@ window.BARMAN_DATA = {
    "Mansinthe",
    "Absente",
    "Sebor",
-   "Fruko absinth"
+   "Fruko absinth",
+   "Bairnsfather",
+   "Absinth 35"
   ],
   "borovicka": [
    "Spišská borovička",
@@ -4991,7 +5207,8 @@ window.BARMAN_DATA = {
    "Bosacka slivovica"
   ],
   "myslivec": [
-   "Myslivec"
+   "Myslivec",
+   "Stará Myslivecká"
   ],
   "vycepni-lihovina": [
    "režná",
@@ -5048,7 +5265,79 @@ window.BARMAN_DATA = {
    "Mossburn",
    "Robert Burns",
    "Singleton",
-   "Ruotker's"
+   "Ruotker's",
+   "Aberfeldy",
+   "Aerstone",
+   "AnCnoc",
+   "Antiquary",
+   "Ardmore",
+   "Ardnamurchan",
+   "Auchroisk",
+   "Aultmore",
+   "Balblair",
+   "Benriach",
+   "Big Peat",
+   "Black Bottle",
+   "Blairmhor",
+   "Bruichladdich",
+   "Cadenhead",
+   "Catto's",
+   "Clan Campbell",
+   "Clynelish",
+   "Cragganmore",
+   "Craigellachie",
+   "Dalmore",
+   "Dimple",
+   "Edradour",
+   "Glen Deveron",
+   "Glen Elgin",
+   "Glen Moray",
+   "Glen Scotia",
+   "Glen Turner",
+   "GlenAllachie",
+   "Glendronach",
+   "Glenfarclas",
+   "Glenglassaugh",
+   "Glengoyne",
+   "Inchmurrin",
+   "Isle of Raasay",
+   "Kavalan",
+   "Kilchoman",
+   "Kilkerran",
+   "Kininvie",
+   "Knockando",
+   "Lagg",
+   "Lauders",
+   "Ledaig",
+   "Loch Lomond",
+   "MacNaMara",
+   "Old Pulteney",
+   "Old St. Andrews",
+   "Penderyn",
+   "Poit Dhubh",
+   "Royal Brackla",
+   "Royal Salute",
+   "Scapa",
+   "Smokehead",
+   "Speyburn",
+   "Strathisla",
+   "Tamdhu",
+   "Tamnavulin",
+   "Té Bheag",
+   "Togouchi",
+   "Tokinoka",
+   "Tomintoul",
+   "Fuji whisky",
+   "Haku",
+   "Kurayoshi",
+   "Paul John",
+   "Hammer Head",
+   "GoldCock",
+   "Trebitsch",
+   "Old Well",
+   "Canadian Club",
+   "Crown Royal",
+   "Kyrö whisky"
   ],
   "limoncello": [
    "Pallini",
@@ -5056,7 +5345,29 @@ window.BARMAN_DATA = {
    "Luxardo Limoncello",
    "Caravella",
    "Limoncè",
-   "Limonce"
+   "Limonce",
+   "Scyavuru"
+  ],
+  "grappa": [
+   "Marzadro",
+   "Nonino",
+   "Jacopo Poli",
+   "Pircher",
+   "Roner",
+   "Nardini",
+   "Bepi Tosolini",
+   "Berta"
+  ],
+  "pivo-nealko": [
+   "Birell",
+   "Radegast Birell",
+   "Birell Polotmavý",
+   "Bernard Free",
+   "Zlatopramen nealko",
+   "Staropramen nealko",
+   "Heineken 0.0",
+   "Krušovice nealko",
+   "Clausthaler"
   ]
  }
 };
