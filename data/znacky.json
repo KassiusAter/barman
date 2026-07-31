@@ -930,6 +930,27 @@
       "Heineken 0.0",
       "Krušovice nealko",
       "Clausthaler"
+    ],
+    "crodino": [
+      "Crodino",
+      "Martini Vibrante",
+      "Martini Floreale",
+      "Sanbittèr",
+      "Sanbitter",
+      "Undone",
+      "Lyre's"
+    ],
+    "sekt-nealko": [
+      "Robby Bubble",
+      "Freixenet 0.0",
+      "Bohemia Sekt nealko",
+      "Hubert nealko",
+      "Nozeco"
+    ],
+    "cerny-caj": [
+      "Pickwick",
+      "Lipton",
+      "Ahmad Tea"
     ]
   }
 }

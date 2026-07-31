@@ -135,6 +135,8 @@
   .stitek { display: inline-block; font-size: 12px; border: 1px solid var(--linka);
     color: var(--tlumeny); border-radius: 6px; padding: 1px 8px; margin-left: 6px; vertical-align: middle; }
   .prazdno { color: var(--tlumeny); font-style: italic; padding: 8px 0; }
+  .uvod-nealko { background: #1d2a2c; border: 1px solid #2f4a4a; border-radius: 10px;
+    padding: 9px 14px; color: #a8cfc9; font-size: 14px; margin: -6px 0 14px; }
 </style>
 </head>
 <body>
@@ -144,6 +146,7 @@
   <div class="stat" id="statistika"></div>
   <nav>
     <button id="tab-drinky" class="aktivni">Drinky</button>
+    <button id="tab-nealko">Pro řidiče a děti</button>
     <button id="tab-bar">Můj bar</button>
   </nav>
 </header>
@@ -166,8 +169,13 @@
         <option value="multimichacka">Multimíchačky</option>
         <option value="horky">Horké</option>
       </select>
-      <label class="prepinac"><input type="checkbox" id="filtr-nealko"> jen nealko</label>
+      <label class="prepinac" id="prepinac-deti" hidden>
+        <input type="checkbox" id="filtr-deti"> jen pro děti 🧒</label>
     </div>
+    <p id="uvod-nealko" class="uvod-nealko" hidden>
+      🚗 Drinky bez kapky alkoholu — pro řidiče, děti i suchý únor.
+      Nealkoholický sekt ani pivo se zde nenahrazují alkoholickými.
+    </p>
 
     <h2><span class="tecka" style="background:var(--zelena)"></span>Můžeš míchat hned <span id="pocet-hned" class="stitek"></span></h2>
     <div class="mrizka" id="sekce-hned"></div>
@@ -315,13 +323,23 @@ function obrazekDrinku(drink, velikost) {
 }
 
 /* ---------- záložky ---------- */
+let rezim = "drinky"; // "drinky" | "nealko" (obě sdílejí stejný seznam), "bar" má vlastní
 function prepni(zalozka) {
-  ["drinky", "bar"].forEach(z => {
-    el("tab-" + z).classList.toggle("aktivni", z === zalozka);
-    el("zalozka-" + z).classList.toggle("aktivni", z === zalozka);
-  });
+  ["drinky", "nealko", "bar"].forEach(z =>
+    el("tab-" + z).classList.toggle("aktivni", z === zalozka));
+  const naDrinky = zalozka !== "bar";
+  el("zalozka-drinky").classList.toggle("aktivni", naDrinky);
+  el("zalozka-bar").classList.toggle("aktivni", !naDrinky);
+  if (naDrinky) {
+    rezim = zalozka;
+    el("uvod-nealko").hidden = rezim !== "nealko";
+    el("prepinac-deti").hidden = rezim !== "nealko";
+    if (rezim !== "nealko") el("filtr-deti").checked = false;
+    vykresliDrinky();
+  }
 }
 el("tab-drinky").onclick = () => prepni("drinky");
+el("tab-nealko").onclick = () => prepni("nealko");
 el("tab-bar").onclick = () => prepni("bar");
 
 /* ---------- záložka Můj bar ---------- */
@@ -532,7 +550,7 @@ function karta(zaznam, sTrivii) {
   const trivia = sTrivii && d.trivia ? `<div class="trivia">💡 ${d.trivia}</div>` : "";
   return `<div class="karta" data-nazev="${d.nazev}">
     ${obrazekDrinku(d, 58)}
-    <div><div class="nazev">${d.nazev}${d.nealko ? " 🥤" : ""}${d.varovani ? " ⚠️" : ""}</div>
+    <div><div class="nazev">${d.nazev}${d.nealko ? " 🥤" : ""}${d.deti ? " 🧒" : ""}${d.varovani ? " ⚠️" : ""}</div>
     <div class="meta">${d.sklenice}</div>${chybi}${zameny}${trivia}</div></div>`;
 }
 
@@ -540,9 +558,11 @@ function vykresliDrinky() {
   const tolerance = +el("tolerance").value;
   el("tolerance-hodnota").textContent = tolerance;
   const dotaz = el("hledat-drink").value;
-  const vyber = Barman.najdiDrinky(DRINKY, dotaz);
+  let vyber = Barman.najdiDrinky(DRINKY, dotaz);
+  if (rezim === "nealko" && el("filtr-deti").checked)
+    vyber = vyber.filter(d => d.deti);
   const v = Barman.vyhodnot(vyber, SUROVINY(), inventar, tolerance, {
-    jenNealko: el("filtr-nealko").checked,
+    jenNealko: rezim === "nealko",
     typ: el("filtr-typ").value || null,
     nahrady: DATA.nahrady
   });
@@ -574,7 +594,7 @@ function vykresliDrinky() {
     k.addEventListener("click", () => otevriDetail(k.dataset.nazev)));
   uloz();
 }
-["tolerance", "filtr-typ", "filtr-nealko", "hledat-drink"].forEach(id =>
+["tolerance", "filtr-typ", "filtr-deti", "hledat-drink"].forEach(id =>
   el(id).addEventListener("input", vykresliDrinky));
 
 /* ---------- detail drinku ---------- */
@@ -606,7 +626,7 @@ function otevriDetail(nazev) {
   }).join("");
   el("detail-obsah").innerHTML = `
     <div class="obrazek">${obrazekDrinku(d, 180)}</div>
-    <h2>${d.nazev}<span class="stitek">${PUVODY[d.puvod] || d.puvod}</span>${d.nealko ? `<span class="stitek">nealko</span>` : ""}</h2>
+    <h2>${d.nazev}<span class="stitek">${PUVODY[d.puvod] || d.puvod}</span>${d.nealko ? `<span class="stitek">nealko 🥤</span>` : ""}${d.deti ? `<span class="stitek">pro děti 🧒</span>` : ""}</h2>
     ${d.alt_nazvy ? `<div class="alt">též: ${d.alt_nazvy.join(", ")}</div>` : ""}
     ${d.varovani ? `<p class="varovani">⚠️ ${d.varovani}</p>` : ""}
     <h4>Suroviny</h4><ul>${suroviny}</ul>

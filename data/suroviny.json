@@ -23,7 +23,8 @@
       "skupina": [
         "cukrovy-sirup",
         "cukr",
-        "med"
+        "med",
+        "agave"
       ],
       "poznamka": "sladidla lze zaměnit; sirup = cukr rozpuštěný ve vodě 1:1"
     },
@@ -581,6 +582,78 @@
       "id": "pivo-nealko",
       "nazev": "Nealkoholické pivo",
       "kategorie": "pivo",
+      "alko": false
+    },
+    {
+      "id": "mangove-pyre",
+      "nazev": "Mangové pyré / džus",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "melounove-pyre",
+      "nazev": "Melounové pyré",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "rybizove-pyre",
+      "nazev": "Pyré z černého rybízu",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "cerny-caj",
+      "nazev": "Černý čaj (vychlazený)",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "agave",
+      "nazev": "Agávový sirup",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "malinovy-sirup",
+      "nazev": "Malinový sirup",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "modry-sirup",
+      "nazev": "Modrý sirup (nealko, do dětských drinků)",
+      "kategorie": "sirup-sladidlo",
+      "alko": false
+    },
+    {
+      "id": "banan",
+      "nazev": "Banán",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "okurka",
+      "nazev": "Okurka",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "zloutek",
+      "nazev": "Žloutek (čerstvé vejce)",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "crodino",
+      "nazev": "Crodino / nealko aperitiv",
+      "kategorie": "nealko-mixer",
+      "alko": false
+    },
+    {
+      "id": "sekt-nealko",
+      "nazev": "Nealkoholický sekt",
+      "kategorie": "nealko-mixer",
       "alko": false
     }
   ]

@@ -730,7 +730,9 @@
       "řidič",
       "máta",
       "limetka",
-      "nojito"
+      "nojito",
+      "ridic",
+      "nealko"
     ]
   },
   "Shirley Temple": {
@@ -740,7 +742,9 @@
       "hollywood",
       "herečka",
       "děti",
-      "širly"
+      "širly",
+      "ridic",
+      "nealko"
     ]
   },
   "Virgin Colada": {
@@ -750,7 +754,9 @@
       "ananas",
       "kokos",
       "děti",
-      "řidič"
+      "řidič",
+      "ridic",
+      "nealko"
     ]
   },
   "Virgin Sunrise": {
@@ -760,7 +766,9 @@
       "východ slunce",
       "děti",
       "řidič",
-      "grenadina"
+      "grenadina",
+      "ridic",
+      "nealko"
     ]
   },
   "Cinderella": {
@@ -769,7 +777,8 @@
       "popelka",
       "ples",
       "nealko",
-      "džusy"
+      "džusy",
+      "ridic"
     ]
   },
   "Ipanema": {
@@ -780,7 +789,9 @@
       "pláž",
       "bossa nova",
       "nealko caipirinha",
-      "řidič"
+      "řidič",
+      "ridic",
+      "nealko"
     ]
   },
   "Střik": {
@@ -1194,6 +1205,205 @@
       "more",
       "benatsko",
       "nealko pivo"
+    ]
+  },
+  "Virgin Mary": {
+    "trivia": "Bloody Mary bez vodky — v mnoha barech ji řidiči objednávají právě kvůli tomu, že chutná jako plnohodnotný drink, ne jako džus.",
+    "klicova_slova": [
+      "ridic",
+      "deti",
+      "nealko",
+      "rajce",
+      "kocovina",
+      "bloody mary bez alkoholu"
+    ]
+  },
+  "Mango Mule": {
+    "trivia": "Nealko obdoba Moscow Mule: mango a okurka nahradí vodku, zázvorové pivo zůstává. Servíruje se stejně stylově v měděném hrnku.",
+    "klicova_slova": [
+      "ridic",
+      "nealko",
+      "moscow mule",
+      "mango",
+      "okurka",
+      "medeny hrnek",
+      "zazvor"
+    ]
+  },
+  "Rybízová burleska": {
+    "trivia": "Černý rybíz s medem a zázvorem — nealko drink, který díky kyselosti rybízu nepůsobí sladce jako většina mocktailů.",
+    "klicova_slova": [
+      "ridic",
+      "nealko",
+      "rybiz",
+      "zazvor",
+      "med",
+      "kysely"
+    ]
+  },
+  "Melounová margarita": {
+    "trivia": "Margarita bez tequily: rozmixovaný meloun s limetkou a agáve, klidně i se soleným okrajem. Letní klasika amerických grilovaček.",
+    "klicova_slova": [
+      "ridic",
+      "deti",
+      "nealko",
+      "meloun",
+      "margarita bez alkoholu",
+      "leto",
+      "agave"
+    ]
+  },
+  "Virgin Sea Breeze": {
+    "trivia": "Brusinka s grapefruitem samy o sobě dají dost chuti i kyselosti, takže vodka v Sea Breeze vlastně jen přidává alkohol.",
+    "klicova_slova": [
+      "ridic",
+      "nealko",
+      "brusinka",
+      "grapefruit",
+      "sea breeze"
+    ]
+  },
+  "Safe Sex on the Beach": {
+    "trivia": "Nealko verze plážové klasiky si udržela i vtipné jméno — „bezpečný sex na pláži“.",
+    "klicova_slova": [
+      "ridic",
+      "deti",
+      "nealko",
+      "plaz",
+      "broskev",
+      "sex on the beach"
+    ]
+  },
+  "Arnold Palmer": {
+    "trivia": "Pojmenovaný po legendárním golfistovi, který si na turnajích míchal ledový čaj s citronovou limonádou. Když si ho jednou objednal v restauraci a někdo od vedlejšího stolu chtěl „to co on“, drink se rozšířil po celé Americe.",
+    "klicova_slova": [
+      "ridic",
+      "nealko",
+      "golf",
+      "ledovy caj",
+      "caj s limonadou",
+      "amerika"
+    ]
+  },
+  "Roy Rogers": {
+    "trivia": "Mužský protějšek Shirley Temple, pojmenovaný po hollywoodském kovbojovi — místo limonády s grenadinou se míchá s colou. Dítě u baru díky němu dostane svůj „vlastní“ drink.",
+    "klicova_slova": [
+      "deti",
+      "ridic",
+      "nealko",
+      "kovboj",
+      "hollywood",
+      "cola s grenadinou",
+      "shirley temple"
+    ]
+  },
+  "Pussyfoot": {
+    "trivia": "Barmanská klasika 30. let se žloutkem, který drinku dodá sametovou pěnu. Název odkazuje na amerického prohibičního agenta Williama „Pussyfoot“ Johnsona.",
+    "klicova_slova": [
+      "ridic",
+      "nealko",
+      "zloutek",
+      "pena",
+      "prohibice",
+      "tri dzusy"
+    ]
+  },
+  "Tropický punč": {
+    "trivia": "Vrstvení džusů podle hustoty — nejtěžší grenadina dole, nejlehčí navrch. Pro děti je to půlka zábavy: drink se nejdřív fotí a teprve pak zamíchá.",
+    "klicova_slova": [
+      "deti",
+      "ridic",
+      "nealko",
+      "vrstveny",
+      "duha",
+      "barevny",
+      "oslava",
+      "narozeniny",
+      "punc"
+    ]
+  },
+  "Šmoulí drink": {
+    "trivia": "Modrá barva bez špetky alkoholu — nealko sirup curaçao dělá ze sklenice hit každé dětské oslavy. Se žlutou limonádou zezelená, s bílým mlékem zesvětlá do tyrkysova.",
+    "klicova_slova": [
+      "deti",
+      "nealko",
+      "modry",
+      "smoula",
+      "oslava",
+      "narozeniny",
+      "barevny",
+      "ridic"
+    ]
+  },
+  "Malinové mléko": {
+    "trivia": "Nejjednodušší dětský koktejl vůbec: mléko s ovocným sirupem. Kapka citronu z něj udělá drink, ne jen slazené mléko.",
+    "klicova_slova": [
+      "deti",
+      "nealko",
+      "mleko",
+      "malina",
+      "ruzovy",
+      "jednoduchy",
+      "ridic"
+    ]
+  },
+  "Banánový koktejl": {
+    "trivia": "Banán s mlékem drží děti dlouho zasycené, takže se hodí i jako svačina. Citron v receptu není kvůli chuti, ale aby banán nezhnědl.",
+    "klicova_slova": [
+      "deti",
+      "nealko",
+      "banan",
+      "mleko",
+      "svacina",
+      "smoothie",
+      "ridic"
+    ]
+  },
+  "Crodino Spritz": {
+    "trivia": "Crodino je italský nealkoholický aperitiv z roku 1965 a v Itálii se pije stejně samozřejmě jako Aperol — jen se po něm dá řídit.",
+    "klicova_slova": [
+      "ridic",
+      "nealko",
+      "spritz",
+      "italie",
+      "aperitiv",
+      "crodino",
+      "oranzovy"
+    ]
+  },
+  "Crodino & Tonic": {
+    "trivia": "Nejjednodušší způsob, jak mít v ruce hořký aperitiv a přitom večer odvézt ostatní domů.",
+    "klicova_slova": [
+      "ridic",
+      "nealko",
+      "tonik",
+      "aperitiv",
+      "horky",
+      "crodino"
+    ]
+  },
+  "Nealko Hugo": {
+    "trivia": "Hugo je na nealko verzi ideální: bezový sirup a máta nesou celou chuť, alkohol v něm nikdy nehrál hlavní roli.",
+    "klicova_slova": [
+      "ridic",
+      "deti",
+      "nealko",
+      "bezinka",
+      "hugo",
+      "leto",
+      "spritz"
+    ]
+  },
+  "Bezová limonáda": {
+    "trivia": "Domácí základ všech letních nealko drinků — bezový sirup s citronem a sodovkou. Z ní se dá udělat i Hugo, stačí přidat nealkoholický sekt.",
+    "klicova_slova": [
+      "deti",
+      "ridic",
+      "nealko",
+      "bezinka",
+      "limonada",
+      "leto",
+      "zahrada"
     ]
   }
 }
