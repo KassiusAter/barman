@@ -278,7 +278,8 @@ window.BARMAN_DATA = {
    "id": "broskvove-pyre",
    "nazev": "Broskvové pyré / hustý broskvový džus",
    "kategorie": "stava",
-   "alko": false
+   "alko": false,
+   "hledat": "broskvový džus"
   },
   {
    "id": "cukrovy-sirup",
@@ -308,7 +309,8 @@ window.BARMAN_DATA = {
    "id": "kokosovy-krem",
    "nazev": "Kokosový krém (Coco López)",
    "kategorie": "sirup-sladidlo",
-   "alko": false
+   "alko": false,
+   "hledat": "kokosové mléko na vaření"
   },
   {
    "id": "med",
@@ -518,25 +520,29 @@ window.BARMAN_DATA = {
    "id": "mangove-pyre",
    "nazev": "Mangové pyré / džus",
    "kategorie": "stava",
-   "alko": false
+   "alko": false,
+   "hledat": "mangový džus"
   },
   {
    "id": "melounove-pyre",
    "nazev": "Melounové pyré",
    "kategorie": "stava",
-   "alko": false
+   "alko": false,
+   "hledat": "meloun"
   },
   {
    "id": "rybizove-pyre",
    "nazev": "Pyré z černého rybízu",
    "kategorie": "stava",
-   "alko": false
+   "alko": false,
+   "hledat": "černý rybíz"
   },
   {
    "id": "cerny-caj",
    "nazev": "Černý čaj (vychlazený)",
    "kategorie": "nealko-mixer",
-   "alko": false
+   "alko": false,
+   "hledat": "černý čaj"
   },
   {
    "id": "agave",
@@ -573,7 +579,8 @@ window.BARMAN_DATA = {
    "id": "zloutek",
    "nazev": "Žloutek (čerstvé vejce)",
    "kategorie": "cerstve-mlecne",
-   "alko": false
+   "alko": false,
+   "hledat": "vejce"
   },
   {
    "id": "crodino",

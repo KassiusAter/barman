@@ -624,15 +624,26 @@ function vykresliDrinky() {
 ["tolerance", "filtr-typ", "filtr-deti", "hledat-drink"].forEach(id =>
   el(id).addEventListener("input", vykresliDrinky));
 
-/* ---------- nákup chybějící suroviny na Heurece ---------- */
-// kupuje se jen to, co má smysl shánět v e-shopu; citrusy a máta ne
-const KUPITELNE = new Set(["lihovina", "liker", "vino-vermut-sekt", "pivo", "sirup-sladidlo"]);
+/* ---------- nákup chybějící suroviny ---------- */
+// alkohol a sirupy míří na Heureku, potraviny a mixéry na Rohlík
+const NA_HEUREKU = new Set(["lihovina", "liker", "vino-vermut-sekt", "pivo", "sirup-sladidlo"]);
+const NA_ROHLIK = new Set(["nealko-mixer", "stava", "cerstve-mlecne"]);
 
-function heurekaOdkaz(s) {
-  if (!KUPITELNE.has(s.kategorie)) return null;
+function nakupniOdkaz(s) {
   // „Triple sec / Cointreau (pomerančový likér)“ → „Triple sec“
   const dotaz = s.hledat || s.nazev.split("(")[0].split("/")[0].trim();
-  return "https://www.heureka.cz/?h%5Bfraze%5D=" + encodeURIComponent(dotaz);
+  // ostatní (angostura, worcester, ocet) se dělí podle toho, jestli je v tom alkohol
+  const heureka = NA_HEUREKU.has(s.kategorie) || (s.kategorie === "ostatni" && s.alko);
+  const rohlik = NA_ROHLIK.has(s.kategorie) || (s.kategorie === "ostatni" && !s.alko);
+  if (heureka) return {
+    url: "https://www.heureka.cz/?h%5Bfraze%5D=" + encodeURIComponent(dotaz),
+    kde: "Heurece", ikona: "🔎"
+  };
+  if (rohlik) return {
+    url: "https://www.rohlik.cz/hledat?q=" + encodeURIComponent(dotaz),
+    kde: "Rohlíku", ikona: "🛒"
+  };
+  return null;
 }
 
 /* ---------- detail drinku ---------- */
@@ -661,9 +672,9 @@ function otevriDetail(nazev) {
         ` <span class="volitelna">(nahraď: ${SLOVNIK[alt].nazev})</span>${volit}</li>`;
     }
     if (!mam) {
-      const odkaz = heurekaOdkaz(info);
-      if (odkaz) return `<li class="mam-ne"><a class="koupit" href="${odkaz}"
-        target="_blank" rel="noopener" title="Najít na Heurece">${info.nazev} 🔎</a> — ${s.mnozstvi}${volit}</li>`;
+      const odkaz = nakupniOdkaz(info);
+      if (odkaz) return `<li class="mam-ne"><a class="koupit" href="${odkaz.url}"
+        target="_blank" rel="noopener" title="Najít na ${odkaz.kde}">${info.nazev} ${odkaz.ikona}</a> — ${s.mnozstvi}${volit}</li>`;
     }
     return `<li class="${mam ? "mam-ano" : "mam-ne"}">${info.nazev} — ${s.mnozstvi}${volit}</li>`;
   }).join("");
