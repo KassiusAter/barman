@@ -131,6 +131,8 @@
   .detail .mam-ano::before { content: "✓ "; color: var(--zelena); }
   .detail .mam-ne::before { content: "✗ "; color: var(--cervena); }
   .detail .mam-ne { color: #e0a9a1; }
+  .detail a.koupit { color: #e0a9a1; text-decoration: underline dotted; }
+  .detail a.koupit:hover { color: #f0c4bc; text-decoration: underline; }
   .detail .volitelna { color: var(--tlumeny); font-style: italic; }
   .detail .poznamka { color: var(--tlumeny); font-style: italic; margin-top: 12px; font-size: 14px; }
   .detail .varovani { background: #3b2a24; border: 1px solid var(--cervena); color: #efc0b6;
@@ -622,6 +624,17 @@ function vykresliDrinky() {
 ["tolerance", "filtr-typ", "filtr-deti", "hledat-drink"].forEach(id =>
   el(id).addEventListener("input", vykresliDrinky));
 
+/* ---------- nákup chybějící suroviny na Heurece ---------- */
+// kupuje se jen to, co má smysl shánět v e-shopu; citrusy a máta ne
+const KUPITELNE = new Set(["lihovina", "liker", "vino-vermut-sekt", "pivo", "sirup-sladidlo"]);
+
+function heurekaOdkaz(s) {
+  if (!KUPITELNE.has(s.kategorie)) return null;
+  // „Triple sec / Cointreau (pomerančový likér)“ → „Triple sec“
+  const dotaz = s.hledat || s.nazev.split("(")[0].split("/")[0].trim();
+  return "https://www.heureka.cz/?h%5Bfraze%5D=" + encodeURIComponent(dotaz);
+}
+
 /* ---------- detail drinku ---------- */
 const PUVODY = {
   "iba": "oficiální IBA koktejl", "svetova-klasika": "světová klasika",
@@ -646,6 +659,11 @@ function otevriDetail(nazev) {
         inventar.has(a) || (SLOVNIK[a] && SLOVNIK[a].zakladni));
       if (alt) return `<li class="mam-zamena">${info.nazev} — ${s.mnozstvi}` +
         ` <span class="volitelna">(nahraď: ${SLOVNIK[alt].nazev})</span>${volit}</li>`;
+    }
+    if (!mam) {
+      const odkaz = heurekaOdkaz(info);
+      if (odkaz) return `<li class="mam-ne"><a class="koupit" href="${odkaz}"
+        target="_blank" rel="noopener" title="Najít na Heurece">${info.nazev} 🔎</a> — ${s.mnozstvi}${volit}</li>`;
     }
     return `<li class="${mam ? "mam-ano" : "mam-ne"}">${info.nazev} — ${s.mnozstvi}${volit}</li>`;
   }).join("");

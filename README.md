@@ -28,6 +28,8 @@ drinků.
   od Virgin Mary a Crodino Spritzu po dětské drinky s vrstvenými džusy
   a přepínačem „jen pro děti". Nealkoholický sekt ani pivo se tu nikdy
   nenahrazují alkoholickými.
+- **Nákup na jeden klik**: chybějící lihovina, likér nebo sirup je v detailu
+  receptu odkazem na vyhledávání na Heurece.
 - **„Chutná mi"**: srdíčkem u suroviny označíš, co máš rád — drinky s ní
   se pak řadí na začátek nabídky.
 - **Vlastní suroviny**: domácí slivovice, meruňkovice, ořechovka — cokoli si

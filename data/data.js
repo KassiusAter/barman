@@ -83,7 +83,8 @@ window.BARMAN_DATA = {
    "id": "zelena",
    "nazev": "Zelená (peprmintový likér)",
    "kategorie": "liker",
-   "alko": true
+   "alko": true,
+   "hledat": "peprmintový likér"
   },
   {
    "id": "griotka",
@@ -173,13 +174,15 @@ window.BARMAN_DATA = {
    "id": "vino-bile",
    "nazev": "Bílé víno",
    "kategorie": "vino-vermut-sekt",
-   "alko": true
+   "alko": true,
+   "hledat": "bílé víno"
   },
   {
    "id": "vino-cervene",
    "nazev": "Červené víno",
    "kategorie": "vino-vermut-sekt",
-   "alko": true
+   "alko": true,
+   "hledat": "červené víno"
   },
   {
    "id": "pivo-svetle",
@@ -508,7 +511,8 @@ window.BARMAN_DATA = {
    "id": "pivo-nealko",
    "nazev": "Nealkoholické pivo",
    "kategorie": "pivo",
-   "alko": false
+   "alko": false,
+   "hledat": "nealkoholické pivo"
   },
   {
    "id": "mangove-pyre",
@@ -550,7 +554,8 @@ window.BARMAN_DATA = {
    "id": "modry-sirup",
    "nazev": "Modrý sirup (nealko, do dětských drinků)",
    "kategorie": "sirup-sladidlo",
-   "alko": false
+   "alko": false,
+   "hledat": "modrý sirup do drinků"
   },
   {
    "id": "banan",
@@ -574,13 +579,15 @@ window.BARMAN_DATA = {
    "id": "crodino",
    "nazev": "Crodino / nealko aperitiv",
    "kategorie": "nealko-mixer",
-   "alko": false
+   "alko": false,
+   "hledat": "Crodino nealkoholický aperitiv"
   },
   {
    "id": "sekt-nealko",
    "nazev": "Nealkoholický sekt",
    "kategorie": "nealko-mixer",
-   "alko": false
+   "alko": false,
+   "hledat": "nealkoholický sekt"
   }
  ],
  "nahrady": [
