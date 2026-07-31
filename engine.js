@@ -35,6 +35,8 @@
     });
     Array.from(inventar).forEach(function (id) { vlastni.add(id); });
 
+    var oblibene = new Set(moznosti.oblibene || []); // „chutná mi“
+
     // mapa záměn: id -> pole zaměnitelných id
     var zamenitelne = {};
     (moznosti.nahrady || []).forEach(function (sk) {
@@ -71,20 +73,29 @@
         drink: d,
         chybi: chybi,
         chybiNazvy: chybi.map(nazevSuroviny),
-        zameny: zameny
+        zameny: zameny,
+        // kolik surovin drinku má uživatel označené jako „chutná mi“
+        oblibenych: d.suroviny.filter(function (s) {
+          return oblibene.has(s.id);
+        }).length
       };
       if (chybi.length === 0) hned.push(zaznam);
       else if (chybi.length <= tolerance) dokoupit.push(zaznam);
       else ostatni.push(zaznam);
     });
 
-    dokoupit.sort(function (a, b) {
-      return a.chybi.length - b.chybi.length ||
+    // řazení: nejdřív drinky s oblíbenými surovinami, u nedostupných pak
+    // podle počtu chybějících surovin
+    function podleOblibenosti(a, b) {
+      return b.oblibenych - a.oblibenych ||
         a.drink.nazev.localeCompare(b.drink.nazev, "cs");
+    }
+    hned.sort(podleOblibenosti);
+    dokoupit.sort(function (a, b) {
+      return a.chybi.length - b.chybi.length || podleOblibenosti(a, b);
     });
     ostatni.sort(function (a, b) {
-      return a.chybi.length - b.chybi.length ||
-        a.drink.nazev.localeCompare(b.drink.nazev, "cs");
+      return a.chybi.length - b.chybi.length || podleOblibenosti(a, b);
     });
 
     return {

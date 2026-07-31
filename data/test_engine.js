@@ -129,6 +129,23 @@ v = Barman.vyhodnot(drinky, suroviny, ["cachaca", "limetka"], 0);
 ok(nazvy(v.hned).includes("Caipirinha"),
   "Caipirinha jde s cachaçou a limetkou (cukr je základní)");
 
+/* ---- „chutná mi“: řazení podle oblíbených surovin ---- */
+console.log("\n[5b] Oblíbené suroviny řadí drinky dopředu");
+const invGin = ["gin", "vodka", "rum-bily", "triple-sec", "limetka", "citron",
+  "cukrovy-sirup", "sodovka", "tonik", "mata"];
+let bezPrefu = Barman.vyhodnot(drinky, suroviny, invGin, 0).hned.map(z => z.drink.nazev);
+let sPrefy = Barman.vyhodnot(drinky, suroviny, invGin, 0, { oblibene: ["gin"] });
+ok(sPrefy.hned.slice(0, 4).every(z => z.oblibenych > 0),
+  "s oblíbeným ginem jsou ginové drinky první: " + sPrefy.hned.slice(0, 4).map(z => z.drink.nazev).join(", "));
+ok(sPrefy.hned.length === bezPrefu.length, "řazení nemění počet nabídnutých drinků");
+ok(sPrefy.hned.every(z => typeof z.oblibenych === "number"), "každý záznam nese počet oblíbených surovin");
+const mojito = sPrefy.hned.find(z => z.drink.nazev === "Mojito");
+ok(mojito && mojito.oblibenych === 0, "Mojito bez ginu má oblibenych = 0");
+/* uvnitř sekce „dokoupit“ rozhoduje nejdřív počet chybějících surovin */
+const dok = Barman.vyhodnot(drinky, suroviny, invGin, 2, { oblibene: ["tequila"] }).dokoupit;
+ok(dok.every((z, i) => i === 0 || dok[i - 1].chybi.length <= z.chybi.length),
+  "v sekci dokoupit rozhoduje dál počet chybějících surovin");
+
 /* ---- logické záměny surovin ---- */
 console.log("\n[6] Logické záměny (citron ↔ limetka apod.)");
 const NAHRADY = JSON.parse(fs.readFileSync(path.join(__dirname, "suroviny.json"))).nahrady;

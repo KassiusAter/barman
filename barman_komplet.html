@@ -98,6 +98,9 @@
   }
   .pridat-listy button:hover { border-color: var(--akcent); }
   .pridat-zprava { color: var(--zelena); font-size: 14px; min-height: 20px; margin: -8px 0 6px 2px; }
+  .srdce { color: var(--tlumeny); margin-left: 7px; cursor: pointer; }
+  .srdce:hover { color: #e2707f; }
+  .srdce.rad { color: #e2707f; }
   .chip .smazat-vlastni { color: var(--tlumeny); margin-left: 7px; font-weight: 700; }
   .chip .smazat-vlastni:hover { color: var(--cervena); }
   .nastroje { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
@@ -258,6 +261,8 @@
     });
     Array.from(inventar).forEach(function (id) { vlastni.add(id); });
 
+    var oblibene = new Set(moznosti.oblibene || []); // „chutná mi“
+
     // mapa záměn: id -> pole zaměnitelných id
     var zamenitelne = {};
     (moznosti.nahrady || []).forEach(function (sk) {
@@ -294,20 +299,29 @@
         drink: d,
         chybi: chybi,
         chybiNazvy: chybi.map(nazevSuroviny),
-        zameny: zameny
+        zameny: zameny,
+        // kolik surovin drinku má uživatel označené jako „chutná mi“
+        oblibenych: d.suroviny.filter(function (s) {
+          return oblibene.has(s.id);
+        }).length
       };
       if (chybi.length === 0) hned.push(zaznam);
       else if (chybi.length <= tolerance) dokoupit.push(zaznam);
       else ostatni.push(zaznam);
     });
 
-    dokoupit.sort(function (a, b) {
-      return a.chybi.length - b.chybi.length ||
+    // řazení: nejdřív drinky s oblíbenými surovinami, u nedostupných pak
+    // podle počtu chybějících surovin
+    function podleOblibenosti(a, b) {
+      return b.oblibenych - a.oblibenych ||
         a.drink.nazev.localeCompare(b.drink.nazev, "cs");
+    }
+    hned.sort(podleOblibenosti);
+    dokoupit.sort(function (a, b) {
+      return a.chybi.length - b.chybi.length || podleOblibenosti(a, b);
     });
     ostatni.sort(function (a, b) {
-      return a.chybi.length - b.chybi.length ||
-        a.drink.nazev.localeCompare(b.drink.nazev, "cs");
+      return a.chybi.length - b.chybi.length || podleOblibenosti(a, b);
     });
 
     return {
@@ -396,10 +410,12 @@ const OBRAZKY = DATA.obrazky;
 
 /* ---------- uložení stavu (localStorage) ---------- */
 const uloz = () => localStorage.setItem("barman", JSON.stringify({
-  inventar: [...inventar], tolerance: +el("tolerance").value, vlastni
+  inventar: [...inventar], tolerance: +el("tolerance").value, vlastni,
+  oblibene: [...oblibene]
 }));
 const nactene = JSON.parse(localStorage.getItem("barman") || "{}");
 const inventar = new Set(nactene.inventar || []);
+const oblibene = new Set(nactene.oblibene || []); // suroviny „chutná mi“
 const vlastni = nactene.vlastni || []; // uživatelovy suroviny: {id, nazev, kategorie, vlastni: true}
 
 /* slovník = dodané suroviny + vlastní přidané uživatelem */
@@ -511,10 +527,13 @@ el("tab-bar").onclick = () => prepni("bar");
 /* ---------- záložka Můj bar ---------- */
 function chipHtml(s) {
   const mam = inventar.has(s.id);
+  const rad = oblibene.has(s.id);
   const krizek = s.vlastni
     ? `<span class="smazat-vlastni" data-smaz="${s.id}" title="Smazat vlastní surovinu">×</span>` : "";
+  const srdce = `<span class="srdce ${rad ? "rad" : ""}" data-srdce="${s.id}"
+    title="${rad ? "Chutná mi — drinky s ní jsou první" : "Označit „chutná mi“"}">${rad ? "♥" : "♡"}</span>`;
   return `<label class="chip ${mam ? "mam" : ""}" data-id="${s.id}">
-    <input type="checkbox" ${mam ? "checked" : ""}>${s.nazev}${krizek}</label>`;
+    <input type="checkbox" ${mam ? "checked" : ""}>${s.nazev}${srdce}${krizek}</label>`;
 }
 
 /* normalizované značky pro hledání: id -> ["guinness", "kozel cerny", …] */
@@ -531,8 +550,11 @@ function vykresliBar() {
   const viditelne = SUROVINY()
     .filter(s => !s.zakladni && sedi(s))
     .sort((a, b) => a.nazev.localeCompare(b.nazev, "cs"));
-  const mam = viditelne.filter(s => inventar.has(s.id));
-  const nemam = viditelne.filter(s => !inventar.has(s.id));
+  // oblíbené suroviny drž nahoře
+  const poradi = (a, b) =>
+    (oblibene.has(b.id) - oblibene.has(a.id)) || a.nazev.localeCompare(b.nazev, "cs");
+  const mam = viditelne.filter(s => inventar.has(s.id)).sort(poradi);
+  const nemam = viditelne.filter(s => !inventar.has(s.id)).sort(poradi);
 
   let html = "";
   html += `<div class="kategorie"><h3>✓ Mám v baru (${mam.length})</h3><div class="chipy">`;
@@ -550,6 +572,14 @@ function vykresliBar() {
     chip.querySelector("input").addEventListener("change", ev => {
       const id = chip.dataset.id;
       ev.target.checked ? inventar.add(id) : inventar.delete(id);
+      uloz(); vykresliBar(); vykresliDrinky();
+    });
+  });
+  el("seznam-surovin").querySelectorAll(".srdce").forEach(h => {
+    h.addEventListener("click", ev => {
+      ev.preventDefault(); ev.stopPropagation();
+      const id = h.dataset.srdce;
+      oblibene.has(id) ? oblibene.delete(id) : oblibene.add(id);
       uloz(); vykresliBar(); vykresliDrinky();
     });
   });
@@ -672,7 +702,8 @@ el("nova-surovina").addEventListener("keydown", ev => {
 
 /* export / import / smazání */
 el("btn-export").onclick = () => {
-  const blob = new Blob([JSON.stringify({ inventar: [...inventar], vlastni }, null, 2)],
+  const blob = new Blob([JSON.stringify(
+    { inventar: [...inventar], vlastni, oblibene: [...oblibene] }, null, 2)],
     { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -696,6 +727,9 @@ el("import-soubor").addEventListener("change", ev => {
       prestavSlovnik();
       inventar.clear();
       ids.filter(id => SLOVNIK[id]).forEach(id => inventar.add(id));
+      oblibene.clear();
+      (Array.isArray(data) ? [] : data.oblibene || [])
+        .filter(id => SLOVNIK[id]).forEach(id => oblibene.add(id));
       uloz(); vykresliBar(); vykresliDrinky();
     } catch { alert("Soubor se nepodařilo načíst — čekám zálohu z tlačítka Exportovat."); }
     ev.target.value = "";
@@ -716,7 +750,8 @@ function karta(zaznam, sTrivii) {
   const trivia = sTrivii && d.trivia ? `<div class="trivia">💡 ${d.trivia}</div>` : "";
   return `<div class="karta" data-nazev="${d.nazev}">
     ${obrazekDrinku(d, 58)}
-    <div><div class="nazev">${d.nazev}${d.nealko ? " 🥤" : ""}${d.deti ? " 🧒" : ""}${d.varovani ? " ⚠️" : ""}</div>
+    <div><div class="nazev">${d.nazev}${d.nealko ? " 🥤" : ""}${d.deti ? " 🧒" : ""}${d.varovani ? " ⚠️" : ""}${
+      zaznam.oblibenych ? ` <span class="srdce rad" title="obsahuje ${zaznam.oblibenych} oblíbenou surovinu">♥</span>` : ""}</div>
     <div class="meta">${d.sklenice}</div>${chybi}${zameny}${trivia}</div></div>`;
 }
 
@@ -730,7 +765,8 @@ function vykresliDrinky() {
   const v = Barman.vyhodnot(vyber, SUROVINY(), inventar, tolerance, {
     jenNealko: rezim === "nealko",
     typ: el("filtr-typ").value || null,
-    nahrady: DATA.nahrady
+    nahrady: DATA.nahrady,
+    oblibene: [...oblibene]
   });
 
   el("pocet-hned").textContent = v.hned.length;
