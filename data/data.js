@@ -285,7 +285,8 @@ window.BARMAN_DATA = {
    "id": "cukrovy-sirup",
    "nazev": "Cukrový sirup (1:1 cukr a voda, dá se uvařit doma)",
    "kategorie": "sirup-sladidlo",
-   "alko": false
+   "alko": false,
+   "obchod": "rohlik"
   },
   {
    "id": "grenadina",
@@ -297,7 +298,8 @@ window.BARMAN_DATA = {
    "id": "bezovy-sirup",
    "nazev": "Bezový sirup",
    "kategorie": "sirup-sladidlo",
-   "alko": false
+   "alko": false,
+   "obchod": "rohlik"
   },
   {
    "id": "orgeat",
@@ -310,13 +312,15 @@ window.BARMAN_DATA = {
    "nazev": "Kokosový krém (Coco López)",
    "kategorie": "sirup-sladidlo",
    "alko": false,
-   "hledat": "kokosové mléko na vaření"
+   "hledat": "kokosové mléko na vaření",
+   "obchod": "rohlik"
   },
   {
    "id": "med",
    "nazev": "Med",
    "kategorie": "sirup-sladidlo",
-   "alko": false
+   "alko": false,
+   "obchod": "rohlik"
   },
   {
    "id": "limetka",
@@ -535,7 +539,7 @@ window.BARMAN_DATA = {
    "nazev": "Pyré z černého rybízu",
    "kategorie": "stava",
    "alko": false,
-   "hledat": "černý rybíz"
+   "hledat": "rybíz"
   },
   {
    "id": "cerny-caj",
@@ -554,7 +558,8 @@ window.BARMAN_DATA = {
    "id": "malinovy-sirup",
    "nazev": "Malinový sirup",
    "kategorie": "sirup-sladidlo",
-   "alko": false
+   "alko": false,
+   "obchod": "rohlik"
   },
   {
    "id": "modry-sirup",
@@ -5866,7 +5871,9 @@ window.BARMAN_DATA = {
    "Crabbie's",
    "Crabbies",
    "Bundaberg",
-   "ginger beer"
+   "ginger beer",
+   "Three Cents",
+   "Fever-Tree Ginger Beer"
   ],
   "zazvorova-limonada": [
    "Canada Dry",
@@ -6102,7 +6109,12 @@ window.BARMAN_DATA = {
    "Staropramen nealko",
    "Heineken 0.0",
    "Krušovice nealko",
-   "Clausthaler"
+   "Clausthaler",
+   "Stella Artois nealkoholické",
+   "Kozel nealkoholické",
+   "Platan nealkoholické",
+   "Vinohradská 12 nealko",
+   "Birell 0.0"
   ],
   "crodino": [
    "Crodino",
@@ -6111,14 +6123,18 @@ window.BARMAN_DATA = {
    "Sanbittèr",
    "Sanbitter",
    "Undone",
-   "Lyre's"
+   "Lyre's",
+   "Crodino Biondo",
+   "Crodino Rosso"
   ],
   "sekt-nealko": [
    "Robby Bubble",
    "Freixenet 0.0",
    "Bohemia Sekt nealko",
    "Hubert nealko",
-   "Nozeco"
+   "Nozeco",
+   "Bohemia Sekt ICE",
+   "Freixenet 0,0%"
   ],
   "cerny-caj": [
    "Pickwick",

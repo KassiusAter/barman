@@ -693,7 +693,9 @@
       "Crabbie's",
       "Crabbies",
       "Bundaberg",
-      "ginger beer"
+      "ginger beer",
+      "Three Cents",
+      "Fever-Tree Ginger Beer"
     ],
     "zazvorova-limonada": [
       "Canada Dry",
@@ -929,7 +931,12 @@
       "Staropramen nealko",
       "Heineken 0.0",
       "Krušovice nealko",
-      "Clausthaler"
+      "Clausthaler",
+      "Stella Artois nealkoholické",
+      "Kozel nealkoholické",
+      "Platan nealkoholické",
+      "Vinohradská 12 nealko",
+      "Birell 0.0"
     ],
     "crodino": [
       "Crodino",
@@ -938,14 +945,18 @@
       "Sanbittèr",
       "Sanbitter",
       "Undone",
-      "Lyre's"
+      "Lyre's",
+      "Crodino Biondo",
+      "Crodino Rosso"
     ],
     "sekt-nealko": [
       "Robby Bubble",
       "Freixenet 0.0",
       "Bohemia Sekt nealko",
       "Hubert nealko",
-      "Nozeco"
+      "Nozeco",
+      "Bohemia Sekt ICE",
+      "Freixenet 0,0%"
     ],
     "cerny-caj": [
       "Pickwick",

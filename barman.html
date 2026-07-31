@@ -632,6 +632,16 @@ const NA_ROHLIK = new Set(["nealko-mixer", "stava", "cerstve-mlecne"]);
 function nakupniOdkaz(s) {
   // „Triple sec / Cointreau (pomerančový likér)“ → „Triple sec“
   const dotaz = s.hledat || s.nazev.split("(")[0].split("/")[0].trim();
+  // pole obchod přebíjí kategorii — ověřeno, co který obchod skutečně vede
+  // (Rohlík má bezový sirup a med, ale ne grenadinu ani orgeat)
+  if (s.obchod === "rohlik") return {
+    url: "https://www.rohlik.cz/hledat?q=" + encodeURIComponent(dotaz),
+    kde: "Rohlíku", ikona: "🛒"
+  };
+  if (s.obchod === "heureka") return {
+    url: "https://www.heureka.cz/?h%5Bfraze%5D=" + encodeURIComponent(dotaz),
+    kde: "Heurece", ikona: "🔎"
+  };
   // ostatní (angostura, worcester, ocet) se dělí podle toho, jestli je v tom alkohol
   const heureka = NA_HEUREKU.has(s.kategorie) || (s.kategorie === "ostatni" && s.alko);
   const rohlik = NA_ROHLIK.has(s.kategorie) || (s.kategorie === "ostatni" && !s.alko);

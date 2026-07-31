@@ -359,7 +359,8 @@
       "id": "cukrovy-sirup",
       "nazev": "Cukrový sirup (1:1 cukr a voda, dá se uvařit doma)",
       "kategorie": "sirup-sladidlo",
-      "alko": false
+      "alko": false,
+      "obchod": "rohlik"
     },
     {
       "id": "grenadina",
@@ -371,7 +372,8 @@
       "id": "bezovy-sirup",
       "nazev": "Bezový sirup",
       "kategorie": "sirup-sladidlo",
-      "alko": false
+      "alko": false,
+      "obchod": "rohlik"
     },
     {
       "id": "orgeat",
@@ -384,13 +386,15 @@
       "nazev": "Kokosový krém (Coco López)",
       "kategorie": "sirup-sladidlo",
       "alko": false,
-      "hledat": "kokosové mléko na vaření"
+      "hledat": "kokosové mléko na vaření",
+      "obchod": "rohlik"
     },
     {
       "id": "med",
       "nazev": "Med",
       "kategorie": "sirup-sladidlo",
-      "alko": false
+      "alko": false,
+      "obchod": "rohlik"
     },
     {
       "id": "limetka",
@@ -609,7 +613,7 @@
       "nazev": "Pyré z černého rybízu",
       "kategorie": "stava",
       "alko": false,
-      "hledat": "černý rybíz"
+      "hledat": "rybíz"
     },
     {
       "id": "cerny-caj",
@@ -628,7 +632,8 @@
       "id": "malinovy-sirup",
       "nazev": "Malinový sirup",
       "kategorie": "sirup-sladidlo",
-      "alko": false
+      "alko": false,
+      "obchod": "rohlik"
     },
     {
       "id": "modry-sirup",
