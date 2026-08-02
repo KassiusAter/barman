@@ -2,7 +2,7 @@
 """Sestaví barman_komplet.html — jediný soubor se vším všudy (engine, data,
 fotky jako base64), který jde poslat komukoli a funguje bez dalších souborů.
 Spustit po každé změně dat či aplikace: python3 data/sestav_distribuci.py"""
-import base64, json, os
+import base64, json, os, re
 
 DATA = os.path.dirname(os.path.abspath(__file__))
 PROJEKT = os.path.dirname(DATA)
@@ -30,6 +30,12 @@ for nazev, soubor in list(data["obrazky"].items()):
 
 vlozena_data = "window.BARMAN_DATA = " + json.dumps(data, ensure_ascii=False) + ";"
 
+# Rozdávaný soubor nesmí nikam volat. Kód počítadla se proto vždy vyprázdní,
+# ať už je v barman.html jakýkoli — samotná kontrola na file:// by stačila,
+# ale tohle je pojistka pro případ, že si soubor někdo pověsí na web.
+html = re.sub(r'window\.METRIKA_KOD\s*=\s*"[^"]*"', 'window.METRIKA_KOD = ""', html)
+metrika_ok = 'window.METRIKA_KOD = ""' in html
+
 html = html.replace('<script src="engine.js"></script>',
                     "<script>\n" + engine + "\n</script>")
 html = html.replace('<script src="data/data.js"></script>',
@@ -42,3 +48,4 @@ with open(vystup, "w", encoding="utf-8") as f:
 mb = os.path.getsize(vystup) / 1024 / 1024
 print(f"OK: barman_komplet.html — {mb:.1f} MB, {vlozeno} fotek vloženo, "
       f"{len(data['drinky'])} drinků, {len(data['suroviny'])} surovin")
+print("Počítadlo návštěv: " + ("vyprázdněno ✓" if metrika_ok else "POZOR, nenalezeno!"))

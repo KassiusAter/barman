@@ -42,7 +42,10 @@ drinků.
   47 drinků má fotografii, ostatní kreslenou SVG siluetu s barevnými vrstvami
   podle surovin (vrstvené panáky jako Semafor vypadají přesně tak, jak mají).
 - **Soukromí**: inventář se ukládá jen v prohlížeči (localStorage) + export
-  a import zálohy do souboru. Nic se nikam neposílá.
+  a import zálohy do souboru. **Obsah tvého baru se nikam neodesílá** — ani
+  suroviny, ani hledání, ani otevřené drinky. Online verze na GitHub Pages
+  počítá anonymní návštěvy přes GoatCounter (bez cookies, bez sledování mezi
+  weby). Stažený `barman_komplet.html` nevolá ven vůbec nic a funguje offline.
 
 ## Spuštění
 
@@ -52,9 +55,13 @@ rovnou v prohlížeči, i na mobilu, nic se nestahuje.
 Nebo si stáhni repozitář a otevři **`barman.html`** v prohlížeči. Hotovo —
 žádná instalace, žádný build, žádný server.
 
-Pro poslání kamarádovi jedním souborem slouží **`barman_komplet.html`**
-(vše včetně fotek vloženo dovnitř, ~1,4 MB); generuje se skriptem
-`python3 data/sestav_distribuci.py`.
+**Jako jeden soubor ke stažení:**
+[`barman_komplet.html`](https://github.com/KassiusAter/barman/releases/latest/download/barman_komplet.html)
+(~1,5 MB, vše včetně fotek vloženo dovnitř). Stáhneš, otevřeš v prohlížeči
+a funguje i bez internetu — ideální na poslání kamarádovi. Najdeš ho vždy
+v [posledním vydání](https://github.com/KassiusAter/barman/releases/latest);
+v repozitáři schválně není, aby ho každá změna dat nenafukovala o další
+megabajt. Generuje se skriptem `python3 data/sestav_distribuci.py`.
 
 ## Struktura projektu
 

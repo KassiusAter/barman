@@ -600,6 +600,81 @@ window.BARMAN_DATA = {
    "kategorie": "nealko-mixer",
    "alko": false,
    "hledat": "nealkoholický sekt"
+  },
+  {
+   "id": "hruskovice",
+   "nazev": "Hruškovice (Williams)",
+   "kategorie": "lihovina",
+   "alko": true
+  },
+  {
+   "id": "rum-koreneny",
+   "nazev": "Kořeněný rum (spiced)",
+   "kategorie": "lihovina",
+   "alko": true,
+   "hledat": "spiced rum"
+  },
+  {
+   "id": "fernet-citrus",
+   "nazev": "Fernet Stock Citrus",
+   "kategorie": "liker",
+   "alko": true,
+   "hledat": "Fernet Stock Citrus"
+  },
+  {
+   "id": "dzus-jablecny",
+   "nazev": "Jablečný džus",
+   "kategorie": "stava",
+   "alko": false
+  },
+  {
+   "id": "jablko",
+   "nazev": "Jablko",
+   "kategorie": "cerstve-mlecne",
+   "alko": false
+  },
+  {
+   "id": "hrozny",
+   "nazev": "Hroznové víno (bobule)",
+   "kategorie": "cerstve-mlecne",
+   "alko": false,
+   "hledat": "hroznové víno"
+  },
+  {
+   "id": "meloun",
+   "nazev": "Vodní meloun",
+   "kategorie": "cerstve-mlecne",
+   "alko": false,
+   "hledat": "meloun"
+  },
+  {
+   "id": "zazvor",
+   "nazev": "Čerstvý zázvor",
+   "kategorie": "cerstve-mlecne",
+   "alko": false,
+   "hledat": "zázvor"
+  },
+  {
+   "id": "bilek",
+   "nazev": "Vaječný bílek",
+   "kategorie": "cerstve-mlecne",
+   "alko": false,
+   "hledat": "vejce"
+  },
+  {
+   "id": "vanilkovy-cukr",
+   "nazev": "Vanilkový cukr",
+   "kategorie": "ostatni",
+   "alko": false,
+   "obchod": "rohlik"
+  },
+  {
+   "id": "hruska-kompot",
+   "nazev": "Kompotovaná hruška",
+   "kategorie": "ostatni",
+   "alko": false,
+   "hledat": "hruškový kompot",
+   "obchod": "rohlik"
   }
  ],
  "nahrady": [
@@ -623,7 +698,8 @@ window.BARMAN_DATA = {
    "skupina": [
     "rum-bily",
     "rum-tmavy",
-    "rum-tuzemsky"
+    "rum-tuzemsky",
+    "rum-koreneny"
    ],
    "poznamka": "rumy lze doma zaměnit — změní se barva a říz"
   },
@@ -663,6 +739,20 @@ window.BARMAN_DATA = {
     "pomeranc"
    ],
    "poznamka": "džus jde nahradit čerstvě vymačkaným pomerančem"
+  },
+  {
+   "skupina": [
+    "fernet",
+    "fernet-citrus"
+   ],
+   "poznamka": "citrusový a bylinný fernet lze zaměnit — změní se sladkost a hořkost"
+  },
+  {
+   "skupina": [
+    "meloun",
+    "melounove-pyre"
+   ],
+   "poznamka": "čerstvý meloun rozmixuj, nebo použij hotové pyré"
   }
  ],
  "drinky": [
@@ -5127,6 +5217,444 @@ window.BARMAN_DATA = {
     "leto",
     "zahrada"
    ]
+  },
+  {
+   "nazev": "Bílý zázvorák",
+   "puvod": "letni",
+   "typ": "longdrink",
+   "sklenice": "highball",
+   "suroviny": [
+    {
+     "id": "rum-bily",
+     "mnozstvi": "60 ml (Božkov Bílý)"
+    },
+    {
+     "id": "zazvorove-pivo",
+     "mnozstvi": "120 ml (nebo zázvorový tonik)"
+    },
+    {
+     "id": "limetka",
+     "mnozstvi": "klínek"
+    }
+   ],
+   "postup": "Vysokou sklenici naplň ledem, nalij bílý rum a dolij zázvorovým pivem nebo zázvorovým tonikem. Krátce promíchej.",
+   "ozdoba": "kolečko limetky",
+   "poznamka": "Jednodušší alternativa mojita, když se nechce drtit máta.",
+   "trivia": "Zázvorové pivo není pivo — je to nealkoholická limonáda, která vznikla v Anglii 18. století kvašením zázvoru. Právě jeho pálivost drží drink v rovnováze, i když je v něm jen rum a limetka.",
+   "klicova_slova": [
+    "zazvorak",
+    "ginger",
+    "ginger beer",
+    "bozkov",
+    "bily rum",
+    "mule"
+   ]
+  },
+  {
+   "nazev": "Hruška se zázvorovou limonádou",
+   "puvod": "letni",
+   "typ": "longdrink",
+   "sklenice": "highball",
+   "alt_nazvy": [
+    "Hruškovice se zázvorovou limonádou"
+   ],
+   "suroviny": [
+    {
+     "id": "hruskovice",
+     "mnozstvi": "40 ml (Williams)"
+    },
+    {
+     "id": "zazvorova-limonada",
+     "mnozstvi": "250 ml"
+    },
+    {
+     "id": "zazvor",
+     "mnozstvi": "2 plátky"
+    },
+    {
+     "id": "hruska-kompot",
+     "mnozstvi": "půlka",
+     "volitelne": true
+    }
+   ],
+   "postup": "Vysokou sklenici naplň ledem a postupně na něj nalij hruškovici a zázvorovou limonádu.",
+   "ozdoba": "plátek zázvoru a kompotovaná hruška",
+   "poznamka": "Letní verze panáka hruškovice oblíbeného na horách — kompot dodá ostré pálence sladký protiklad.",
+   "trivia": "Hruškovice Williams se pálí z odrůdy Williams Christ, která dává pálence typickou květinovou vůni. Na horách se pije jako panák, v létě ji zázvorová limonáda naředí do dlouhého drinku.",
+   "klicova_slova": [
+    "hruskovice",
+    "williams",
+    "jelinek",
+    "hory",
+    "palenka",
+    "hruska"
+   ]
+  },
+  {
+   "nazev": "Citrus Grappino",
+   "puvod": "letni",
+   "typ": "longdrink",
+   "sklenice": "džbán",
+   "suroviny": [
+    {
+     "id": "fernet-citrus",
+     "mnozstvi": "200 ml"
+    },
+    {
+     "id": "hrozny",
+     "mnozstvi": "300 g na šťávu + kuličky do džbánu"
+    },
+    {
+     "id": "sodovka",
+     "mnozstvi": "300 ml"
+    },
+    {
+     "id": "citron",
+     "mnozstvi": "½ na plátky"
+    }
+   ],
+   "postup": "Nejdřív udělej hroznovou limonádu: asi 300 g hroznového vína omyj, prožeň odšťavňovačem a šťávu zřeď 300 ml sodovky. Džbán naplň ledem, zalij Fernetem Stock Citrus a hroznovou limonádou. Přidej kuličky hroznů překrojené napůl a plátky citronu a dobře promíchej.",
+   "ozdoba": "hroznové víno a plátky citronu",
+   "poznamka": "Recept je na 4 drinky, tedy jeden džbán. Ideální je bezpeckové hroznové víno.",
+   "trivia": "Jméno odkazuje na grappu, italskou pálenku z hroznových výlisků — v drinku ale žádná není. Hroznovou chuť sem dodává čerstvá šťáva z bobulí.",
+   "klicova_slova": [
+    "grappino",
+    "hrozny",
+    "vino",
+    "fernet citrus",
+    "dzban",
+    "grappa"
+   ]
+  },
+  {
+   "nazev": "Metaxa Cucumber",
+   "puvod": "letni",
+   "typ": "koktejl",
+   "sklenice": "highball",
+   "suroviny": [
+    {
+     "id": "konak",
+     "mnozstvi": "40 ml (Metaxa 5*)"
+    },
+    {
+     "id": "cukrovy-sirup",
+     "mnozstvi": "10 ml"
+    },
+    {
+     "id": "limetka",
+     "mnozstvi": "20 ml šťávy"
+    },
+    {
+     "id": "okurka",
+     "mnozstvi": "3 plátky salátové"
+    },
+    {
+     "id": "tonik",
+     "mnozstvi": "80 ml"
+    },
+    {
+     "id": "bazalka",
+     "mnozstvi": "lístek",
+     "volitelne": true
+    }
+   ],
+   "postup": "Do sklenice vlož plátky okurky, přidej limetkovou šťávu a cukrový sirup a vymačkej paličkou. Nasyp kostkový led, zalij Metaxou a tonikem a promíchej.",
+   "ozdoba": "plátek okurky a lístek bazalky",
+   "poznamka": "Okurka je díky neutrální chuti vděčná do letních drinků.",
+   "trivia": "Metaxa není koňak ani brandy v pravém slova smyslu — je to řecká směs vinného destilátu, muškátového vína a bylin, kterou v roce 1888 vymyslel obchodník Spyros Metaxas.",
+   "klicova_slova": [
+    "metaxa",
+    "okurka",
+    "cucumber",
+    "recko",
+    "bazalka"
+   ]
+  },
+  {
+   "nazev": "Black Spiced & Apple",
+   "puvod": "letni",
+   "typ": "longdrink",
+   "sklenice": "highball",
+   "suroviny": [
+    {
+     "id": "rum-koreneny",
+     "mnozstvi": "40 ml (Captain Morgan Black Spiced)"
+    },
+    {
+     "id": "dzus-jablecny",
+     "mnozstvi": "200 ml"
+    },
+    {
+     "id": "jablko",
+     "mnozstvi": "plátky"
+    }
+   ],
+   "postup": "Vysokou sklenici naplň ledem a plátky jablka, pár si jich nech na ozdobu. Přes led přelij kořeněný rum a dolij jablečným džusem.",
+   "ozdoba": "plátky jablka",
+   "poznamka": "Black Spiced voní po skořici, hřebíčku a zázvoru — jablko jeho kořeněné tělo doplní svěžestí.",
+   "trivia": "Kořeněné rumy se v Karibiku původně dochucovaly proto, aby zakryly hrubou chuť mladého destilátu. Dnes je skořice, hřebíček a vanilka hlavní lákadlo.",
+   "klicova_slova": [
+    "captain morgan",
+    "black spiced",
+    "spiced",
+    "jablko",
+    "apple",
+    "rum"
+   ]
+  },
+  {
+   "nazev": "Yellow Apple",
+   "puvod": "letni",
+   "typ": "longdrink",
+   "sklenice": "džbán",
+   "suroviny": [
+    {
+     "id": "fernet-citrus",
+     "mnozstvi": "200 ml"
+    },
+    {
+     "id": "dzus-jablecny",
+     "mnozstvi": "400 ml"
+    },
+    {
+     "id": "sodovka",
+     "mnozstvi": "200 ml"
+    },
+    {
+     "id": "jablko",
+     "mnozstvi": "½ na tenké plátky"
+    }
+   ],
+   "postup": "Džbán naplň asi do tří čtvrtin ledem a zalij Fernetem Stock Citrus. Přilij jablečný džus a sodovku, přidej natenko nakrájené plátky jablka a vše důkladně promíchej.",
+   "ozdoba": "tenký plátek jablka ve sklenici",
+   "poznamka": "Recept je na 4 drinky, tedy jeden džbán.",
+   "trivia": "Fernet Stock se v Česku vyrábí od roku 1927 podle receptury Roberta Stocka, citrusová verze přišla na trh až o osmdesát let později a chytla se hlavně v míchaných nápojích.",
+   "klicova_slova": [
+    "fernet citrus",
+    "jablko",
+    "apple",
+    "dzban",
+    "stock"
+   ]
+  },
+  {
+   "nazev": "Citrus Cucumber",
+   "puvod": "letni",
+   "typ": "longdrink",
+   "sklenice": "džbán",
+   "suroviny": [
+    {
+     "id": "fernet-citrus",
+     "mnozstvi": "200 ml"
+    },
+    {
+     "id": "okurka",
+     "mnozstvi": "1 menší na šťávu + plátky"
+    },
+    {
+     "id": "citron",
+     "mnozstvi": "1 střední na šťávu + plátky"
+    },
+    {
+     "id": "cukrovy-sirup",
+     "mnozstvi": "3 lžíce cukru a 3 lžíce horké vody"
+    },
+    {
+     "id": "sodovka",
+     "mnozstvi": "300 ml"
+    }
+   ],
+   "postup": "Nejdřív udělej okurkovou limonádu: menší salátovou okurku oloupej, nakrájej na větší kusy a prožeň odšťavňovačem. Přidej šťávu z jednoho citronu, vmíchej cukrový sirup ze tří lžic cukru a stejného množství horké vody a zřeď 300 ml sodovky. Do džbánu nalij Fernet Stock Citrus a okurkovou limonádu, přidej slabé plátky okurky a citronu a promíchej. Nech vychladit a nalévej do sklenic s ledem.",
+   "ozdoba": "plátky okurky a citronu",
+   "poznamka": "Recept je na 4 drinky, tedy jeden džbán.",
+   "trivia": "Okurková limonáda se z asijských a blízkovýchodních kuchyní rozšířila do letních barů teprve nedávno — okurka je totiž ze sedmadevadesáti procent voda, takže drink ředí, aniž by ho zbavila chuti.",
+   "klicova_slova": [
+    "okurka",
+    "cucumber",
+    "fernet citrus",
+    "limonada",
+    "dzban"
+   ]
+  },
+  {
+   "nazev": "Metaxa Spicy",
+   "puvod": "letni",
+   "typ": "koktejl",
+   "sklenice": "highball",
+   "suroviny": [
+    {
+     "id": "konak",
+     "mnozstvi": "40 ml (Metaxa 5*)"
+    },
+    {
+     "id": "zazvor",
+     "mnozstvi": "2 plátky"
+    },
+    {
+     "id": "pomeranc",
+     "mnozstvi": "2 plátky"
+    },
+    {
+     "id": "cukr",
+     "mnozstvi": "1 lžička třtinového"
+    },
+    {
+     "id": "limetka",
+     "mnozstvi": "10 ml šťávy"
+    },
+    {
+     "id": "sodovka",
+     "mnozstvi": "60 ml"
+    }
+   ],
+   "postup": "S třtinovým cukrem rozdrť plátky zázvoru a pomeranče. Přidej šťávu z poloviny limetky a zasyp ledovou tříští. Nalij Metaxu, zalij sodovkou a důkladně promíchej. Nakonec dosyp tříšť.",
+   "ozdoba": "plátek limetky a plátek zázvoru, brčko",
+   "poznamka": "Pro ty, kdo to mají rádi ostré.",
+   "trivia": "Zázvor pálí kvůli gingerolu, látce chemicky příbuzné kapsaicinu z chilli. Na rozdíl od chilli se ale jeho ostrost v chladném nápoji rychle ztrácí.",
+   "klicova_slova": [
+    "metaxa",
+    "zazvor",
+    "ginger",
+    "ostry",
+    "pomeranc",
+    "spicy"
+   ]
+  },
+  {
+   "nazev": "Melounové mojito",
+   "puvod": "letni",
+   "typ": "longdrink",
+   "sklenice": "highball",
+   "suroviny": [
+    {
+     "id": "meloun",
+     "mnozstvi": "asi 7 kostek bezpeckového"
+    },
+    {
+     "id": "rum-bily",
+     "mnozstvi": "40 ml"
+    },
+    {
+     "id": "limetka",
+     "mnozstvi": "½ nakrájená"
+    },
+    {
+     "id": "mata",
+     "mnozstvi": "10 lístků"
+    },
+    {
+     "id": "cukr",
+     "mnozstvi": "3 lžičky třtinového"
+    },
+    {
+     "id": "sodovka",
+     "mnozstvi": "dolít"
+    }
+   ],
+   "postup": "Meloun rozmixuj. Do sklenice dej nakrájenou limetku, mátu a třtinový cukr a rozmačkej je vařečkou. Přidej rozmixovaný meloun, po okraj nasyp drcený led, nalij bílý rum a dolij sodovkou.",
+   "ozdoba": "trojúhelníček melounu a snítka máty",
+   "poznamka": "Melounová varianta klasického mojita.",
+   "trivia": "Vodní meloun je z více než devadesáti procent voda, takže drink chladí i bez velkého množství ledu. Botanicky přitom nejde o ovoce, ale o plod příbuzný okurce.",
+   "klicova_slova": [
+    "meloun",
+    "mojito",
+    "watermelon",
+    "mata",
+    "bacardi",
+    "pláž"
+   ]
+  },
+  {
+   "nazev": "Citrus Limono",
+   "puvod": "letni",
+   "typ": "longdrink",
+   "sklenice": "džbán",
+   "suroviny": [
+    {
+     "id": "fernet-citrus",
+     "mnozstvi": "200 ml"
+    },
+    {
+     "id": "citron",
+     "mnozstvi": "1 střední na šťávu + ½ na plátky"
+    },
+    {
+     "id": "cukrovy-sirup",
+     "mnozstvi": "3 lžíce cukru a 3 lžíce horké vody"
+    },
+    {
+     "id": "sodovka",
+     "mnozstvi": "400 ml"
+    },
+    {
+     "id": "limetka",
+     "mnozstvi": "plátky",
+     "volitelne": true
+    },
+    {
+     "id": "mata",
+     "mnozstvi": "hrst lístků",
+     "volitelne": true
+    }
+   ],
+   "postup": "Nejdřív udělej citronovou limonádu: rozpusť tři lžíce cukru ve stejném množství horké vody, přidej šťávu z jednoho středního citronu a zřeď 400 ml sodovky. Džbán naplň ledem a zalij Fernetem Stock Citrus spolu s citronovou limonádou. Přidej plátky citronu a limetky, lístky máty a dobře promíchej.",
+   "ozdoba": "plátky citronu a limetky, lístky máty",
+   "poznamka": "Recept je na 4 drinky, tedy jeden džbán.",
+   "trivia": "Limonáda dostala jméno po citronu, ne naopak — francouzské limonade označovalo nápoj z citronové šťávy dávno předtím, než se slovo přeneslo na jakoukoli slazenou sodovku.",
+   "klicova_slova": [
+    "citronada",
+    "limonada",
+    "citron",
+    "fernet citrus",
+    "dzban"
+   ]
+  },
+  {
+   "nazev": "Bohemian Sour",
+   "puvod": "letni",
+   "typ": "koktejl",
+   "sklenice": "nízká sklenice (tumbler)",
+   "alt_nazvy": [
+    "Moravian Sour",
+    "Bohemian (Moravian) Sour",
+    "Slivovice Sour"
+   ],
+   "suroviny": [
+    {
+     "id": "slivovice",
+     "mnozstvi": "40 ml (Kosher R. JELÍNEK, 5letá)"
+    },
+    {
+     "id": "citron",
+     "mnozstvi": "20 ml šťávy"
+    },
+    {
+     "id": "cukrovy-sirup",
+     "mnozstvi": "10 ml"
+    },
+    {
+     "id": "vanilkovy-cukr",
+     "mnozstvi": "kávová lžíce"
+    },
+    {
+     "id": "bilek",
+     "mnozstvi": "20 ml"
+    }
+   ],
+   "postup": "Všechny ingredience důkladně protřepej v šejkru a přelij do nízké sklenice.",
+   "ozdoba": "pomerančová nebo citronová kůra a sušená švestka",
+   "varovani": "Obsahuje syrový vaječný bílek — nepodávej dětem, těhotným ani lidem s oslabenou imunitou.",
+   "poznamka": "Česká obdoba whiskey sour, kde místo whiskey pracuje slivovice.",
+   "trivia": "Vaječný bílek se do sour koktejlů přidává kvůli husté pěně, ne kvůli chuti. Slivovice v téhle roli nahrazuje whiskey a dělá z amerického klasika drink, který by prošel i na moravských hodech.",
+   "klicova_slova": [
+    "slivovice",
+    "sour",
+    "jelinek",
+    "moravian",
+    "bohemian",
+    "bilek",
+    "whiskey sour"
+   ]
   }
  ],
  "obrazky": {
@@ -5297,7 +5825,8 @@ window.BARMAN_DATA = {
    "Veritas rum",
    "Clairin",
    "Charrette",
-   "Kuna bílá"
+   "Kuna bílá",
+   "Božkov Bílý"
   ],
   "rum-tmavy": [
    "Captain Morgan",
@@ -5627,7 +6156,6 @@ window.BARMAN_DATA = {
   "fernet": [
    "Fernet Stock",
    "Fernet Branca",
-   "Fernet Citrus",
    "Altfernet"
   ],
   "zelena": [
@@ -5946,7 +6474,9 @@ window.BARMAN_DATA = {
    "Žufánek slivovice",
    "Zufanek slivovice",
    "Bošácka slivovica",
-   "Bosacka slivovica"
+   "Bosacka slivovica",
+   "Slivovitz",
+   "Slivovitz Kosher"
   ],
   "myslivec": [
    "Myslivec",
@@ -6140,6 +6670,26 @@ window.BARMAN_DATA = {
    "Pickwick",
    "Lipton",
    "Ahmad Tea"
+  ],
+  "fernet-citrus": [
+   "Fernet Stock Citrus",
+   "Fernet Citrus",
+   "Stock Citrus"
+  ],
+  "rum-koreneny": [
+   "Captain Morgan Black Spiced",
+   "Black Spiced",
+   "Captain Morgan Spiced Gold",
+   "Spiced Gold",
+   "Kraken",
+   "Sailor Jerry",
+   "Bumbu"
+  ],
+  "hruskovice": [
+   "Williams",
+   "hruškovice",
+   "R. Jelínek Williams",
+   "Bohemia Williams"
   ]
  }
 };

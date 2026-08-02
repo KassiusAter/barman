@@ -32,7 +32,8 @@
       "skupina": [
         "rum-bily",
         "rum-tmavy",
-        "rum-tuzemsky"
+        "rum-tuzemsky",
+        "rum-koreneny"
       ],
       "poznamka": "rumy lze doma zaměnit — změní se barva a říz"
     },
@@ -72,6 +73,20 @@
         "pomeranc"
       ],
       "poznamka": "džus jde nahradit čerstvě vymačkaným pomerančem"
+    },
+    {
+      "skupina": [
+        "fernet",
+        "fernet-citrus"
+      ],
+      "poznamka": "citrusový a bylinný fernet lze zaměnit — změní se sladkost a hořkost"
+    },
+    {
+      "skupina": [
+        "meloun",
+        "melounove-pyre"
+      ],
+      "poznamka": "čerstvý meloun rozmixuj, nebo použij hotové pyré"
     }
   ],
   "suroviny": [
@@ -674,6 +689,81 @@
       "kategorie": "nealko-mixer",
       "alko": false,
       "hledat": "nealkoholický sekt"
+    },
+    {
+      "id": "hruskovice",
+      "nazev": "Hruškovice (Williams)",
+      "kategorie": "lihovina",
+      "alko": true
+    },
+    {
+      "id": "rum-koreneny",
+      "nazev": "Kořeněný rum (spiced)",
+      "kategorie": "lihovina",
+      "alko": true,
+      "hledat": "spiced rum"
+    },
+    {
+      "id": "fernet-citrus",
+      "nazev": "Fernet Stock Citrus",
+      "kategorie": "liker",
+      "alko": true,
+      "hledat": "Fernet Stock Citrus"
+    },
+    {
+      "id": "dzus-jablecny",
+      "nazev": "Jablečný džus",
+      "kategorie": "stava",
+      "alko": false
+    },
+    {
+      "id": "jablko",
+      "nazev": "Jablko",
+      "kategorie": "cerstve-mlecne",
+      "alko": false
+    },
+    {
+      "id": "hrozny",
+      "nazev": "Hroznové víno (bobule)",
+      "kategorie": "cerstve-mlecne",
+      "alko": false,
+      "hledat": "hroznové víno"
+    },
+    {
+      "id": "meloun",
+      "nazev": "Vodní meloun",
+      "kategorie": "cerstve-mlecne",
+      "alko": false,
+      "hledat": "meloun"
+    },
+    {
+      "id": "zazvor",
+      "nazev": "Čerstvý zázvor",
+      "kategorie": "cerstve-mlecne",
+      "alko": false,
+      "hledat": "zázvor"
+    },
+    {
+      "id": "bilek",
+      "nazev": "Vaječný bílek",
+      "kategorie": "cerstve-mlecne",
+      "alko": false,
+      "hledat": "vejce"
+    },
+    {
+      "id": "vanilkovy-cukr",
+      "nazev": "Vanilkový cukr",
+      "kategorie": "ostatni",
+      "alko": false,
+      "obchod": "rohlik"
+    },
+    {
+      "id": "hruska-kompot",
+      "nazev": "Kompotovaná hruška",
+      "kategorie": "ostatni",
+      "alko": false,
+      "hledat": "hruškový kompot",
+      "obchod": "rohlik"
     }
   ]
 }

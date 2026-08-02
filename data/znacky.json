@@ -119,7 +119,8 @@
       "Veritas rum",
       "Clairin",
       "Charrette",
-      "Kuna bílá"
+      "Kuna bílá",
+      "Božkov Bílý"
     ],
     "rum-tmavy": [
       "Captain Morgan",
@@ -449,7 +450,6 @@
     "fernet": [
       "Fernet Stock",
       "Fernet Branca",
-      "Fernet Citrus",
       "Altfernet"
     ],
     "zelena": [
@@ -768,7 +768,9 @@
       "Žufánek slivovice",
       "Zufanek slivovice",
       "Bošácka slivovica",
-      "Bosacka slivovica"
+      "Bosacka slivovica",
+      "Slivovitz",
+      "Slivovitz Kosher"
     ],
     "myslivec": [
       "Myslivec",
@@ -962,6 +964,26 @@
       "Pickwick",
       "Lipton",
       "Ahmad Tea"
+    ],
+    "fernet-citrus": [
+      "Fernet Stock Citrus",
+      "Fernet Citrus",
+      "Stock Citrus"
+    ],
+    "rum-koreneny": [
+      "Captain Morgan Black Spiced",
+      "Black Spiced",
+      "Captain Morgan Spiced Gold",
+      "Spiced Gold",
+      "Kraken",
+      "Sailor Jerry",
+      "Bumbu"
+    ],
+    "hruskovice": [
+      "Williams",
+      "hruškovice",
+      "R. Jelínek Williams",
+      "Bohemia Williams"
     ]
   }
 }

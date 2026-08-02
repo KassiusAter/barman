@@ -1405,5 +1405,123 @@
       "leto",
       "zahrada"
     ]
+  },
+  "Bílý zázvorák": {
+    "trivia": "Zázvorové pivo není pivo — je to nealkoholická limonáda, která vznikla v Anglii 18. století kvašením zázvoru. Právě jeho pálivost drží drink v rovnováze, i když je v něm jen rum a limetka.",
+    "klicova_slova": [
+      "zazvorak",
+      "ginger",
+      "ginger beer",
+      "bozkov",
+      "bily rum",
+      "mule"
+    ]
+  },
+  "Hruška se zázvorovou limonádou": {
+    "trivia": "Hruškovice Williams se pálí z odrůdy Williams Christ, která dává pálence typickou květinovou vůni. Na horách se pije jako panák, v létě ji zázvorová limonáda naředí do dlouhého drinku.",
+    "klicova_slova": [
+      "hruskovice",
+      "williams",
+      "jelinek",
+      "hory",
+      "palenka",
+      "hruska"
+    ]
+  },
+  "Citrus Grappino": {
+    "trivia": "Jméno odkazuje na grappu, italskou pálenku z hroznových výlisků — v drinku ale žádná není. Hroznovou chuť sem dodává čerstvá šťáva z bobulí.",
+    "klicova_slova": [
+      "grappino",
+      "hrozny",
+      "vino",
+      "fernet citrus",
+      "dzban",
+      "grappa"
+    ]
+  },
+  "Metaxa Cucumber": {
+    "trivia": "Metaxa není koňak ani brandy v pravém slova smyslu — je to řecká směs vinného destilátu, muškátového vína a bylin, kterou v roce 1888 vymyslel obchodník Spyros Metaxas.",
+    "klicova_slova": [
+      "metaxa",
+      "okurka",
+      "cucumber",
+      "recko",
+      "bazalka"
+    ]
+  },
+  "Black Spiced & Apple": {
+    "trivia": "Kořeněné rumy se v Karibiku původně dochucovaly proto, aby zakryly hrubou chuť mladého destilátu. Dnes je skořice, hřebíček a vanilka hlavní lákadlo.",
+    "klicova_slova": [
+      "captain morgan",
+      "black spiced",
+      "spiced",
+      "jablko",
+      "apple",
+      "rum"
+    ]
+  },
+  "Yellow Apple": {
+    "trivia": "Fernet Stock se v Česku vyrábí od roku 1927 podle receptury Roberta Stocka, citrusová verze přišla na trh až o osmdesát let později a chytla se hlavně v míchaných nápojích.",
+    "klicova_slova": [
+      "fernet citrus",
+      "jablko",
+      "apple",
+      "dzban",
+      "stock"
+    ]
+  },
+  "Citrus Cucumber": {
+    "trivia": "Okurková limonáda se z asijských a blízkovýchodních kuchyní rozšířila do letních barů teprve nedávno — okurka je totiž ze sedmadevadesáti procent voda, takže drink ředí, aniž by ho zbavila chuti.",
+    "klicova_slova": [
+      "okurka",
+      "cucumber",
+      "fernet citrus",
+      "limonada",
+      "dzban"
+    ]
+  },
+  "Metaxa Spicy": {
+    "trivia": "Zázvor pálí kvůli gingerolu, látce chemicky příbuzné kapsaicinu z chilli. Na rozdíl od chilli se ale jeho ostrost v chladném nápoji rychle ztrácí.",
+    "klicova_slova": [
+      "metaxa",
+      "zazvor",
+      "ginger",
+      "ostry",
+      "pomeranc",
+      "spicy"
+    ]
+  },
+  "Melounové mojito": {
+    "trivia": "Vodní meloun je z více než devadesáti procent voda, takže drink chladí i bez velkého množství ledu. Botanicky přitom nejde o ovoce, ale o plod příbuzný okurce.",
+    "klicova_slova": [
+      "meloun",
+      "mojito",
+      "watermelon",
+      "mata",
+      "bacardi",
+      "pláž"
+    ]
+  },
+  "Citrus Limono": {
+    "trivia": "Limonáda dostala jméno po citronu, ne naopak — francouzské limonade označovalo nápoj z citronové šťávy dávno předtím, než se slovo přeneslo na jakoukoli slazenou sodovku.",
+    "klicova_slova": [
+      "citronada",
+      "limonada",
+      "citron",
+      "fernet citrus",
+      "dzban"
+    ]
+  },
+  "Bohemian Sour": {
+    "trivia": "Vaječný bílek se do sour koktejlů přidává kvůli husté pěně, ne kvůli chuti. Slivovice v téhle roli nahrazuje whiskey a dělá z amerického klasika drink, který by prošel i na moravských hodech.",
+    "klicova_slova": [
+      "slivovice",
+      "sour",
+      "jelinek",
+      "moravian",
+      "bohemian",
+      "bilek",
+      "whiskey sour"
+    ]
   }
 }

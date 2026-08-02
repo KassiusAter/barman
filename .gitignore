@@ -2,5 +2,9 @@
 data/kniha České míchačky/
 data/kniha_michacky.md
 
+# Sestavená jednosouborová verze — rozdává se přes GitHub Releases, ne z repozitáře.
+# Je to 1,5 MB, které by se při každé změně dat commitovaly znovu celé.
+barman_komplet.html
+
 # Systémové soubory
 .DS_Store

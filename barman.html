@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🍸 Barman — co si můžu namíchat</title>
+<!-- Kód projektu z GoatCounteru pro počítání návštěv webové verze.
+     Prázdná hodnota = neměří se vůbec nic. Do rozdávaného barman_komplet.html
+     se vždy vkládá prázdný, viz data/sestav_distribuci.py. -->
+<script>window.METRIKA_KOD = "kassiusater";</script>
 <style>
   :root {
     --pozadi: #14181d; --panel: #1d232b; --panel2: #242c36;
@@ -133,6 +137,8 @@
   .detail .mam-ne { color: #e0a9a1; }
   .detail a.koupit { color: #e0a9a1; text-decoration: underline dotted; }
   .detail a.koupit:hover { color: #f0c4bc; text-decoration: underline; }
+  .radce a.koupit { color: var(--zluta); text-decoration: underline dotted; }
+  .radce a.koupit:hover { text-decoration: underline; }
   .detail .volitelna { color: var(--tlumeny); font-style: italic; }
   .detail .poznamka { color: var(--tlumeny); font-style: italic; margin-top: 12px; font-size: 14px; }
   .detail .varovani { background: #3b2a24; border: 1px solid var(--cervena); color: #efc0b6;
@@ -229,6 +235,21 @@
 <script src="data/data.js"></script>
 <script>
 "use strict";
+
+/* ---------- počítadlo návštěv ----------
+   Měří se jen webová verze na GitHub Pages. Rozdávaný barman_komplet.html se
+   otevírá přes file:// a navíc má prázdný kód, takže z cizího počítače se
+   neodesílá nic. GoatCounter nesahá na cookies ani localStorage. */
+(function pocitadlo() {
+  const kod = window.METRIKA_KOD;
+  if (!kod || location.protocol === "file:") return;
+  const s = document.createElement("script");
+  s.async = true;
+  s.dataset.goatcounter = "https://" + kod + ".goatcounter.com/count";
+  s.src = "//gc.zgo.at/count.js";
+  document.head.appendChild(s);
+})();
+
 const DATA = window.BARMAN_DATA;
 const DRINKY = DATA.drinky;
 const OBRAZKY = DATA.obrazky;
@@ -610,7 +631,13 @@ function vykresliDrinky() {
     const casti = [];
     if (r.odemkne) casti.push(`odemkne <b>${r.odemkne} ${drinkuSlovo(r.odemkne)}</b> hned`);
     if (r.priblizi) casti.push(`přiblíží ${r.priblizi} ${sklonuj(r.priblizi, ["další", "další", "dalších"])}`);
-    return `<li>🛒 <b>${r.nazev}</b> — ${casti.join(", ")}</li>`;
+    // rádce je místo, kde se nakupuje — odkaz patří rovnou sem, ne až do detailu drinku
+    const odkaz = nakupniOdkaz(SLOVNIK[r.id] || { nazev: r.nazev, kategorie: "ostatni" });
+    const nazev = odkaz
+      ? `<a class="koupit" href="${odkaz.url}" target="_blank" rel="noopener"
+           title="Najít na ${odkaz.kde}"><b>${r.nazev}</b> ${odkaz.ikona}</a>`
+      : `<b>${r.nazev}</b>`;
+    return `<li>🛒 ${nazev} — ${casti.join(", ")}</li>`;
   }).join("") || `<li class="prazdno">Máš všechno — rádce nemá co doporučit!</li>`;
 
   const hnedVse = Barman.vyhodnot(DRINKY, SUROVINY(), inventar, 0).hned.length;
@@ -659,7 +686,8 @@ function nakupniOdkaz(s) {
 /* ---------- detail drinku ---------- */
 const PUVODY = {
   "iba": "oficiální IBA koktejl", "svetova-klasika": "světová klasika",
-  "ceska-klasika": "česká klasika", "party-neoficialni": "párty drink"
+  "ceska-klasika": "česká klasika", "party-neoficialni": "párty drink",
+  "letni": "letní drink"
 };
 
 /* zaměnitelné suroviny (id -> pole náhradních id) pro detail drinku */
