@@ -10,11 +10,13 @@ drinků.
 
 ## Funkce
 
-- **137 receptů**: oficiální IBA koktejly (Mojito, Negroni, Espresso Martini…),
-  světová klasika (Gin & Tonic, White Russian, B52…) a zejména **česká
+- **477 receptů**: oficiální IBA koktejly (Mojito, Negroni, Espresso Martini…),
+  světová klasika (Gin & Tonic, White Russian, B52…), celé rodiny variant
+  (Collins, spritz, Mule, radler, B-5x, pastis) a zejména **česká
   hospodská a retro klasika** — Beton, Bavorák, Magické oko, Semafor, Mozek,
   Vodníkovo sperma, Cesta do lesa, TGV, Kofila, Béžovice, multimíchačky
-  i Drátěnka.
+  i Drátěnka. Nechybí ani horké drinky: grogy, punče, svařáky a kávy
+  s alkoholem.
 - **Tolerance nákupu 0–3**: posuvníkem určíš, kolik surovin jsi ochoten
   dokoupit; aplikace vypíše, co přesně chybí.
 - **Nákupní rádce**: „Kup Becherovku — odemkne 2 drinky hned, přiblíží 3 další.“
@@ -22,9 +24,9 @@ drinků.
   se zřetelně vyznačenou domácí záměnou (citron ↔ limetka, cukr ↔ sirup ↔ med,
   rumy mezi sebou, smetana ↔ mléko…).
 - **Rozpoznávání obchodních značek**: napiš „Guinness“ a aplikace ví, že máš
-  černé pivo; „zlatá Sierra“ znamená tequilu. Přes 830 značek, toleruje překlepy
+  černé pivo; „zlatá Sierra“ znamená tequilu. Přes 840 značek, toleruje překlepy
   i skloňování.
-- **Záložka „Pro řidiče a děti"**: 23 nealko receptů na jednom místě —
+- **Záložka „Pro řidiče a děti"**: 24 nealko receptů na jednom místě —
   od Virgin Mary a Crodino Spritzu po dětské drinky s vrstvenými džusy
   a přepínačem „jen pro děti". Nealkoholický sekt ani pivo se tu nikdy
   nenahrazují alkoholickými.
@@ -69,8 +71,8 @@ megabajt. Generuje se skriptem `python3 data/sestav_distribuci.py`.
 |---|---|
 | `barman.html` | celá aplikace (UI) |
 | `engine.js` | logika: vyhodnocení inventáře, záměny, nákupní rádce, hledání |
-| `data/suroviny.json` | slovník 96 surovin + skupiny logických záměn |
-| `data/drinky.json` | 137 receptů (zdroj pravdy) |
+| `data/suroviny.json` | slovník 215 surovin + skupiny logických záměn |
+| `data/drinky.json` | 477 receptů (zdroj pravdy) |
 | `data/trivia.json` | zajímavosti a klíčová slova pro asociativní hledání |
 | `data/znacky.json` | obchodní názvy → obecné suroviny |
 | `data/data.js` | vygenerovaný balík dat pro prohlížeč (`sestav_data.py`) |
@@ -95,6 +97,9 @@ megabajt. Generuje se skriptem `python3 data/sestav_distribuci.py`.
 - Část seznamu obchodních značek vychází z veřejných katalogů e-shopů
   **Warehouse #1** (warehouse1.cz), **Bestdrink** (bestdrink.cz),
   **La-Vin** (la-vin.cz) a **Don Pealo** (donpealo.cz).
+- Velká část receptů (světová klasika, pivní a vinné míchačky, horké drinky,
+  české retro i obskurní kuriozity) vychází z českého webu **ALKOHOL DRINK**
+  (alkoholdrink.cz); recepty jsou přepsány vlastními slovy.
 
 ## Licence
 

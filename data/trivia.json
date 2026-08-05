@@ -1008,7 +1008,11 @@
       "kava s rumem",
       "turek",
       "vlk",
-      "sutr"
+      "sutr",
+      "cloumak",
+      "supercloumak",
+      "stroh",
+      "turek s rumem"
     ]
   },
   "Koksák": {
@@ -1522,6 +1526,3361 @@
       "bohemian",
       "bilek",
       "whiskey sour"
+    ]
+  },
+  "Irská vlajka": {
+    "trivia": "Tři vrstvy v barvách irské trikolóry — zelená máta, bílý Baileys a oranžový Grand Marnier. Nalévat se musí přesně v tomto pořadí, jinak vlajka „splyne“.",
+    "klicova_slova": [
+      "irsko",
+      "vlajka",
+      "trikolora",
+      "st patrick",
+      "irish flag"
+    ]
+  },
+  "Incredible Hulk": {
+    "trivia": "Modrý Hpnotiq s koňakem se po smíchání zbarví jasně zeleně — drink proslavil rapper P. Diddy.",
+    "klicova_slova": [
+      "hulk",
+      "marvel",
+      "zeleny",
+      "p diddy",
+      "komiks"
+    ]
+  },
+  "Blow Job": {
+    "trivia": "Barový úkol i drink zároveň: panák se má vypít bez pomoci rukou, jen ústy přes šlehačku.",
+    "klicova_slova": [
+      "hra",
+      "sazka",
+      "slehacka",
+      "bez rukou",
+      "party"
+    ]
+  },
+  "Agent Orange": {
+    "trivia": "Screwdriver, ve kterém pomerančový džus vystřídal mrkvový. Jméno si vypůjčil od neblaze proslulého defoliantu z vietnamské války.",
+    "klicova_slova": [
+      "mrkev",
+      "vietnam",
+      "screwdriver",
+      "karotka",
+      "oranzovy"
+    ]
+  },
+  "Hiroshima Shot": {
+    "trivia": "Grenadina se v panáku rozlije do tvaru atomového hřibu — odtud jméno.",
+    "klicova_slova": [
+      "hirosima",
+      "atomova bomba",
+      "hrib",
+      "japonsko"
+    ]
+  },
+  "Alien Brain Hemorrhage": {
+    "trivia": "Smetanový likér se v kyselém broskvovém likéru srazí do chuchvalců, které vypadají jako mozek — halloweenská klasika.",
+    "klicova_slova": [
+      "halloween",
+      "mozek",
+      "vetrelec",
+      "sraženina",
+      "alien"
+    ]
+  },
+  "Radler": {
+    "trivia": "Legenda praví, že hostinský Franz Xaver Kugler v roce 1922 ředil pivo limonádou, protože mu na výletníky-cyklisty nezbývalo dost sudů. Radler je německy „cyklista“.",
+    "klicova_slova": [
+      "cyklista",
+      "kolo",
+      "bavorsko",
+      "kugler",
+      "alster",
+      "panache"
+    ]
+  },
+  "Alžírská káva": {
+    "trivia": "Kávový klenot socialistických kaváren — vaječný likér, espresso a šlehačka ve třech nesmíchaných vrstvách.",
+    "klicova_slova": [
+      "vajecnak",
+      "kavarna",
+      "retro",
+      "alzir",
+      "espresso"
+    ]
+  },
+  "Angel Face": {
+    "trivia": "Oficiální koktejl IBA ze třicátých let — tři destiláty ve stejném poměru a žádný citrus.",
+    "klicova_slova": [
+      "andel",
+      "iba",
+      "calvados",
+      "merunka"
+    ]
+  },
+  "Aviation": {
+    "trivia": "Bledě modrý odstín od likéru Crème de Violette má připomínat nebe z pilotní kabiny; recept pochází z roku 1916.",
+    "klicova_slova": [
+      "letadlo",
+      "pilot",
+      "fialka",
+      "nebe",
+      "modry"
+    ]
+  },
+  "Barracuda": {
+    "trivia": "Oficiální IBA koktejl, který spojuje karibský rum s italským Gallianem a proseccem.",
+    "klicova_slova": [
+      "ryba",
+      "barakuda",
+      "iba",
+      "galliano",
+      "prosecco"
+    ]
+  },
+  "Batanga": {
+    "trivia": "Namíchal ji don Javier Delgado Corona v cantině La Capilla v mexickém městě Tequila — a míchá se dlouhým nožem na limetky.",
+    "klicova_slova": [
+      "mexiko",
+      "tequila",
+      "cola",
+      "chilli",
+      "cantina",
+      "kuba libre"
+    ]
+  },
+  "Bermuda Rum Swizzle": {
+    "trivia": "Neoficiální národní nápoj Bermud; „swizzle“ je kvedlačka z větvičky stromu, kterou se drink míchá.",
+    "klicova_slova": [
+      "bermudy",
+      "swizzle",
+      "kvedlacka",
+      "ostrov",
+      "punc"
+    ]
+  },
+  "Between the Sheets": {
+    "trivia": "Prohibiční sourozenec Sidecaru — místo poloviny koňaku se přidává bílý rum. Jméno napovídá, kam drink vede.",
+    "klicova_slova": [
+      "prohibice",
+      "sidecar",
+      "postel",
+      "prostěradlo"
+    ]
+  },
+  "Big Mojito": {
+    "trivia": "Mojito v party kýblu s dlouhými slámkami — jeden kýbl vystačí zhruba pro pět lidí.",
+    "klicova_slova": [
+      "party",
+      "kybl",
+      "mojito",
+      "oslava",
+      "slamky"
+    ]
+  },
+  "Espanhola": {
+    "trivia": "Brazilská specialita a proslulý ranní vyprošťovák: červené víno rozmixované s ananasem a kondenzovaným mlékem.",
+    "klicova_slova": [
+      "brazilie",
+      "kocovina",
+      "vyprostovak",
+      "ananas",
+      "kondenzovane mleko"
+    ]
+  },
+  "Black & Tan": {
+    "trivia": "Světlé ale a Guinness ve dvou ostře oddělených vrstvách. V Irsku má jméno hořkou pachuť — Black and Tans se říkalo britským jednotkám z války za nezávislost.",
+    "klicova_slova": [
+      "guinness",
+      "irsko",
+      "stout",
+      "vrstveni",
+      "ale"
+    ]
+  },
+  "Black Velvet": {
+    "trivia": "Namíchán roku 1861 v londýnském Brooks's Clubu na truchlení za prince Alberta — i šampaňské prý mělo mít smutek.",
+    "klicova_slova": [
+      "princ albert",
+      "smutek",
+      "sampanske",
+      "guinness",
+      "londyn"
+    ]
+  },
+  "Irish Car Bomb": {
+    "trivia": "Panák Baileys s Jamesonem hozený do stoutu — pije se na ex, protože se smetana v pivu během chvilky srazí.",
+    "klicova_slova": [
+      "guinness",
+      "baileys",
+      "jameson",
+      "bomba",
+      "na ex"
+    ]
+  },
+  "Caesar": {
+    "trivia": "Kanadský národní nápoj, který v roce 1969 vymyslel barman Walter Chell v Calgary. Od Bloody Mary ho odlišuje šťáva ze škeblí.",
+    "klicova_slova": [
+      "kanada",
+      "clamato",
+      "skeble",
+      "bloody mary",
+      "calgary"
+    ]
+  },
+  "Motor Oil": {
+    "trivia": "Jägermeister, zelená, skořicová pálenka a kokosový rum v jednom panáku — hustá tmavá směs, která vypadá jako olej z vany.",
+    "klicova_slova": [
+      "obskurni",
+      "olej",
+      "auto",
+      "jager",
+      "hnus"
+    ]
+  },
+  "Blue Lagoon": {
+    "trivia": "Namíchal ho Andy MacElhone v pařížském Harry's New York Baru; s filmem Modrá laguna nemá nic společného.",
+    "klicova_slova": [
+      "modry",
+      "laguna",
+      "harry's bar",
+      "pariz",
+      "curacao"
+    ]
+  },
+  "Chameleon": {
+    "trivia": "Modrý Curaçao s oranžovým džusem dají zelenou — drink si mění barvu podle toho, co do něj přilijete.",
+    "klicova_slova": [
+      "zeleny",
+      "barva",
+      "blue lagoon",
+      "chameleon"
+    ]
+  },
+  "Mexican Mule": {
+    "trivia": "Moscow Mule, ve kterém vodku vystřídala tequila. Zázvorové pivo zůstává i měděný plecháček.",
+    "klicova_slova": [
+      "mezek",
+      "mule",
+      "tequila",
+      "zazvor",
+      "mexiko"
+    ]
+  },
+  "Bohemian Mule": {
+    "trivia": "Česká varianta Mule staví na absintu — odtud „Bohemian“, ne od Čechů, ale od bohémů kolem zelené víly.",
+    "klicova_slova": [
+      "absint",
+      "mule",
+      "bohem",
+      "zelena vila"
+    ]
+  },
+  "Bombardino": {
+    "trivia": "Fenomén alpských sjezdovek. Vaječný likér nesmí přesáhnout 70 °C, jinak se srazí.",
+    "klicova_slova": [
+      "alpy",
+      "lyze",
+      "sjezdovka",
+      "vajecnak",
+      "italie",
+      "apres ski"
+    ]
+  },
+  "John Collins": {
+    "trivia": "Sourozenec Tom Collinse z londýnského Limmer's Hotelu; liší se typem ginu — John se dělá z London Dry, Tom z Old Tom.",
+    "klicova_slova": [
+      "limmers",
+      "londyn",
+      "gin",
+      "tom collins",
+      "sifon"
+    ]
+  },
+  "Phil Collins": {
+    "trivia": "Barmanský vtip: jediný Collins na pivním základu, pojmenovaný po zpěvákovi.",
+    "klicova_slova": [
+      "genesis",
+      "zpevak",
+      "pivo",
+      "vtip",
+      "in the air tonight"
+    ]
+  },
+  "Brandy Crusta": {
+    "trivia": "Vynalezl ji Joseph Santini v New Orleansu kolem roku 1850 a je předkem Sidecaru i celé rodiny „crusta“ drinků. Cukrová krusta dala drinku jméno.",
+    "klicova_slova": [
+      "new orleans",
+      "santini",
+      "krusta",
+      "sidecar",
+      "1850"
+    ]
+  },
+  "Brusinkový grog": {
+    "trivia": "Zimní grog, ve kterém brusinky s badyánem vytlačí obvyklý citron. Rum se přidává až nakonec — nad 80 °C se alkohol odpařuje.",
+    "klicova_slova": [
+      "zima",
+      "vanoce",
+      "brusinky",
+      "badyan",
+      "grog",
+      "chata"
+    ]
+  },
+  "Buck's Fizz": {
+    "trivia": "Namíchán roku 1921 v londýnském Buck's Clubu, čtyři roky před Mimosou. Rozdíl je jen v poměru — tady je sektu dvakrát tolik než džusu.",
+    "klicova_slova": [
+      "londyn",
+      "buck's club",
+      "mimosa",
+      "brunch",
+      "sampanske"
+    ]
+  },
+  "Cadillac Margarita": {
+    "trivia": "Prémiová Margarita: reposado tequila a Grand Marnier navrch, který ve sklenici vytvoří barevný přechod.",
+    "klicova_slova": [
+      "margarita",
+      "grand marnier",
+      "luxus",
+      "cadillac",
+      "reposado"
+    ]
+  },
+  "Caffé corretto": {
+    "trivia": "Italsky „opravené kafe“. Objednává se podle destilátu: alla grappa, alla sambuca, al cognac.",
+    "klicova_slova": [
+      "italie",
+      "espresso",
+      "grappa",
+      "sambuca",
+      "opravene kafe"
+    ]
+  },
+  "Caipiroska": {
+    "trivia": "Caipirinha, ve které cachaçu vystřídala vodka — vznikla v Brazílii, když do země dorazily první západní vodky.",
+    "klicova_slova": [
+      "brazilie",
+      "caipirinha",
+      "vodka",
+      "limetka",
+      "muddler"
+    ]
+  },
+  "Milano-Torino": {
+    "trivia": "Campari z Milána a vermut z Turína — dva regiony v jedné sklenici. Když se přidá soda, vznikne Americano; když gin, Negroni.",
+    "klicova_slova": [
+      "milano",
+      "turin",
+      "italie",
+      "negroni",
+      "americano",
+      "mito"
+    ]
+  },
+  "Negroni Sbagliato": {
+    "trivia": "„Pokažený“ Negroni — barman v milánském Bar Basso prý sáhl místo ginu po lahvi sektu. V roce 2022 z drinku udělalo hit jedno virální video s Emmou D'Arcy.",
+    "klicova_slova": [
+      "pokazeny",
+      "bar basso",
+      "milano",
+      "prosecco",
+      "viral"
+    ]
+  },
+  "Old Pal": {
+    "trivia": "Suchý bratranec Negroniho z pařížského Harry's Baru dvacátých let — žitná whiskey a suchý vermut místo ginu a sladkého.",
+    "klicova_slova": [
+      "harry's bar",
+      "pariz",
+      "rye",
+      "negroni",
+      "boulevardier"
+    ]
+  },
+  "Jungle Bird": {
+    "trivia": "Vznikl roku 1978 v hotelu Kuala Lumpur Hilton. Vzácný tiki drink postavený na hořkém Campari.",
+    "klicova_slova": [
+      "tiki",
+      "malajsie",
+      "kuala lumpur",
+      "campari",
+      "ananas",
+      "1978"
+    ]
+  },
+  "Campari Soda": {
+    "trivia": "V Itálii se prodává hotová v kónické lahvičce, kterou v roce 1932 navrhl futurista Fortunato Depero.",
+    "klicova_slova": [
+      "italie",
+      "depero",
+      "futurismus",
+      "aperitiv",
+      "lahvicka"
+    ]
+  },
+  "Canchánchara": {
+    "trivia": "Nejstarší kubánský koktejl — pili ho mambises, bojovníci za nezávislost v 19. století, kteří rum ředili medem a limetkou.",
+    "klicova_slova": [
+      "kuba",
+      "trinidad",
+      "mambises",
+      "med",
+      "nejstarsi"
+    ]
+  },
+  "Prairie Oyster": {
+    "trivia": "Klasický vyprošťovák z 19. století. Celý syrový žloutek se polyká vcelku — proto „ústřice“.",
+    "klicova_slova": [
+      "kocovina",
+      "vyprostovak",
+      "vejce",
+      "ustrice",
+      "rano"
+    ]
+  },
+  "Kopytama napřed": {
+    "trivia": "Žižkovská legenda: rum, režná, kmínka a čert po půl deci. Jméno drinku popisuje způsob odchodu z hospody.",
+    "klicova_slova": [
+      "zizkov",
+      "praha",
+      "hospoda",
+      "retro",
+      "cert",
+      "kminka"
+    ]
+  },
+  "Okena": {
+    "trivia": "Doklad nejhlubšího dna českého alkoholového folkloru — technický líh z čisticího prostředku, filtrovaný přes plátek chleba.",
+    "klicova_slova": [
+      "technicky lih",
+      "bezdomovci",
+      "chleba",
+      "denaturovany",
+      "otrava"
+    ]
+  },
+  "Clover Club": {
+    "trivia": "Pojmenován po pánském klubu ve filadelfském hotelu Bellevue-Stratford, který se scházel před první světovou válkou.",
+    "klicova_slova": [
+      "filadelfie",
+      "maliny",
+      "bilek",
+      "ruzovy",
+      "klub"
+    ]
+  },
+  "Corpse Reviver #2": {
+    "trivia": "Ranní vyprošťovák z Savoy Cocktail Booku (1930). U receptu stojí varování, že čtyři za sebou křísit přestanou.",
+    "klicova_slova": [
+      "kocovina",
+      "vyprostovak",
+      "savoy",
+      "krisitel mrtvol",
+      "lillet"
+    ]
+  },
+  "Yorsh": {
+    "trivia": "Rusky ёрш znamená ježdík, drsná říční rybka. Pivo s vodkou zrychlí opíjení natolik, že se drink u nás mylně říká i „bílý medvěd“.",
+    "klicova_slova": [
+      "rusko",
+      "jezdik",
+      "vodka",
+      "pivo",
+      "cesta do lesa"
+    ]
+  },
+  "Opilý meloun": {
+    "trivia": "Celý meloun nasaje láhev vodky během jediného dne. V dužině alkohol vůbec necítíš — a přesně v tom je nebezpečí.",
+    "klicova_slova": [
+      "party",
+      "leto",
+      "meloun",
+      "vodka",
+      "grilovacka"
+    ]
+  },
+  "Death in the Afternoon": {
+    "trivia": "Hemingwayův recept z roku 1935 zněl doslova: „Nalijte jednu jigger absintu do sklenice na šampaňské. Doplňte ledovým šampaňským, dokud nezíská opalescentní mléčnost. Pijte tři až pět těchto drinků pomalu.“",
+    "klicova_slova": [
+      "hemingway",
+      "absint",
+      "korida",
+      "spanelsko",
+      "sampanske",
+      "smrt odpoledne"
+    ]
+  },
+  "Death in the Gulf Stream": {
+    "trivia": "Hemingway ho namíchal pro autora kuchařek Charlese H. Bakera na Kubě — bez cukru, protože jako diabetik si ho nemohl dovolit.",
+    "klicova_slova": [
+      "hemingway",
+      "kuba",
+      "genever",
+      "angostura",
+      "diabetes"
+    ]
+  },
+  "The Montgomery": {
+    "trivia": "Poměr ginu k vermutu 15:1 odkazuje na vtip o maršálu Montgomerym, který prý neútočil bez patnáctinásobné převahy.",
+    "klicova_slova": [
+      "hemingway",
+      "montgomery",
+      "martini",
+      "suche",
+      "valka"
+    ]
+  },
+  "Diesel": {
+    "trivia": "Kult českých diskoték devadesátých let — pivo, kola a panák tuzemáku. Barva připomíná naftu, odtud jméno.",
+    "klicova_slova": [
+      "devadesatky",
+      "diskoteka",
+      "tuzemak",
+      "nafta",
+      "retro"
+    ]
+  },
+  "Dubonnet Cocktail No.1": {
+    "trivia": "Oblíbený aperitiv královny Alžběty II., který si dávala před obědem. Recept prý zdědila po královně matce.",
+    "klicova_slova": [
+      "kralovna",
+      "alzbeta",
+      "anglie",
+      "aperitiv",
+      "gordons",
+      "dubonnet"
+    ]
+  },
+  "Felicia": {
+    "trivia": "Autorský koktejl legendárního barmana Bohumila Pavlíčka — koňak s Becherovkou a třešní macerovanou v rumu.",
+    "klicova_slova": [
+      "pavlicek",
+      "becherovka",
+      "cesky barman",
+      "konak",
+      "retro"
+    ]
+  },
+  "Fernandito": {
+    "trivia": "V Argentině skoro národní nápoj — země spotřebuje víc Fernetu Branca než Itálie, kde se vyrábí.",
+    "klicova_slova": [
+      "argentina",
+      "fernet",
+      "cola",
+      "cordoba",
+      "branca"
+    ]
+  },
+  "Jägertee": {
+    "trivia": "Rakouský „lovecký čaj“ z rumu, čaje, vína a pálenky. V EU se smí jménem Jagertee označovat jen výrobek z Rakouska.",
+    "klicova_slova": [
+      "rakousko",
+      "hory",
+      "apres ski",
+      "lyze",
+      "caj",
+      "rum"
+    ]
+  },
+  "French Connection": {
+    "trivia": "Pojmenován podle filmu s Genem Hackmanem z roku 1971. Dvě suroviny, žádný citrus, žádný led navíc.",
+    "klicova_slova": [
+      "film",
+      "hackman",
+      "konak",
+      "amaretto",
+      "1971"
+    ]
+  },
+  "French Martini": {
+    "trivia": "Vznikl v osmdesátých letech v newyorských barech Keitha McNallyho. Ananasová šťáva při šejkrování vytvoří charakteristickou pěnu.",
+    "klicova_slova": [
+      "chambord",
+      "new york",
+      "maliny",
+      "ananas",
+      "osmdesatky"
+    ]
+  },
+  "Frozen Margarita": {
+    "trivia": "První stroj na frozen margaritu postavil roku 1971 restauratér Mariano Martínez z Dallasu — přestavěl kvůli tomu automat na zmrzlinu. Dnes je ve Smithsonian Institution.",
+    "klicova_slova": [
+      "dallas",
+      "stroj",
+      "smithsonian",
+      "sorbet",
+      "mixer",
+      "tequila"
+    ]
+  },
+  "Gimlet": {
+    "trivia": "Britské námořnictvo dávalo posádkám gin s limetkovou šťávou proti kurdějím. Jméno prý pochází od chirurga Thomase Gimletta nebo od vrtáku, kterým se otvíraly sudy.",
+    "klicova_slova": [
+      "namornictvo",
+      "kurdeje",
+      "limetka",
+      "rose's",
+      "chandler"
+    ]
+  },
+  "Godfather": {
+    "trivia": "Whisky a amaretto ve stejném poměru; drink prý miloval Marlon Brando. S vodkou je z něj Godmother.",
+    "klicova_slova": [
+      "brando",
+      "film",
+      "mafie",
+      "amaretto",
+      "kmotr"
+    ]
+  },
+  "Hanky Panky": {
+    "trivia": "Namíchala ho Ada Coleman, legendární barmanka londýnského hotelu Savoy, pro herce Charlese Hawtreyho. Ten po prvním doušku vykřikl: „To je ta pravá hanky-panky!“",
+    "klicova_slova": [
+      "savoy",
+      "ada coleman",
+      "londyn",
+      "fernet",
+      "barmanka"
+    ]
+  },
+  "Hemingway Special": {
+    "trivia": "V havanském El Floridita si ho Hemingway dával bez cukru a v dvojité dávce — odtud přezdívka Papa Doble. Rekord prý byl šestnáct kusů za jeden večer.",
+    "klicova_slova": [
+      "hemingway",
+      "havana",
+      "floridita",
+      "kuba",
+      "papa doble",
+      "grapefruit"
+    ]
+  },
+  "Horká hruška": {
+    "trivia": "Stálice adventních trhů. Klíč je v teplotě — mošt nesmí přesáhnout 78 °C, jinak se hruškovice odpaří dřív, než se napiješ.",
+    "klicova_slova": [
+      "advent",
+      "trhy",
+      "vanoce",
+      "williams",
+      "hruskovice",
+      "zima"
+    ]
+  },
+  "Grog originální recept": {
+    "trivia": "Jméno má po admirálu Edwardu Vernonovi, přezdívaném Old Grog podle pláště z grogramu. Roku 1740 nařídil ředit námořnickou dávku rumu vodou.",
+    "klicova_slova": [
+      "namornictvo",
+      "vernon",
+      "old grog",
+      "rum",
+      "britanie",
+      "1740"
+    ]
+  },
+  "Greyhound": {
+    "trivia": "Se solí na okraji sklenice se z Greyhoundu stane Salty Dog. Jméno prý pochází z barů autobusové společnosti Greyhound.",
+    "klicova_slova": [
+      "grapefruit",
+      "salty dog",
+      "autobus",
+      "chrt"
+    ]
+  },
+  "Horse's Neck": {
+    "trivia": "Jméno má po ozdobě — dlouhá spirála citronové kůry visící přes okraj sklenice připomíná koňskou hřívu. Původně se podával úplně bez alkoholu.",
+    "klicova_slova": [
+      "kun",
+      "kura",
+      "spirala",
+      "zazvor",
+      "konak"
+    ]
+  },
+  "Hot Toddy": {
+    "trivia": "Tradiční domácí lék na nachlazení. Skotové ho pijí od 18. století a doktoři mu do dnešního dne přiznávají aspoň účinek medu a horké páry.",
+    "klicova_slova": [
+      "nachlazeni",
+      "kasel",
+      "skotsko",
+      "med",
+      "zima",
+      "lek"
+    ]
+  },
+  "Huhu": {
+    "trivia": "Legendární drink z Limonádového Joea: „Huhu, whisky, koňak a rum!“ Podle filmu se po něm běžně umíralo — a s kyselinou mravenčí v receptuře to není nadsázka.",
+    "klicova_slova": [
+      "limonadovy joe",
+      "film",
+      "western",
+      "cloumak",
+      "kolaloka"
+    ]
+  },
+  "Hurricane": {
+    "trivia": "Vznikl ve čtyřicátých letech v novoorleánském baru Pat O'Brien's — dodavatelé tehdy nutili majitele brát ke každé bedně whisky několik beden rumu, kterých se potřeboval zbavit.",
+    "klicova_slova": [
+      "new orleans",
+      "pat obriens",
+      "mardi gras",
+      "rum",
+      "hurikan",
+      "mucenka"
+    ]
+  },
+  "Champagne Cocktail": {
+    "trivia": "Kostka cukru na dně pomalu uvolňuje bublinky po celou dobu pití. Recept je v tisku doložen už roku 1862 u Jerryho Thomase.",
+    "klicova_slova": [
+      "sampanske",
+      "kostka cukru",
+      "jerry thomas",
+      "casablanca",
+      "1862"
+    ]
+  },
+  "Chrchel indiánské babičky": {
+    "trivia": "Vaječný likér se drží u dna půllitru a při pití se v pivu táhne jako červ — proto druhé jméno Slizký červ.",
+    "klicova_slova": [
+      "magicke oko",
+      "vajecnak",
+      "cerne pivo",
+      "cerv",
+      "bony a klid"
+    ]
+  },
+  "Sauronovo oko": {
+    "trivia": "Twister Magického oka, ve kterém panáka zelené nahradí absint. Jméno má po temném pánovi Mordoru.",
+    "klicova_slova": [
+      "tolkien",
+      "pan prstenu",
+      "mordor",
+      "absint",
+      "magicke oko"
+    ]
+  },
+  "Illegal": {
+    "trivia": "Moderní klasika z newyorského baru Mayahuel — mezcal s jamajským overproof rumem a karibským falernem.",
+    "klicova_slova": [
+      "mezcal",
+      "mayahuel",
+      "new york",
+      "falernum",
+      "kour"
+    ]
+  },
+  "Jalisco Express": {
+    "trivia": "Jalisco je mexický stát, kde se tequila smí legálně vyrábět. Okurka s bazalkou a jalapeñem z něj dělají zeleninový drink, který pálí i chladí.",
+    "klicova_slova": [
+      "mexiko",
+      "jalisco",
+      "jalapeno",
+      "tajin",
+      "okurka",
+      "bazalka"
+    ]
+  },
+  "Jahodové Frozen Daiquiri": {
+    "trivia": "Klíč je použít mražené jahody místo ledu — drink zůstane hustý a nezředí se.",
+    "klicova_slova": [
+      "jahody",
+      "leto",
+      "mixer",
+      "frozen",
+      "daiquiri"
+    ]
+  },
+  "Kamikaze": {
+    "trivia": "Vznikl prý po druhé světové válce na americké základně v Japonsku. Tři stejné díly, žádný cukr navíc — a jméno, které varuje.",
+    "klicova_slova": [
+      "japonsko",
+      "vodka",
+      "shot",
+      "valka",
+      "letec"
+    ]
+  },
+  "Kir Royale": {
+    "trivia": "Nese jméno Félixe Kira, dijonského starosty a kanovníka, který drink prosazoval na oficiálních recepcích, aby podpořil místní pěstitele černého rybízu.",
+    "klicova_slova": [
+      "dijon",
+      "burgundsko",
+      "cassis",
+      "starosta",
+      "kanovnik",
+      "francie"
+    ]
+  },
+  "Rum s kolou": {
+    "trivia": "Socialistická odpověď na Cuba Libre — tuzemák s Kofolou. Led, citron ani slámka většinou nebyly k mání.",
+    "klicova_slova": [
+      "tuzemak",
+      "kofola",
+      "retro",
+      "cuba libre",
+      "hospoda",
+      "libeň"
+    ]
+  },
+  "Vítr z hor": {
+    "trivia": "Doklad toho, kam až sahal český hospodský folklor: zelená s Alpou v poměru 2:1. Alpa je určená výhradně k zevnímu použití.",
+    "klicova_slova": [
+      "alpa",
+      "francovka",
+      "zelena",
+      "bizar",
+      "folklor"
+    ]
+  },
+  "Vejce se špenátem": {
+    "trivia": "Stejné dvě suroviny jako Flusanec, jen jiná technika lití — a hned z toho je jiný drink i jiné jméno.",
+    "klicova_slova": [
+      "vajecnak",
+      "zelena",
+      "vrstveny panak",
+      "retro",
+      "hospoda"
+    ]
+  },
+  "Last Word": {
+    "trivia": "Čtyři stejné díly. Vznikl za prohibice v Detroit Athletic Clubu, na sedmdesát let se zapomnělo a v roce 2004 ho vzkřísil seattleský barman Murray Stenson.",
+    "klicova_slova": [
+      "detroit",
+      "prohibice",
+      "chartreuse",
+      "stenson",
+      "seattle"
+    ]
+  },
+  "Mary Pickford": {
+    "trivia": "Namíchán za prohibice v havanském hotelu Sevilla-Biltmore pro hvězdu němého filmu, která do Ameriky nemohla vzít ani jednu skleničku.",
+    "klicova_slova": [
+      "prohibice",
+      "havana",
+      "nemy film",
+      "hollywood",
+      "ananas"
+    ]
+  },
+  "Perroquet": {
+    "trivia": "Ve francouzských bistrech si pastis barvíte sirupem: zelený je Perroquet (papoušek), červený Tomate (rajče), mandlový Mauresque.",
+    "klicova_slova": [
+      "pastis",
+      "francie",
+      "papousek",
+      "marseille",
+      "anyz",
+      "sirup"
+    ]
+  },
+  "Martinez": {
+    "trivia": "Chybějící článek mezi Manhattanem a Dry Martini — poprvé zapsán v roce 1884, tedy dřív než samotné Martini.",
+    "klicova_slova": [
+      "manhattan",
+      "martini",
+      "maraschino",
+      "1884",
+      "predek"
+    ]
+  },
+  "Michelada": {
+    "trivia": "Mexická snídaně v půllitru. V Mexiku se prodává i v kelímcích z kiosku, s krustou z chilli a soli po celém obvodu.",
+    "klicova_slova": [
+      "mexiko",
+      "kocovina",
+      "rajcata",
+      "chilli",
+      "pivo",
+      "chelada"
+    ]
+  },
+  "Mixela": {
+    "trivia": "Porevoluční černá kapitola podniku Víno Mikulov. Vyráběla se v šesti příchutích, ale ovoce v ní nikdy žádné nebylo — jen syntetická aromata a barviva.",
+    "klicova_slova": [
+      "devadesatky",
+      "koleje",
+      "studenti",
+      "mikulov",
+      "retro",
+      "bolehlav"
+    ]
+  },
+  "Monkey Gland": {
+    "trivia": "Jméno má po chirurgu Serge Voronoffovi, který ve dvacátých letech transplantoval mužům opičí žlázy jako omlazovací kúru. Drink namíchal Harry MacElhone v Paříži.",
+    "klicova_slova": [
+      "opice",
+      "voronoff",
+      "pariz",
+      "harrys bar",
+      "absint",
+      "omlazeni"
+    ]
+  },
+  "Moravský šroubovák": {
+    "trivia": "Screwdriver s bílým vínem navrch. Sladký džus schová všechno — proto ta zrada.",
+    "klicova_slova": [
+      "morava",
+      "screwdriver",
+      "vino",
+      "vodka",
+      "obskurni"
+    ]
+  },
+  "Vánoční cukroví": {
+    "trivia": "Čokoládové figurce se ukousne hlava, naplní se tuzemákem a po chvíli se vypije. Rumová pralinka v nadživotní velikosti.",
+    "klicova_slova": [
+      "vanoce",
+      "cokolada",
+      "figurka",
+      "tuzemak",
+      "mikulas"
+    ]
+  },
+  "Naked and Famous": {
+    "trivia": "Namíchal ho Joaquín Simó v newyorském Death & Co. Čtyři stejné díly — kříženec Last Word a Paper Plane.",
+    "klicova_slova": [
+      "mezcal",
+      "death and co",
+      "new york",
+      "chartreuse",
+      "aperol"
+    ]
+  },
+  "New York Sour": {
+    "trivia": "Whiskey Sour s vrstvou červeného vína navrch. Vznikl v osmdesátých letech 19. století v Chicagu, název ale nese po New Yorku.",
+    "klicova_slova": [
+      "chicago",
+      "vino",
+      "vrstva",
+      "sour",
+      "rye"
+    ]
+  },
+  "Old Cuban": {
+    "trivia": "Namíchala ho Audrey Saunders v newyorském Pegu Clubu roku 2001 — Mojito v šatech od šampaňského.",
+    "klicova_slova": [
+      "saunders",
+      "pegu club",
+      "new york",
+      "mojito",
+      "sampanske"
+    ]
+  },
+  "Paper Plane": {
+    "trivia": "Sam Ross ho namíchal roku 2008 pro chicagský bar The Violet Hour a pojmenoval po písni Paper Planes od M.I.A.",
+    "klicova_slova": [
+      "sam ross",
+      "mia",
+      "chicago",
+      "amaro",
+      "aperol",
+      "vlastovka"
+    ]
+  },
+  "Penicillin": {
+    "trivia": "Sam Ross, Milk & Honey, New York, 2005. Med, zázvor a citron jako z babiččiny kuchyně — a navrch kouřová whisky z Islay.",
+    "klicova_slova": [
+      "sam ross",
+      "milk and honey",
+      "med",
+      "zazvor",
+      "islay",
+      "nachlazeni"
+    ]
+  },
+  "Nikita": {
+    "trivia": "Madeirská plážová klasika: ananas, zmrzlina, víno a pivo v jednom mixéru. Prodává se v každém baru u vody ve Funchalu.",
+    "klicova_slova": [
+      "madeira",
+      "funchal",
+      "ananas",
+      "zmrzlina",
+      "portugalsko"
+    ]
+  },
+  "Pisco Sour": {
+    "trivia": "Peru i Chile si drink nárokují jako národní. V Peru má vlastní státní svátek — první únorovou sobotu.",
+    "klicova_slova": [
+      "peru",
+      "chile",
+      "pisco",
+      "bilek",
+      "lima",
+      "narodni"
+    ]
+  },
+  "Planter's Punch": {
+    "trivia": "Řídí se karibským říkadlem „one of sour, two of sweet, three of strong, four of weak“ — kyselé, sladké, silné, slabé.",
+    "klicova_slova": [
+      "karibik",
+      "jamajka",
+      "rum",
+      "rikadlo",
+      "punc"
+    ]
+  },
+  "Poncha": {
+    "trivia": "Madeirská klasika. Míchá se dřevěnou metličkou zvanou caralhinho a místní rum aguardente de cana má i 60 procent.",
+    "klicova_slova": [
+      "madeira",
+      "portugalsko",
+      "med",
+      "citron",
+      "caralhinho",
+      "funchal"
+    ]
+  },
+  "Pornstar Martini": {
+    "trivia": "Namíchal ho Douglas Ankrah v Londýně roku 2002. Panák šampaňského vedle sklenice se pije mezi doušky — je to součást drinku, ne bonus.",
+    "klicova_slova": [
+      "londyn",
+      "ankrah",
+      "marakuja",
+      "sampanske",
+      "vanilka"
+    ]
+  },
+  "Ramos Gin Fizz": {
+    "trivia": "V baru Henryho Ramose v New Orleansu se u jednoho drinku střídalo i dvacet šejkrmenů — pěna vyžaduje dvanáct minut třepání.",
+    "klicova_slova": [
+      "new orleans",
+      "ramos",
+      "pena",
+      "sejkrmen",
+      "smetana",
+      "bilek"
+    ]
+  },
+  "Red Eye": {
+    "trivia": "Ranní vyprošťovák, který ve filmu Tootsie objednává Bill Murray — pivo, rajčatová šťáva a syrové vejce.",
+    "klicova_slova": [
+      "tootsie",
+      "bill murray",
+      "kocovina",
+      "rajce",
+      "pivo"
+    ]
+  },
+  "Snakebite": {
+    "trivia": "Cider s pivem má v britských hospodách takovou pověst, že ho řada podniků odmítá čepovat.",
+    "klicova_slova": [
+      "britanie",
+      "cider",
+      "hospoda",
+      "zakaz",
+      "black"
+    ]
+  },
+  "Rusty Nail": {
+    "trivia": "Drambuie prý vzniklo podle receptu, který princ Karel Eduard Stuart věnoval klanu MacKinnonů po bitvě u Cullodenu.",
+    "klicova_slova": [
+      "skotsko",
+      "drambuie",
+      "whisky",
+      "med",
+      "stuart",
+      "rat pack"
+    ]
+  },
+  "Sake Bomba": {
+    "trivia": "Vznikla prý mezi americkými vojáky v poválečném Japonsku. Kalíšek na hůlkách spadne do piva úderem pěstí do stolu.",
+    "klicova_slova": [
+      "japonsko",
+      "sake",
+      "hulky",
+      "sapporo",
+      "party",
+      "uder"
+    ]
+  },
+  "Sazerac": {
+    "trivia": "Oficiální koktejl města New Orleans. Původně se dělal z koňaku — na žitnou whiskey se přešlo, když francouzské vinice zničil révokaz.",
+    "klicova_slova": [
+      "new orleans",
+      "absint",
+      "peychauds",
+      "rye",
+      "revokaz",
+      "louisiana"
+    ]
+  },
+  "Russian Spring Punch": {
+    "trivia": "Dick Bradsell, Londýn, osmdesátá léta — ze stejné dílny jako Espresso Martini a Bramble.",
+    "klicova_slova": [
+      "bradsell",
+      "londyn",
+      "cassis",
+      "sekt",
+      "espresso martini"
+    ]
+  },
+  "Rainbow Paradise": {
+    "trivia": "Trik je v tom naředit Curaçao vodou — jinak by kleslo ke dnu a duha by se nepovedla.",
+    "klicova_slova": [
+      "duha",
+      "vrstveni",
+      "curacao",
+      "ananas",
+      "tropicky"
+    ]
+  },
+  "Absinth Without Leave": {
+    "trivia": "Vrstvený panák, ve kterém se sambuca, Baileys a absint nesmí smíchat. Jméno je vojenský slang pro samovolné opuštění útvaru.",
+    "klicova_slova": [
+      "absint",
+      "vrstveny",
+      "sambuca",
+      "vojna",
+      "panak"
+    ]
+  },
+  "Acapulco": {
+    "trivia": "Mexická plážová klasika z 60. let — rum, pomerančový likér a bílek, který drinku dá hustou pěnu.",
+    "klicova_slova": [
+      "mexiko",
+      "acapulco",
+      "plaz",
+      "bilek",
+      "rum"
+    ]
+  },
+  "Acapulco de Juárez": {
+    "trivia": "Moderní tropická verze Acapulca — rum s tequilou a dvěma džusy, bez bílku.",
+    "klicova_slova": [
+      "mexiko",
+      "tropicky",
+      "grapefruit",
+      "ananas",
+      "tequila"
+    ]
+  },
+  "Jellyfish Shot": {
+    "trivia": "Smetanový likér se v panáku rozteče do chapadel, grenadina udělá střed medúzy.",
+    "klicova_slova": [
+      "meduza",
+      "vrstveny",
+      "halloween",
+      "kakao",
+      "amaretto"
+    ]
+  },
+  "Fallen Froggy": {
+    "trivia": "Zelený melounový likér, bílá smetana a rudá kapka grenadiny — padlá žába v celé kráse.",
+    "klicova_slova": [
+      "zaba",
+      "meloun",
+      "midori",
+      "vrstveny",
+      "party"
+    ]
+  },
+  "Almradler": {
+    "trivia": "Rakouský radler s bylinkovou limonádou Almdudler, která je v Alpách stejná instituce jako u nás Kofola.",
+    "klicova_slova": [
+      "rakousko",
+      "almdudler",
+      "radler",
+      "hory",
+      "bylinky"
+    ]
+  },
+  "Ententeich": {
+    "trivia": "Kachní rybník ze středního Německa — černé pivo s malinovou limonádou.",
+    "klicova_slova": [
+      "nemecko",
+      "kachna",
+      "rybnik",
+      "cerne pivo",
+      "malina"
+    ]
+  },
+  "Soda-radler": {
+    "trivia": "Rakouský „kyselý“ radler — místo limonády jen minerálka. Nejmíň kalorická verze.",
+    "klicova_slova": [
+      "rakousko",
+      "minerálka",
+      "kysely",
+      "radler",
+      "lehky"
+    ]
+  },
+  "Wurstwasser": {
+    "trivia": "Klobásková voda z Münsterlandu — jméno má podle barvy nálevu, ve kterém se nakládají skopové klobásky.",
+    "klicova_slova": [
+      "nemecko",
+      "munsterland",
+      "klobasa",
+      "fanta",
+      "radler"
+    ]
+  },
+  "Citrusová sangria": {
+    "trivia": "Základní španělská sangria: červené víno, citrusová šťáva, skořice a nakrájené ovoce. Musí se nechat vychladit, jinak chutě nesplynou.",
+    "klicova_slova": [
+      "spanelsko",
+      "vino",
+      "ovoce",
+      "leto",
+      "dzbanek"
+    ]
+  },
+  "Ananasová sangria": {
+    "trivia": "Sangria s grilovaným ananasem a rumem. Ogrilovaný plátek dodá kouřovou chuť, kterou v obyčejné sangrii nenajdete.",
+    "klicova_slova": [
+      "spanelsko",
+      "ananas",
+      "gril",
+      "rum",
+      "leto"
+    ]
+  },
+  "Aperol Sour": {
+    "trivia": "Aperol Spritz svlečený z bublinek — gin, citron a bílek z něj udělají plnohodnotný sour.",
+    "klicova_slova": [
+      "aperol",
+      "sour",
+      "bilek",
+      "italie",
+      "gin"
+    ]
+  },
+  "Appletini": {
+    "trivia": "Ikona amerických barů přelomu tisíciletí. V seriálu Scrubs je to oblíbený drink doktora Doriana.",
+    "klicova_slova": [
+      "scrubs",
+      "jablko",
+      "martini",
+      "devadesatky",
+      "calvados"
+    ]
+  },
+  "B-51": {
+    "trivia": "Varianta B-52, ve které Grand Marnier vystřídal oříškový Frangelico.",
+    "klicova_slova": [
+      "vrstveny",
+      "frangelico",
+      "kahlua",
+      "baileys",
+      "bombarder"
+    ]
+  },
+  "B-53": {
+    "trivia": "B-52 se sambucou místo Baileys — anýz místo smetany.",
+    "klicova_slova": [
+      "vrstveny",
+      "sambuca",
+      "anyz",
+      "kahlua",
+      "bombarder"
+    ]
+  },
+  "B-54": {
+    "trivia": "B-52, ve které se Grand Marnier vymění za mandlové amaretto.",
+    "klicova_slova": [
+      "vrstveny",
+      "amaretto",
+      "mandle",
+      "kahlua",
+      "bombarder"
+    ]
+  },
+  "B-55": {
+    "trivia": "B-52 s absintem navrch. Nejsilnější člen rodiny a jediný, který se dá zapálit skoro neviditelným plamenem.",
+    "klicova_slova": [
+      "vrstveny",
+      "absint",
+      "ohen",
+      "kahlua",
+      "bombarder"
+    ]
+  },
+  "B-56": {
+    "trivia": "B-52, kde vrchní vrstvu tvoří čistá vodka místo Grand Marnier.",
+    "klicova_slova": [
+      "vrstveny",
+      "vodka",
+      "kahlua",
+      "baileys",
+      "bombarder"
+    ]
+  },
+  "B-57": {
+    "trivia": "B-52 se zelenou peprmintkou uprostřed — chladivá varianta.",
+    "klicova_slova": [
+      "vrstveny",
+      "zelena",
+      "peprmint",
+      "kahlua",
+      "bombarder"
+    ]
+  },
+  "B-156": {
+    "trivia": "Trojnásobná B-52 ve vysoké sklenici. Číslo v názvu je 52 krát tři.",
+    "klicova_slova": [
+      "vrstveny",
+      "velky",
+      "trojnasobek",
+      "kahlua",
+      "bombarder"
+    ]
+  },
+  "B-52 Gunship": {
+    "trivia": "Klasická B-52 se čtvrtou vrstvou ginu až po okraj — palubní děla navíc.",
+    "klicova_slova": [
+      "vrstveny",
+      "gin",
+      "ctyri vrstvy",
+      "bombarder",
+      "letadlo"
+    ]
+  },
+  "B-52 in the Desert": {
+    "trivia": "Mexická verze B-52: místo Baileys tequila. Druhé jméno zní B-52 with a Mexican Tailgunner.",
+    "klicova_slova": [
+      "vrstveny",
+      "tequila",
+      "mexiko",
+      "poust",
+      "bombarder"
+    ]
+  },
+  "B-52 with a Full Payload": {
+    "trivia": "Pětivrstvá B-52 s Frangelicem a overproof rumem — plný náklad bomb.",
+    "klicova_slova": [
+      "vrstveny",
+      "frangelico",
+      "overproof",
+      "pet vrstev",
+      "bombarder"
+    ]
+  },
+  "Bellini Royal": {
+    "trivia": "Bellini povýšené o koňak. V Harry's Baru v Benátkách se ale drží originálu bez destilátu.",
+    "klicova_slova": [
+      "benatky",
+      "broskev",
+      "prosecco",
+      "konak",
+      "harrys bar"
+    ]
+  },
+  "Big Cosmo": {
+    "trivia": "Cosmopolitan v party kýblu s dlouhými slámkami — jeden kýbl vyjde zhruba na pět lidí.",
+    "klicova_slova": [
+      "party",
+      "kybl",
+      "cosmopolitan",
+      "brusinky",
+      "oslava"
+    ]
+  },
+  "Big Margarita": {
+    "trivia": "Margarita v kýbli. Sůl se dává zvlášť do misky, ať si každý osolí podle sebe.",
+    "klicova_slova": [
+      "party",
+      "kybl",
+      "margarita",
+      "tequila",
+      "sul"
+    ]
+  },
+  "Bílé víno se Spritem": {
+    "trivia": "Sladší bratr vinného střiku. Podle článku pokrývají tyhle kombinace celý sortiment Coca-Coly: červené s colou, bílé se Spritem, rosé s Fantou.",
+    "klicova_slova": [
+      "strik",
+      "sprite",
+      "vino",
+      "leto",
+      "levny"
+    ]
+  },
+  "Bílé víno s tonikem": {
+    "trivia": "Střik s jemnou hořkostí od chininu — výraznější než obyčejná soda.",
+    "klicova_slova": [
+      "strik",
+      "tonik",
+      "chinin",
+      "vino",
+      "leto"
+    ]
+  },
+  "Rosé s Fantou": {
+    "trivia": "Nejmladší z rodiny vinných střiků s limonádou. Trend posledních let.",
+    "klicova_slova": [
+      "rose",
+      "fanta",
+      "strik",
+      "leto",
+      "sladke"
+    ]
+  },
+  "Červené víno s mlékem": {
+    "trivia": "Mléko víno zjemní a srazí jeho trpkost. Vypadá bizarně, chutná překvapivě dobře.",
+    "klicova_slova": [
+      "mleko",
+      "vino",
+      "bizar",
+      "jemne",
+      "netradicni"
+    ]
+  },
+  "Black & Black": {
+    "trivia": "Tmavý stout dolitý džusem z černého rybízu. V Británii se mu říká prostě Black.",
+    "klicova_slova": [
+      "stout",
+      "rybiz",
+      "britanie",
+      "pivo",
+      "tmave"
+    ]
+  },
+  "Chelada": {
+    "trivia": "Mexická odpověď na horko — pivo, limetka a sůl. Od Michelady ji odlišuje absence rajčat.",
+    "klicova_slova": [
+      "mexiko",
+      "limetka",
+      "sul",
+      "horko",
+      "michelada"
+    ]
+  },
+  "Bloody Maria": {
+    "trivia": "Bloody Mary s tequilou. Křen a chilli jí dodají pálivost, kterou vodková verze nemá.",
+    "klicova_slova": [
+      "tequila",
+      "bloody mary",
+      "kren",
+      "rajce",
+      "kocovina"
+    ]
+  },
+  "Bloody Tampon": {
+    "trivia": "Tři destiláty, zeleninová šťáva a Baileys, který se v kyselém prostředí srazí. Obskurní drink z kategorie „jednou a dost“.",
+    "klicova_slova": [
+      "obskurni",
+      "hnus",
+      "baileys",
+      "srazenina",
+      "hecovacka"
+    ]
+  },
+  "Four Horsemen of the Apocalypse": {
+    "trivia": "Čtyři whisky ze tří zemí v jednom panáku — a podává se zapálený, což konzumaci pořádně komplikuje.",
+    "klicova_slova": [
+      "whisky",
+      "apokalypsa",
+      "ohen",
+      "jim beam",
+      "jameson"
+    ]
+  },
+  "Hot Mexican Hooker": {
+    "trivia": "Tequila, tabasco a nálev z konzervy tuňáka. Obskurní klasika, kterou vám barman namíchá jen na výslovné přání.",
+    "klicova_slova": [
+      "obskurni",
+      "tunak",
+      "tabasco",
+      "hnus",
+      "mexiko"
+    ]
+  },
+  "Infected Whitehead": {
+    "trivia": "Vodka, rajčatová šťáva a tvaroh. Vypadá, jako by drink už někdo pil před vámi.",
+    "klicova_slova": [
+      "obskurni",
+      "tvaroh",
+      "hnus",
+      "rajce",
+      "zaludek"
+    ]
+  },
+  "Tango": {
+    "trivia": "Pivo s grenadinou a limetkou. Sladká pivní míchačka pro ty, kdo hořkost nemusí.",
+    "klicova_slova": [
+      "pivo",
+      "grenadina",
+      "sladke",
+      "limetka",
+      "michacka"
+    ]
+  },
+  "Mixer": {
+    "trivia": "Z půllitru se upije tolik, aby se vešel panák Jägermeisteru, a ten se do piva vlije. Jednodušší verze Ponorky.",
+    "klicova_slova": [
+      "jager",
+      "pivo",
+      "panak",
+      "hospoda",
+      "ponorka"
+    ]
+  },
+  "Ponorka": {
+    "trivia": "Panák se speciálním grifem vloží do půllitru dnem vzhůru tak, aby zůstal stát na dně. Kdo to neumí, skončí u Mixeru.",
+    "klicova_slova": [
+      "jager",
+      "pivo",
+      "grif",
+      "u-boat",
+      "magicke oko"
+    ]
+  },
+  "Blue Beer": {
+    "trivia": "Blue Curaçao dokáže obarvit i pivo. Výsledek vypadá lépe, než chutná.",
+    "klicova_slova": [
+      "modre",
+      "curacao",
+      "pivo",
+      "party",
+      "barva"
+    ]
+  },
+  "Tagada": {
+    "trivia": "Jahodový sirup zalitý světlým lehčím pivem — jméno má po francouzských jahodových bonbonech.",
+    "klicova_slova": [
+      "jahoda",
+      "sirup",
+      "pivo",
+      "bonbon",
+      "sladke"
+    ]
+  },
+  "Blue Devil": {
+    "trivia": "Zářivě modrý gin s limetkou. Jeden z prvních drinků, které Blue Curaçao proslavilo.",
+    "klicova_slova": [
+      "modre",
+      "curacao",
+      "gin",
+      "limetka",
+      "cert"
+    ]
+  },
+  "Blue Hawaiian": {
+    "trivia": "Namíchal ho Harry Yee v honolulském hotelu Hilton Hawaiian Village v roce 1957 na objednávku dovozce Blue Curaçaa.",
+    "klicova_slova": [
+      "havaj",
+      "honolulu",
+      "harry yee",
+      "kokos",
+      "ananas",
+      "modre"
+    ]
+  },
+  "The Bluebonnet": {
+    "trivia": "Texaská margarita — jméno má po státní květině Texasu. Krusta z Tajínu pálí i osvěžuje.",
+    "klicova_slova": [
+      "texas",
+      "margarita",
+      "tajin",
+      "jalapeno",
+      "kvetina"
+    ]
+  },
+  "Bombardino Pirata": {
+    "trivia": "Bombardino s karibským rumem místo brandy. Na alpských sjezdovkách nejoblíbenější varianta.",
+    "klicova_slova": [
+      "alpy",
+      "rum",
+      "vajecnak",
+      "lyze",
+      "pirat"
+    ]
+  },
+  "Bombardino Scozzese": {
+    "trivia": "„Skotský“ Bombardino s whisky. Kdo chce grappu, objedná si Bandito — ale ten název není ustálený.",
+    "klicova_slova": [
+      "alpy",
+      "whisky",
+      "vajecnak",
+      "lyze",
+      "skotsko"
+    ]
+  },
+  "Calimero": {
+    "trivia": "Odlehčené Bombardino bez destilátu — jen vaječný likér a dvojité espresso. Vzniklo proto, aby lyžařům nestoupal alkohol do hlavy tak rychle.",
+    "klicova_slova": [
+      "alpy",
+      "vajecnak",
+      "kava",
+      "lyze",
+      "bombardino",
+      "slabsi"
+    ]
+  },
+  "Bourbon Lemonade": {
+    "trivia": "Typicky americký drink, jehož původ sahá k počátkům výroby bourbonu. Druhé jméno je Kentucky Lemonade.",
+    "klicova_slova": [
+      "kentucky",
+      "bourbon",
+      "limonada",
+      "leto",
+      "amerika"
+    ]
+  },
+  "Bramble": {
+    "trivia": "Namíchal ho Dick Bradsell v Londýně v 80. letech; ostružinový likér nalitý shora vytvoří charakteristický barevný přechod.",
+    "klicova_slova": [
+      "bradsell",
+      "londyn",
+      "ostruziny",
+      "gin",
+      "prechod"
+    ]
+  },
+  "Brandy Collins": {
+    "trivia": "Člen rodiny Collins postavený na brandy — nikoli na koňaku, ten patří Pierru Collinsovi.",
+    "klicova_slova": [
+      "collins",
+      "brandy",
+      "sodovka",
+      "citron",
+      "longdrink"
+    ]
+  },
+  "Pierre Collins": {
+    "trivia": "Francouzský Collins — jediný, který má stát na skutečném koňaku.",
+    "klicova_slova": [
+      "collins",
+      "konak",
+      "francie",
+      "sodovka",
+      "citron"
+    ]
+  },
+  "José Collins": {
+    "trivia": "Mexická odnož rodiny Collins s tequilou.",
+    "klicova_slova": [
+      "collins",
+      "tequila",
+      "mexiko",
+      "sodovka",
+      "citron"
+    ]
+  },
+  "Sandy Collins": {
+    "trivia": "Skotský Collins — výhradně se skotskou whisky, nikdy s irskou. Druhé jméno je Jock Collins.",
+    "klicova_slova": [
+      "collins",
+      "whisky",
+      "skotsko",
+      "jock",
+      "sodovka"
+    ]
+  },
+  "Michael Collins": {
+    "trivia": "Collins s irskou whiskey, pojmenovaný po vůdci irského boje za nezávislost.",
+    "klicova_slova": [
+      "collins",
+      "irsko",
+      "whiskey",
+      "nezavislost",
+      "sodovka"
+    ]
+  },
+  "Jack Collins": {
+    "trivia": "Jablečný Collins s americkým Apple Jackem — u nás nejblíž calvados nebo jablkovice.",
+    "klicova_slova": [
+      "collins",
+      "jablko",
+      "applejack",
+      "calvados",
+      "sodovka"
+    ]
+  },
+  "Ron Collins": {
+    "trivia": "„Ron“ je španělsky rum. Karibský člen rodiny Collins, známý i jako Pedro Collins.",
+    "klicova_slova": [
+      "collins",
+      "rum",
+      "spanelsky",
+      "pedro",
+      "sodovka"
+    ]
+  },
+  "Sam Collins": {
+    "trivia": "Collins pro otrlé — stejný jako John, jen s dvojnásobnou dávkou ginu.",
+    "klicova_slova": [
+      "collins",
+      "gin",
+      "dvojnasobny",
+      "silny",
+      "sodovka"
+    ]
+  },
+  "Vodka Collins": {
+    "trivia": "Collins s vodkou. Druhé jméno Comrade znamená soudruh.",
+    "klicova_slova": [
+      "collins",
+      "vodka",
+      "soudruh",
+      "comrade",
+      "sodovka"
+    ]
+  },
+  "Joan Collins": {
+    "trivia": "Jediný Collins, který porušuje pravidla rodiny — okurka, máta, med a ibišek místo prostého citronu se sodou.",
+    "klicova_slova": [
+      "collins",
+      "okurka",
+      "ibisek",
+      "med",
+      "herecka",
+      "dynastie"
+    ]
+  },
+  "Coco Collins": {
+    "trivia": "Rumový Collins s kokosovým likérem. Alternativní název je nezkrácené Coconut Collins.",
+    "klicova_slova": [
+      "collins",
+      "kokos",
+      "malibu",
+      "rum",
+      "karibik"
+    ]
+  },
+  "Gin Buck": {
+    "trivia": "„Buck“ je celá rodina drinků na zázvorovém pivu s citrusem. Ten ginový se jmenuje i London nebo British Buck.",
+    "klicova_slova": [
+      "gin",
+      "zazvor",
+      "buck",
+      "londyn",
+      "mule"
+    ]
+  },
+  "Hnědý medvěd": {
+    "trivia": "Koňak zalitý sektem. Bublinky zjemní sílu destilátu tak, že si ani nevšimnete, kolik jste toho vypili.",
+    "klicova_slova": [
+      "konak",
+      "sekt",
+      "medved",
+      "rusko",
+      "sampanske"
+    ]
+  },
+  "Bubble Sunset": {
+    "trivia": "Tři vrstvy, které nesmíte smíchat — Aperol dole, džus uprostřed, sekt nahoře. Vypadá to jako západ slunce.",
+    "klicova_slova": [
+      "aperol",
+      "vrstveny",
+      "zapad slunce",
+      "sekt",
+      "leto"
+    ]
+  },
+  "Fragolini": {
+    "trivia": "Jahodový bratranec Belliniho. Italsky fragola znamená jahoda.",
+    "klicova_slova": [
+      "jahoda",
+      "prosecco",
+      "bellini",
+      "italie",
+      "pyre"
+    ]
+  },
+  "Pink Chevrolet": {
+    "trivia": "Jahody s mátou rozmixované do ledové tříště a zalité sektem. Vydá na dvě sklenice.",
+    "klicova_slova": [
+      "jahoda",
+      "mata",
+      "trist",
+      "sekt",
+      "leto",
+      "ruzovy"
+    ]
+  },
+  "Granda Mimosa": {
+    "trivia": "Mimosa vylepšená o Grand Marnier — oblíbená varianta klasiky ze snídaňových brunchů.",
+    "klicova_slova": [
+      "mimosa",
+      "grand marnier",
+      "brunch",
+      "sekt",
+      "pomeranc"
+    ]
+  },
+  "Cuba Libre Spiced": {
+    "trivia": "Vánoční Cuba Libre — kořeněný rum, javorový a punčový sirup a nastrouhaný muškátový oříšek.",
+    "klicova_slova": [
+      "vanoce",
+      "cuba libre",
+      "koreny rum",
+      "muskat",
+      "svatky"
+    ]
+  },
+  "Christmas Cosmopolitan": {
+    "trivia": "Cosmopolitan s vanilkovou vodkou a skořicí navrch. Vánoční verze ikony devadesátek.",
+    "klicova_slova": [
+      "vanoce",
+      "cosmopolitan",
+      "vanilka",
+      "skorice",
+      "brusinky"
+    ]
+  },
+  "Buddy Bolden": {
+    "trivia": "Pojmenován po novoorleánském kornetistovi, kterého se považuje za jednoho z otců jazzu.",
+    "klicova_slova": [
+      "jazz",
+      "new orleans",
+      "kornet",
+      "portske",
+      "konak"
+    ]
+  },
+  "Polibek pod jmelím": {
+    "trivia": "Whisky sour s kapkou grenadiny — vánoční drink, jehož jméno slibuje víc než jen sklenici.",
+    "klicova_slova": [
+      "vanoce",
+      "jmeli",
+      "whisky",
+      "bilek",
+      "sour"
+    ]
+  },
+  "Cafe Brasileiro": {
+    "trivia": "Brazilská káva s cachaçou a čokoládovým likérem. Smetana se šlehá se zrníčky pravé vanilky.",
+    "klicova_slova": [
+      "brazilie",
+      "cachaca",
+      "cokolada",
+      "kava",
+      "vanilka"
+    ]
+  },
+  "Kingstone Negroni": {
+    "trivia": "Karibská verze Negroniho, ve které gin nahradí jamajský rum. Jméno odkazuje na Kingston.",
+    "klicova_slova": [
+      "negroni",
+      "jamajka",
+      "rum",
+      "kingston",
+      "campari"
+    ]
+  },
+  "Enzoni": {
+    "trivia": "Kříženec Negroniho a Gin Sour s rozdrcenými kuličkami hroznového vína. Vznikl v newyorském Milk & Honey.",
+    "klicova_slova": [
+      "negroni",
+      "hrozny",
+      "milk and honey",
+      "campari",
+      "gin"
+    ]
+  },
+  "Campari Milano": {
+    "trivia": "Campari s proseccem a bezovým sirupem — sladší a květinovější než klasický spritz.",
+    "klicova_slova": [
+      "campari",
+      "bezovy",
+      "prosecco",
+      "milano",
+      "aperitiv"
+    ]
+  },
+  "Campari Tonic": {
+    "trivia": "Dvojnásobná hořkost — z bitteru i z chininu v toniku. Aperitiv pro otrlé.",
+    "klicova_slova": [
+      "campari",
+      "tonik",
+      "horky",
+      "chinin",
+      "aperitiv"
+    ]
+  },
+  "Campari Spritz": {
+    "trivia": "Hořčejší předchůdce dnes všudypřítomného Aperol Spritzu. V Benátkách se mu říká Veneziano.",
+    "klicova_slova": [
+      "campari",
+      "spritz",
+      "benatky",
+      "prosecco",
+      "veneziano"
+    ]
+  },
+  "Casino": {
+    "trivia": "Prohibiční klasika z Old Tom ginu s maraschinem. Objevuje se už v Savoy Cocktail Booku z roku 1930.",
+    "klicova_slova": [
+      "prohibice",
+      "old tom",
+      "maraschino",
+      "savoy",
+      "gin"
+    ]
+  },
+  "The Smokers Cough": {
+    "trivia": "Jägermeister s lžící majonézy. Vypadá to přesně tak, jak jméno slibuje.",
+    "klicova_slova": [
+      "obskurni",
+      "majoneza",
+      "jager",
+      "hnus",
+      "chrchel"
+    ]
+  },
+  "The Bath Cure": {
+    "trivia": "Šest destilátů v jedné sklenici. Na pohled hezký drink s účinkem rány kladivem do hlavy.",
+    "klicova_slova": [
+      "obskurni",
+      "rum",
+      "koupel",
+      "silny",
+      "party"
+    ]
+  },
+  "Horse Jizz": {
+    "trivia": "Pivo a mléko v poměru jedna ku jedné. Mléko se v pivu sráží — a to je celé.",
+    "klicova_slova": [
+      "obskurni",
+      "mleko",
+      "pivo",
+      "hnus",
+      "srazenina"
+    ]
+  },
+  "Cement Mixer": {
+    "trivia": "Smetanový likér a citronová šťáva se v ústech srazí do hmoty připomínající beton. Proto se drink jmenuje, jak se jmenuje.",
+    "klicova_slova": [
+      "obskurni",
+      "baileys",
+      "citron",
+      "beton",
+      "srazenina"
+    ]
+  },
+  "Prairie Chicken": {
+    "trivia": "Drsnější varianta Prérijní ústřice — místo tabasca sůl a pepř, místo bourbonu gin.",
+    "klicova_slova": [
+      "kocovina",
+      "vejce",
+      "gin",
+      "vyprostovak",
+      "prerie"
+    ]
+  },
+  "Padějevka": {
+    "trivia": "Retro míchačka z dob, kdy vermut stál pár korun — dvě deci vermutu a deci tuzemáku.",
+    "klicova_slova": [
+      "retro",
+      "vermut",
+      "tuzemak",
+      "hospoda",
+      "socialismus"
+    ]
+  },
+  "Správce": {
+    "trivia": "Deci režné a deci tuzemáku. Nic víc, nic míň.",
+    "klicova_slova": [
+      "retro",
+      "rezna",
+      "tuzemak",
+      "hospoda",
+      "silny"
+    ]
+  },
+  "Coco Espresso Affogato": {
+    "trivia": "Affogato znamená italsky „utopený“ — kopeček zmrzliny se zalije horkým espressem a jí se lžičkou.",
+    "klicova_slova": [
+      "italie",
+      "zmrzlina",
+      "espresso",
+      "grappa",
+      "dezert",
+      "kokos"
+    ]
+  },
+  "Coffee Gin & Tonic": {
+    "trivia": "Káva nalitá opatrně navrch zůstane jako hnědá vrstva nad čirým gin tonikem. Nejlépe funguje cold brew.",
+    "klicova_slova": [
+      "gin",
+      "tonik",
+      "kava",
+      "cold brew",
+      "vrstva"
+    ]
+  },
+  "Cryo-Yorsh": {
+    "trivia": "Zmražené kostky vodky v pivu. Hlídej poměr, jinak celý nápoj zamrzne.",
+    "klicova_slova": [
+      "vodka",
+      "pivo",
+      "mrazeny",
+      "rusko",
+      "yorsh"
+    ]
+  },
+  "Mexický Yorsh": {
+    "trivia": "Tequila v láhvi mexického ležáku. Druhé jméno zní Mexická smrt.",
+    "klicova_slova": [
+      "tequila",
+      "corona",
+      "mexiko",
+      "pivo",
+      "smrt"
+    ]
+  },
+  "Čaj s rumem": {
+    "trivia": "Česká zimní klasika. Rum se přidává až nakonec — nad 80 °C se alkohol odpařuje.",
+    "klicova_slova": [
+      "zima",
+      "caj",
+      "tuzemak",
+      "nachlazeni",
+      "chata"
+    ]
+  },
+  "Daiquiri melon": {
+    "trivia": "Letní varianta Daiquiri s melounovým pyré místo části sirupu.",
+    "klicova_slova": [
+      "meloun",
+      "daiquiri",
+      "leto",
+      "rum",
+      "limetka"
+    ]
+  },
+  "Mimosa melon": {
+    "trivia": "Mimosa, ve které pomerančový džus nahradí melounová šťáva nebo smoothie.",
+    "klicova_slova": [
+      "meloun",
+      "mimosa",
+      "sekt",
+      "leto",
+      "brunch"
+    ]
+  },
+  "Moscow mule melon": {
+    "trivia": "Moscow Mule s melounovým džusem — letní varianta ruského mezka.",
+    "klicova_slova": [
+      "meloun",
+      "mule",
+      "zazvor",
+      "vodka",
+      "leto"
+    ]
+  },
+  "Shaky Pete's Ginger Brew": {
+    "trivia": "Gin se zázvorovým sirupem přecezený do namraženého půllitru a dolitý pivem typu ale. Moderní londýnská klasika.",
+    "klicova_slova": [
+      "gin",
+      "zazvor",
+      "ale",
+      "londyn",
+      "pivo"
+    ]
+  },
+  "Mantini": {
+    "trivia": "Parodie na Martini — sedm centilitrů čistého ginu a ozdoba ze sušeného masa.",
+    "klicova_slova": [
+      "martini",
+      "parodie",
+      "gin",
+      "maso",
+      "oliva"
+    ]
+  },
+  "Pale Charlie": {
+    "trivia": "Sloe gin, meruňková brandy a absint dolité pivem IPA. Pivní koktejl pro pokročilé.",
+    "klicova_slova": [
+      "ipa",
+      "sloe gin",
+      "absint",
+      "grapefruit",
+      "pivo"
+    ]
+  },
+  "De Beauvoir": {
+    "trivia": "Žitná whisky s oříškovým Frangelicem a stoutem. Pojmenován po londýnské čtvrti De Beauvoir Town.",
+    "klicova_slova": [
+      "stout",
+      "rye",
+      "frangelico",
+      "londyn",
+      "pivo"
+    ]
+  },
+  "Weissen Sour": {
+    "trivia": "Whiskey sour s lžičkou pomerančové marmelády, dolitý pšeničným pivem.",
+    "klicova_slova": [
+      "psenicne",
+      "marmelada",
+      "bourbon",
+      "sour",
+      "pivo"
+    ]
+  },
+  "Saoco": {
+    "trivia": "Kubánská plážová klasika. Původně se míchala rovnou v otevřeném zeleném kokosu.",
+    "klicova_slova": [
+      "kuba",
+      "kokos",
+      "plaz",
+      "rum",
+      "leto"
+    ]
+  },
+  "Francouzská káva": {
+    "trivia": "Koňak s Grand Marnierem zalitý horkou kávou. Šlehačka se dává ihned, aby se alkohol nestihl odpařit.",
+    "klicova_slova": [
+      "konak",
+      "grand marnier",
+      "kava",
+      "francie",
+      "slehacka"
+    ]
+  },
+  "Frozen Daiquiri": {
+    "trivia": "Daiquiri rozmixované do konzistence sorbetu. Hemingway ho v El Floriditě pil bez cukru a v dvojité dávce.",
+    "klicova_slova": [
+      "mixer",
+      "sorbet",
+      "havana",
+      "hemingway",
+      "leto"
+    ]
+  },
+  "Garibaldi Sbagliato": {
+    "trivia": "Campari za sever Itálie, pomeranče za jih — a prosecco, které z něj dělá „sbagliato“, tedy pokažený.",
+    "klicova_slova": [
+      "garibaldi",
+      "italie",
+      "prosecco",
+      "campari",
+      "spritz"
+    ]
+  },
+  "Golden Dream": {
+    "trivia": "Krémový koktejl ze 70. let, ve kterém vládne italské Galliano se svou vanilkovo-anýzovou chutí.",
+    "klicova_slova": [
+      "galliano",
+      "smetana",
+      "sedmdesatky",
+      "pomeranc",
+      "zlaty"
+    ]
+  },
+  "Grand Sidecar": {
+    "trivia": "Sidecar, ve kterém triple sec vystřídal Grand Marnier — luxusnější a sladší verze.",
+    "klicova_slova": [
+      "sidecar",
+      "grand marnier",
+      "konak",
+      "citron",
+      "luxus"
+    ]
+  },
+  "Grog ze slivovice": {
+    "trivia": "Česká varianta grogu — místo rumu slivovice a sušená švestka na dně hrnku.",
+    "klicova_slova": [
+      "slivovice",
+      "svestka",
+      "med",
+      "zima",
+      "morava"
+    ]
+  },
+  "Grog z hruškovice": {
+    "trivia": "Hruškovice zalitá horkou vodou a oslazená medem až nakonec, aby neztratil aroma.",
+    "klicova_slova": [
+      "hruskovice",
+      "williams",
+      "med",
+      "zima",
+      "grog"
+    ]
+  },
+  "Grog s karamelem": {
+    "trivia": "Cukr se nechá zkaramelizovat a teprve pak zalije vodou. Grog dostane hlubší, opečenou sladkost.",
+    "klicova_slova": [
+      "karamel",
+      "rum",
+      "zima",
+      "grog",
+      "cukr"
+    ]
+  },
+  "Grog z griotky": {
+    "trivia": "Višňová varianta grogu. Kdo chce ostřejší, přidá půl na půl tuzemák.",
+    "klicova_slova": [
+      "griotka",
+      "visne",
+      "zima",
+      "grog",
+      "tuzemak"
+    ]
+  },
+  "Máslový grog": {
+    "trivia": "Na hladině plave lžíce másla utřeného s cukrem a muškátovým oříškem. Anglický hot buttered rum v české úpravě.",
+    "klicova_slova": [
+      "maslo",
+      "muskat",
+      "rum",
+      "zima",
+      "grog"
+    ]
+  },
+  "Grog z brandy": {
+    "trivia": "Grog s kořeněným rozvarem a brandy místo rumu. Brandy se přidává až pod 80 °C.",
+    "klicova_slova": [
+      "brandy",
+      "koreni",
+      "zima",
+      "grog",
+      "konak"
+    ]
+  },
+  "Horký cider": {
+    "trivia": "Cider se šťávou z granátového jablka a kořením. Nesmí vřít — nad 78 °C se odpařuje alkohol.",
+    "klicova_slova": [
+      "cider",
+      "jablko",
+      "granatove jablko",
+      "zima",
+      "advent"
+    ]
+  },
+  "Punč s Becherovkou": {
+    "trivia": "Půl litru Becherovky v jablečném moštu s kořením. Vydá zhruba na osm hrnků.",
+    "klicova_slova": [
+      "becherovka",
+      "most",
+      "advent",
+      "punc",
+      "vanoce"
+    ]
+  },
+  "Lesní ticho": {
+    "trivia": "Rosé s borůvkovým džusem a sodou. Letní drink, který vypadá jako lesní ovoce ve sklenici.",
+    "klicova_slova": [
+      "boruvky",
+      "rose",
+      "les",
+      "leto",
+      "sodovka"
+    ]
+  },
+  "Halb und Halb": {
+    "trivia": "Půl na půl tiché a šumivé víno. Jednodušší koktejl už asi neexistuje.",
+    "klicova_slova": [
+      "vino",
+      "sekt",
+      "pul na pul",
+      "jednoduchy",
+      "nemecko"
+    ]
+  },
+  "Ovocná limonáda ze studeného svařáku": {
+    "trivia": "Svařák, který se nechá vychladnout a pije se studený. Ovoce zůstává ve sklenici.",
+    "klicova_slova": [
+      "svarak",
+      "studeny",
+      "ovoce",
+      "leto",
+      "vino"
+    ]
+  },
+  "Peardise": {
+    "trivia": "Hruškový likér s citronem a šumivým vínem. Jméno je slovní hříčka z „pear“ a „paradise“.",
+    "klicova_slova": [
+      "hruska",
+      "sekt",
+      "likér",
+      "raj",
+      "leto"
+    ]
+  },
+  "High Society": {
+    "trivia": "Hit devadesátek — gin, broskvový likér a Campari s grapefruitem.",
+    "klicova_slova": [
+      "devadesatky",
+      "broskev",
+      "campari",
+      "grapefruit",
+      "gin"
+    ]
+  },
+  "Holandská káva": {
+    "trivia": "Silná sladká káva z džezvy zalitá na gin. Recept vydá na dvě porce.",
+    "klicova_slova": [
+      "gin",
+      "kava",
+      "dzezva",
+      "nizozemi",
+      "slehacka"
+    ]
+  },
+  "Horká čokoláda s vínem": {
+    "trivia": "Hořká čokoláda rozpuštěná v mléce a doplněná červeným vínem. Zimní dezert v hrnku.",
+    "klicova_slova": [
+      "cokolada",
+      "vino",
+      "zima",
+      "dezert",
+      "mleko"
+    ]
+  },
+  "Horká griotka": {
+    "trivia": "Nejjednodušší zimní drink české hospody — griotka a horká voda s citronem.",
+    "klicova_slova": [
+      "griotka",
+      "visne",
+      "zima",
+      "hospoda",
+      "jednoduchy"
+    ]
+  },
+  "Punč z griotky": {
+    "trivia": "Griotka s tuzemákem v kořeněné vodě. Silnější sourozenec Horké griotky.",
+    "klicova_slova": [
+      "griotka",
+      "tuzemak",
+      "punc",
+      "zima",
+      "koreni"
+    ]
+  },
+  "Horký citrusový punč": {
+    "trivia": "Punč na celý advent — vydá zhruba na deset porcí. Cukr se karamelizuje a citrusy se vaří i s kůrou.",
+    "klicova_slova": [
+      "advent",
+      "punc",
+      "citrusy",
+      "vanoce",
+      "trhy"
+    ]
+  },
+  "Horký pomerančový punč": {
+    "trivia": "Litr čerstvé pomerančové šťávy s karamelem, vanilkou a koňakem.",
+    "klicova_slova": [
+      "pomeranc",
+      "karamel",
+      "konak",
+      "vanilka",
+      "punc"
+    ]
+  },
+  "Horké portské": {
+    "trivia": "Portské ruby je samo o sobě dost sladké, takže cukr většinou není potřeba. Nesmí přesáhnout 78 °C.",
+    "klicova_slova": [
+      "portske",
+      "svarak",
+      "zima",
+      "portugalsko",
+      "ruby"
+    ]
+  },
+  "Hořící medovina": {
+    "trivia": "Medovina v kořeněném hruškovém moštu. Advent na trzích v hrnku.",
+    "klicova_slova": [
+      "medovina",
+      "hruska",
+      "advent",
+      "trhy",
+      "med"
+    ]
+  },
+  "Svařený cider": {
+    "trivia": "Cider s citrusovou kůrou a kořením. Medem se sladí až těsně před pitím.",
+    "klicova_slova": [
+      "cider",
+      "jablko",
+      "zima",
+      "med",
+      "koreni"
+    ]
+  },
+  "Hot Apple Toddy": {
+    "trivia": "Hot Toddy s jablečným ciderem místo vody. Med se dává na dno a zalije whisky.",
+    "klicova_slova": [
+      "cider",
+      "whisky",
+      "med",
+      "zima",
+      "toddy"
+    ]
+  },
+  "Hruškový punč s medem": {
+    "trivia": "Hruškový mošt, bílé víno a hruškovice s rozinkami a muškátovým oříškem.",
+    "klicova_slova": [
+      "hruska",
+      "punc",
+      "med",
+      "rozinky",
+      "advent"
+    ]
+  },
+  "Jablečný punč s karamelem a vanilkou": {
+    "trivia": "Cukr se nechá zkaramelizovat a teprve pak zalije jablečným džusem. Vůně vanilky dělá zbytek.",
+    "klicova_slova": [
+      "jablko",
+      "karamel",
+      "vanilka",
+      "punc",
+      "advent"
+    ]
+  },
+  "Pomerančový punč se zázvorem a kardamonem": {
+    "trivia": "Zázvor s kardamomem dá punči orientální nádech, jaký v obyčejném svařáku nenajdete.",
+    "klicova_slova": [
+      "pomeranc",
+      "zazvor",
+      "kardamom",
+      "punc",
+      "advent"
+    ]
+  },
+  "Chupito": {
+    "trivia": "Španělsky „doušek“. Panák rumu s džusem a třešní, který se dá pít i pomalu.",
+    "klicova_slova": [
+      "spanelsko",
+      "panak",
+      "dousek",
+      "rum",
+      "tresen"
+    ]
+  },
+  "Tiger Style": {
+    "trivia": "Gin s medovým sirupem z čínského koření. Sirup si připravíš doma — koření povař ve vodě a zahusť medem.",
+    "klicova_slova": [
+      "gin",
+      "med",
+      "cinske koreni",
+      "sour",
+      "vanoce"
+    ]
+  },
+  "Sweet Christmas": {
+    "trivia": "Červené víno, sherry a cider s punčovým sirupem. Vánoce ve vysoké sklenici.",
+    "klicova_slova": [
+      "vanoce",
+      "sherry",
+      "cider",
+      "punc",
+      "vino"
+    ]
+  },
+  "It's a Wonderful Life": {
+    "trivia": "Krémový vánoční drink pojmenovaný po klasickém filmu Franka Capry z roku 1946.",
+    "klicova_slova": [
+      "vanoce",
+      "film",
+      "capra",
+      "smetana",
+      "menta"
+    ]
+  },
+  "Jablečný punč s proseccem": {
+    "trivia": "Vodka s jablečnou šťávou doplněná proseccem. Všechny suroviny musí být pořádně vychlazené.",
+    "klicova_slova": [
+      "jablko",
+      "prosecco",
+      "vodka",
+      "punc",
+      "svatky"
+    ]
+  },
+  "Jahodové Daiquiri": {
+    "trivia": "Daiquiri se šťávou z čerstvých jahod a podrcenou mátou v šejkru.",
+    "klicova_slova": [
+      "jahody",
+      "daiquiri",
+      "mata",
+      "leto",
+      "rum"
+    ]
+  },
+  "Jahodový spritz": {
+    "trivia": "Jahody se pomačkají vidličkou, zbytek dužiny se dá použít do dezertu. Zamíchat jen zlehka, ať zůstanou bublinky.",
+    "klicova_slova": [
+      "jahody",
+      "spritz",
+      "sekt",
+      "leto",
+      "sodovka"
+    ]
+  },
+  "Jamajská káva": {
+    "trivia": "Irská káva s karibským rumem místo whiskey. Šlehačka se lije opatrně přes lžičku a nemíchá se.",
+    "klicova_slova": [
+      "jamajka",
+      "rum",
+      "kava",
+      "slehacka",
+      "karibik"
+    ]
+  },
+  "Kentucky Coffee": {
+    "trivia": "Irská káva po americku — s bourbonem z Kentucky.",
+    "klicova_slova": [
+      "kentucky",
+      "bourbon",
+      "kava",
+      "amerika",
+      "slehacka"
+    ]
+  },
+  "Kentucky Mule": {
+    "trivia": "Moscow Mule s bourbonem. Zázvorové pivo i měděný plecháček zůstávají.",
+    "klicova_slova": [
+      "kentucky",
+      "bourbon",
+      "mule",
+      "zazvor",
+      "medeny hrnek"
+    ]
+  },
+  "Krámy Yettiho mámy": {
+    "trivia": "Griotka s francovkou. Název je výstižný, receptura nepoživatelná — doklad hospodského folkloru, ne návod.",
+    "klicova_slova": [
+      "francovka",
+      "griotka",
+      "bizar",
+      "folklor",
+      "hospoda"
+    ]
+  },
+  "Drátěnka s vodkou": {
+    "trivia": "Drsnější verze Drátěnky: místo tuzemáku vodka, místo nalámaného párátka pepř.",
+    "klicova_slova": [
+      "ocet",
+      "vodka",
+      "pepr",
+      "hecovacka",
+      "bizar"
+    ]
+  },
+  "Ledová káva s rumem": {
+    "trivia": "Káva musí být hodně silná — tající led ji ještě zředí. Nejlépe funguje espresso nebo cold brew.",
+    "klicova_slova": [
+      "kava",
+      "tuzemak",
+      "leto",
+      "led",
+      "cold brew"
+    ]
+  },
+  "Ledová káva s Baileys": {
+    "trivia": "Studená káva se smetanovým likérem, přikrytá šlehačkou a čokoládou.",
+    "klicova_slova": [
+      "kava",
+      "baileys",
+      "slehacka",
+      "cokolada",
+      "leto"
+    ]
+  },
+  "Ledová káva s kokosem": {
+    "trivia": "Ledová káva s karibským rumem a kokosovým sirupem — nebo rovnou s Malibu.",
+    "klicova_slova": [
+      "kava",
+      "kokos",
+      "malibu",
+      "rum",
+      "leto"
+    ]
+  },
+  "Lemon Drop Martini": {
+    "trivia": "Vznikl v 70. letech v San Francisku. Cukrová krusta na okraji z něj dělá pití i dezert.",
+    "klicova_slova": [
+      "san francisco",
+      "citron",
+      "cukr",
+      "martini",
+      "bonbon"
+    ]
+  },
+  "Lemongrass Gin Fizz": {
+    "trivia": "Gin fizz s citronovou trávou. Šejkr se třepe, dokud se neorosí.",
+    "klicova_slova": [
+      "gin",
+      "lemongrass",
+      "fizz",
+      "leto",
+      "sodovka"
+    ]
+  },
+  "Mandlový fizz": {
+    "trivia": "Gin s domácím orgeatem a sodou. Mandlový sirup se dá vyrobit doma a díky cukru vydrží prakticky neomezeně.",
+    "klicova_slova": [
+      "mandle",
+      "orgeat",
+      "gin",
+      "fizz",
+      "sirup"
+    ]
+  },
+  "Manoa": {
+    "trivia": "Tiki koktejl s pěti složkami z Karibiku. Podává se v keramickém tiki hrnku.",
+    "klicova_slova": [
+      "tiki",
+      "rum",
+      "falernum",
+      "mucenka",
+      "havaj"
+    ]
+  },
+  "Vodkatini": {
+    "trivia": "Martini, ve kterém gin nahradí vodka. Právě tuhle verzi si James Bond nechává protřepat.",
+    "klicova_slova": [
+      "bond",
+      "vodka",
+      "martini",
+      "oliva",
+      "007"
+    ]
+  },
+  "Rourou": {
+    "trivia": "Pastis s jahodovým sirupem. Ve francouzských bistrech se anýzovka barví sirupy podle chuti.",
+    "klicova_slova": [
+      "pastis",
+      "jahoda",
+      "francie",
+      "anyz",
+      "bistro"
+    ]
+  },
+  "Tomate": {
+    "trivia": "Pastis s grenadinou se zbarví do červena — odtud jméno „rajče“.",
+    "klicova_slova": [
+      "pastis",
+      "grenadina",
+      "francie",
+      "rajce",
+      "anyz"
+    ]
+  },
+  "Mauresque": {
+    "trivia": "„Maurský“ pastis s mandlovým sirupem, klasika jihofrancouzských bister.",
+    "klicova_slova": [
+      "pastis",
+      "mandle",
+      "orgeat",
+      "francie",
+      "anyz"
+    ]
+  },
+  "Oblak": {
+    "trivia": "Balkánská mastika se po zalití vodou zakalí do mléčného oblaku — odtud jméno.",
+    "klicova_slova": [
+      "mastika",
+      "balkan",
+      "anyz",
+      "mata",
+      "zakal"
+    ]
+  },
+  "Metropolitan": {
+    "trivia": "Brandy s červeným vermutem a kapkou angostury. Klasika z konce 19. století, dnes skoro zapomenutá.",
+    "klicova_slova": [
+      "brandy",
+      "vermut",
+      "angostura",
+      "klasika",
+      "manhattan"
+    ]
+  },
+  "Mexická káva": {
+    "trivia": "Káva s tequilou a Kahlúou. Místo šlehačky se dá dát kopeček vanilkové zmrzliny.",
+    "klicova_slova": [
+      "mexiko",
+      "tequila",
+      "kahlua",
+      "kava",
+      "slehacka"
+    ]
+  },
+  "Miloškův šláftruňk": {
+    "trivia": "Panák Becherovky utopený v hrnku horkého mléka. Kdo trpí nespavostí, poměr obrátí.",
+    "klicova_slova": [
+      "becherovka",
+      "mleko",
+      "spanek",
+      "vecer",
+      "nespavost"
+    ]
+  },
+  "Mojito Original Recipe": {
+    "trivia": "Verze s drcenými limetkami, angosturou a třtinovým sirupem Guarapo.",
+    "klicova_slova": [
+      "kuba",
+      "guarapo",
+      "angostura",
+      "limetka",
+      "mata"
+    ]
+  },
+  "Mojito Cukito Fashioned": {
+    "trivia": "Mojito s rapadurou — sušenou třtinovou melasou, která drinku dodá karamelovou hloubku.",
+    "klicova_slova": [
+      "rapadura",
+      "melasa",
+      "mojito",
+      "mata",
+      "karamel"
+    ]
+  },
+  "Mojito Originál": {
+    "trivia": "Verze s mátovým sirupem. Ozdobná snítka máty se během pití žvýká a zapíjí, aby se zvýraznilo aroma.",
+    "klicova_slova": [
+      "mojito",
+      "matovy sirup",
+      "mata",
+      "kuba",
+      "aroma"
+    ]
+  },
+  "Mojito s příchutí": {
+    "trivia": "Základ zůstává, jen se přidá ovoce — borůvky, maliny, meloun, grapefruit nebo jahody.",
+    "klicova_slova": [
+      "mojito",
+      "ovoce",
+      "jahody",
+      "meloun",
+      "leto"
+    ]
+  },
+  "Námořnický grog": {
+    "trivia": "Britské námořnictvo vydávalo grog dennodenně až do roku 1970 — poslední dávka padla 31. července, kterému se dodnes říká Black Tot Day.",
+    "klicova_slova": [
+      "namornictvo",
+      "black tot day",
+      "rum",
+      "britanie",
+      "1970"
+    ]
+  },
+  "Virgin Strawberry Daiquiri": {
+    "trivia": "Nealkoholické jahodové Daiquiri — jahody, limetkový sirup a led v mixéru. Vydá na dvě porce.",
+    "klicova_slova": [
+      "nealko",
+      "jahody",
+      "deti",
+      "ridic",
+      "mixer"
+    ]
+  },
+  "Okurková limonáda s ginem": {
+    "trivia": "Gin s okurkou a mátou. Nejlépe funguje s ginem Hendrick's, který je okurkou přímo ochucený.",
+    "klicova_slova": [
+      "okurka",
+      "gin",
+      "hendricks",
+      "mata",
+      "leto"
+    ]
+  },
+  "Opilá horká višeň": {
+    "trivia": "Višňový mošt s višňovicí a kořením. Adventní alternativa svařáku pro ty, kdo nemusí víno.",
+    "klicova_slova": [
+      "visne",
+      "advent",
+      "trhy",
+      "zima",
+      "most"
+    ]
+  },
+  "Paradise": {
+    "trivia": "Klasika ze Savoy Cocktail Booku v poměru 7:4:3 — gin, meruňka, pomeranč.",
+    "klicova_slova": [
+      "savoy",
+      "merunka",
+      "gin",
+      "pomeranc",
+      "raj"
+    ]
+  },
+  "Pečený citrusový čaj s rumem": {
+    "trivia": "Citrusy se pečou 45 minut v troubě, směs se zavaří do sklenic s rumem a vydrží ve spíži i roky.",
+    "klicova_slova": [
+      "advent",
+      "citrusy",
+      "trouba",
+      "zavarovani",
+      "darek"
+    ]
+  },
+  "Proton": {
+    "trivia": "Název je zkratka: PRO-secco a TON-ik. Nejlépe vypadá s růžovým proseccem.",
+    "klicova_slova": [
+      "prosecco",
+      "tonik",
+      "ruzovy",
+      "leto",
+      "zkratka"
+    ]
+  },
+  "Pink Gin Spritz": {
+    "trivia": "Růžový jahodový gin s bylinkovou limonádou a proseccem. Instagramový drink par excellence.",
+    "klicova_slova": [
+      "ruzovy gin",
+      "jahoda",
+      "prosecco",
+      "leto",
+      "spritz"
+    ]
+  },
+  "Pivní svařák": {
+    "trivia": "Med se přidává až těsně před podáváním — při vaření by ztratil aroma i účinné látky.",
+    "klicova_slova": [
+      "pivo",
+      "svarak",
+      "med",
+      "zima",
+      "koreni"
+    ]
+  },
+  "Porto Flip": {
+    "trivia": "„Flip“ je celá rodina drinků se syrovým vejcem, doložená už v 17. století. Tenhle je oficiální koktejl IBA.",
+    "klicova_slova": [
+      "portske",
+      "zloutek",
+      "flip",
+      "iba",
+      "muskat"
+    ]
+  },
+  "Royal Hawaiian": {
+    "trivia": "Nese jméno po růžovém hotelu na pláži Waikiki. Indigový gin Empress 1908 mění barvu podle kyselosti — s citrusem přejde z modré do růžové.",
+    "klicova_slova": [
+      "havaj",
+      "waikiki",
+      "empress",
+      "ananas",
+      "orgeat",
+      "modry gin"
+    ]
+  },
+  "Puccini": {
+    "trivia": "Benátský sourozenec Belliniho a Rossiniho — všechny tři nesou jména italských umělců.",
+    "klicova_slova": [
+      "benatky",
+      "mandarinka",
+      "prosecco",
+      "opera",
+      "bellini"
+    ]
+  },
+  "Punč": {
+    "trivia": "Slovo pochází z hindského „paňč“, tedy pět — podle pěti složek: alkohol, cukr, citron, voda a koření.",
+    "klicova_slova": [
+      "advent",
+      "trhy",
+      "indie",
+      "pet",
+      "vanoce",
+      "caj"
+    ]
+  },
+  "Shandy": {
+    "trivia": "Britská verze radleru, doložená prý už v 50. letech 19. století — tedy dřív než německý originál. Se zázvorovou limonádou je z toho shandygaff.",
+    "klicova_slova": [
+      "britanie",
+      "radler",
+      "limonada",
+      "pivo",
+      "shandygaff"
+    ]
+  },
+  "Summer Hoedown": {
+    "trivia": "Meloun pomačkaný s hnědým cukrem a dolitý pivem. Letní pivní míchačka pro grilovačky.",
+    "klicova_slova": [
+      "meloun",
+      "pivo",
+      "leto",
+      "gril",
+      "hnedy cukr"
+    ]
+  },
+  "Rossini": {
+    "trivia": "Jahodový člen benátské rodiny šumivých koktejlů, pojmenovaný po skladateli Gioachinu Rossinim.",
+    "klicova_slova": [
+      "benatky",
+      "jahody",
+      "prosecco",
+      "opera",
+      "bellini"
+    ]
+  },
+  "Rudé slunce": {
+    "trivia": "Džus, víno, režná a nálev z feferonek ve stejných dílech. Obskurní míchačka pro otrlé.",
+    "klicova_slova": [
+      "obskurni",
+      "feferonky",
+      "rezna",
+      "palive",
+      "bizar"
+    ]
+  },
+  "Suicidal tequila": {
+    "trivia": "Tequila se saje brčkem, sůl se šňupe a limetkou se to zapije. Barmanská hecovačka, ne receptura.",
+    "klicova_slova": [
+      "tequila",
+      "hecovacka",
+      "brcko",
+      "sul",
+      "bizar"
+    ]
+  },
+  "Salty Dog": {
+    "trivia": "Greyhound se solí na okraji sklenice. Sůl potlačí hořkost grapefruitu a zvýrazní jeho sladkost.",
+    "klicova_slova": [
+      "grapefruit",
+      "sul",
+      "greyhound",
+      "gin",
+      "krusta"
+    ]
+  },
+  "Sarti Spritz": {
+    "trivia": "Novinka mezi spritzy — italský květinový aperitiv Sarti Rosa s proseccem a sodou v poměru 3:2:1.",
+    "klicova_slova": [
+      "spritz",
+      "sarti",
+      "prosecco",
+      "italie",
+      "ruzovy"
+    ]
+  },
+  "Siesta": {
+    "trivia": "Namíchala ho Katie Stipe v newyorském Flatiron Lounge roku 2006 — Hemingway Daiquiri přeložený do tequily s Camparim.",
+    "klicova_slova": [
+      "tequila",
+      "campari",
+      "grapefruit",
+      "new york",
+      "hemingway"
+    ]
+  },
+  "Singapore Sling": {
+    "trivia": "Namíchal ho Ngiam Tong Boon v Long Baru hotelu Raffles kolem roku 1915. Růžová barva měla vypadat jako dámský ovocný nápoj — v době, kdy se od žen nečekalo, že budou na veřejnosti pít alkohol.",
+    "klicova_slova": [
+      "singapur",
+      "raffles",
+      "long bar",
+      "ananas",
+      "visne",
+      "gin"
+    ]
+  },
+  "Skinny Bitch": {
+    "trivia": "Dietní drink bez cukru a sirupů — jen destilát, citrus a hodně sody. Proslavila ho Bethenny Frankelová z reality show.",
+    "klicova_slova": [
+      "dieta",
+      "kalorie",
+      "soda",
+      "vodka",
+      "hubnuti"
+    ]
+  },
+  "Spicy Fifty": {
+    "trivia": "Autorský koktejl Salvatora Calabreseho z londýnského baru Fifty. Vanilka, bezový květ a chilli v jedné sklenici.",
+    "klicova_slova": [
+      "calabrese",
+      "londyn",
+      "chilli",
+      "bez",
+      "vanilka"
+    ]
+  },
+  "Sunset Spritz": {
+    "trivia": "Spritz posílený o gin a bezový sirup. Vrstvy barev připomínají západ slunce nad mořem.",
+    "klicova_slova": [
+      "spritz",
+      "gin",
+      "aperol",
+      "bez",
+      "leto",
+      "zapad slunce"
+    ]
+  },
+  "Stinger": {
+    "trivia": "Drink newyorské smetánky dvacátých let, pil se po půlnoci jako digestiv. Ve filmu Něco musí povolit si ho objednává Cary Grant.",
+    "klicova_slova": [
+      "menta",
+      "konak",
+      "new york",
+      "cary grant",
+      "digestiv",
+      "zihadlo"
+    ]
+  },
+  "Suffering Bastard": {
+    "trivia": "Namíchal ho Joe Scialom v káhirském hotelu Shepheard's roku 1942 jako vyprošťovák pro britské důstojníky od El Alameinu. Objednávky prý chodily až na frontu.",
+    "klicova_slova": [
+      "kahira",
+      "el alamein",
+      "valka",
+      "kocovina",
+      "zazvor",
+      "1942"
+    ]
+  },
+  "Svařené víno s karamelem, medem a ovocem": {
+    "trivia": "Karamelizovaný cukr dá svařáku hloubku, kterou obyčejný krystal nikdy nedá. Med se přidává až nakonec.",
+    "klicova_slova": [
+      "svarak",
+      "karamel",
+      "advent",
+      "med",
+      "zima"
+    ]
+  },
+  "Svařené víno dle Jamieho Olivera": {
+    "trivia": "Trik britského kuchaře: cukr s kůrou a kořením se nejdřív svaří jen v troše vína do hustého sirupu, teprve pak se dolije zbytek.",
+    "klicova_slova": [
+      "oliver",
+      "chianti",
+      "svarak",
+      "mandarinka",
+      "britanie",
+      "sirup"
+    ]
+  },
+  "Svařené víno dle M. D. Rettigové": {
+    "trivia": "Historická česká receptura z 19. století. Rettigová nechávala svařák projít varem — dnes už víme, že tím zmizí i alkohol.",
+    "klicova_slova": [
+      "rettigova",
+      "historie",
+      "svarak",
+      "obrozeni",
+      "kucharka"
+    ]
+  },
+  "Svařené bílé víno s karamelem a ovocem": {
+    "trivia": "Bílá varianta svařáku s grapefruitem a jablkem. Lehčí a kyselejší než klasika z červeného.",
+    "klicova_slova": [
+      "svarak",
+      "bile vino",
+      "grapefruit",
+      "karamel",
+      "advent"
+    ]
+  },
+  "Svařené víno s ovocným moštem": {
+    "trivia": "Mošt sníží obsah alkoholu a přidá ovocnou sladkost, takže cukru stačí míň. Jalovec a bobkový list dají svařáku kořenitý spodek.",
+    "klicova_slova": [
+      "svarak",
+      "most",
+      "jalovec",
+      "bobkovy list",
+      "advent"
+    ]
+  },
+  "Szarlotka": {
+    "trivia": "Nejoblíbenější drink v Polsku. Żubrówka s bizoní trávou a jablečný džus chutnají jako jablečný závin. Druhé jméno Tatanka znamená v lakotštině bizon.",
+    "klicova_slova": [
+      "polsko",
+      "zubrovka",
+      "bizon",
+      "jablko",
+      "zavin",
+      "tatanka"
+    ]
+  },
+  "Likér Krówki": {
+    "trivia": "Polské karamelové bonbony „kravičky“ rozpuštěné ve vodce. Za dva dny je z toho hotový smetanový likér.",
+    "klicova_slova": [
+      "polsko",
+      "karamel",
+      "bonbony",
+      "domaci liker",
+      "zubrovka"
+    ]
+  },
+  "Tequila Sour": {
+    "trivia": "Margarita bez pomerančového likéru, zato s bílkem. Dvojice limetka plus citron jí dá kyselost, kterou samotná limetka nezvládne.",
+    "klicova_slova": [
+      "tequila",
+      "sour",
+      "bilek",
+      "limetka",
+      "margarita"
+    ]
+  },
+  "Ti Punch": {
+    "trivia": "Národní drink Martiniku a Guadeloupu. Místní ho pijí bez ledu a míchají si ho u stolu sami — servíruje se jako stavebnice: rum, limetka, sirup.",
+    "klicova_slova": [
+      "martinik",
+      "guadeloupe",
+      "agricole",
+      "karibik",
+      "limetka",
+      "petit punch"
+    ]
+  },
+  "Ti Apricot": {
+    "trivia": "Ti Punch obohacený o mátu a lžíci meruňkové marmelády, která drinku dodá hustotu i ovocnou sladkost.",
+    "klicova_slova": [
+      "karibik",
+      "agricole",
+      "merunka",
+      "marmelada",
+      "mata"
+    ]
+  },
+  "Tipperary": {
+    "trivia": "Irský bratranec Manhattanu se zeleným Chartreuse. Jméno má po písni It's a Long Way to Tipperary z první světové války.",
+    "klicova_slova": [
+      "irsko",
+      "chartreuse",
+      "manhattan",
+      "pisen",
+      "whiskey",
+      "valka"
+    ]
+  },
+  "Tommy's Margarita": {
+    "trivia": "Namíchal ji Julio Bermejo v rodinné restauraci Tommy's v San Franciscu. Místo pomerančového likéru agávový sirup — nechá vyniknout samotnou tequilu.",
+    "klicova_slova": [
+      "san francisco",
+      "bermejo",
+      "agave",
+      "margarita",
+      "tequila"
+    ]
+  },
+  "Trinidad Sour": {
+    "trivia": "Jediný drink na světě, kde je angostura hlavní složkou — celých 45 ml místo dvou střiků. Namíchal ho Giuseppe González roku 2009.",
+    "klicova_slova": [
+      "angostura",
+      "gonzalez",
+      "orgeat",
+      "trinidad",
+      "bitters"
+    ]
+  },
+  "Turbomošt": {
+    "trivia": "Brněnský fenomén adventních trhů — jablečná odpověď na svařák. Mošt nesmí přesáhnout 75 °C.",
+    "klicova_slova": [
+      "brno",
+      "advent",
+      "trhy",
+      "most",
+      "jablko",
+      "palenka"
+    ]
+  },
+  "Tuxedo": {
+    "trivia": "Pojmenován po Tuxedo Clubu ve státě New York — po témže klubu, který dal jméno i smokingu.",
+    "klicova_slova": [
+      "smoking",
+      "new york",
+      "klub",
+      "maraschino",
+      "absint"
+    ]
+  },
+  "Ukrajinská vlajka": {
+    "trivia": "Modrá nad žlutou. Klíč je nalít modrou vrstvu opravdu pomalu — jinak se na přechodu objeví zelená a vlajka je zkažená.",
+    "klicova_slova": [
+      "ukrajina",
+      "vlajka",
+      "vrstveni",
+      "curacao",
+      "modra zluta"
+    ]
+  },
+  "Vampiro": {
+    "trivia": "Mexická klasika z Guadalajary. Blíž originálu je sangrita místo rajčatového džusu, k tomu nasekaná cibule a worcester.",
+    "klicova_slova": [
+      "mexiko",
+      "guadalajara",
+      "sangrita",
+      "tequila",
+      "upir",
+      "palive"
+    ]
+  },
+  "Ve.n.to": {
+    "trivia": "Oficiální IBA koktejl a vzácný případ, kdy se v mixologii uplatní italská grappa. Heřmánek dá drinku lučnatou vůni.",
+    "klicova_slova": [
+      "grappa",
+      "iba",
+      "hermanek",
+      "italie",
+      "med"
+    ]
+  },
+  "Vermut s tonikem": {
+    "trivia": "Ve Španělsku je „la hora del vermut“ nedělní instituce — aperitiv před obědem, ke kterému se chodí celá rodina.",
+    "klicova_slova": [
+      "spanelsko",
+      "vermut",
+      "aperitiv",
+      "nedele",
+      "tonik"
+    ]
+  },
+  "Vesper": {
+    "trivia": "James Bond si ho v Casino Royale objednává vlastními slovy a pojmenuje po Vesper Lyndové. Jediný Bondův drink, který má v knize přesnou recepturu.",
+    "klicova_slova": [
+      "bond",
+      "007",
+      "casino royale",
+      "fleming",
+      "lillet",
+      "vesper lynd"
+    ]
+  },
+  "Vieux Carré": {
+    "trivia": "Namíchán roku 1938 v otáčivém baru Carousel hotelu Monteleone v New Orleansu. Vieux Carré je francouzské jméno Francouzské čtvrti.",
+    "klicova_slova": [
+      "new orleans",
+      "monteleone",
+      "carousel",
+      "benedictine",
+      "francouzska ctvrt"
+    ]
+  },
+  "Višňový punč": {
+    "trivia": "Višně se nechají projít varem, ale nesmí se rozvařit — do hrnku patří i s ovocem.",
+    "klicova_slova": [
+      "visne",
+      "punc",
+      "advent",
+      "zima",
+      "trhy"
+    ]
+  },
+  "Vodka Daisy": {
+    "trivia": "„Daisy“ je celá rodina drinků z destilátu, citrusu a sladidla, doložená už v 19. století. Margarita je vlastně tequilová Daisy — španělsky margarita znamená sedmikráska.",
+    "klicova_slova": [
+      "sedmikraska",
+      "margarita",
+      "grenadina",
+      "krusta",
+      "vodka"
+    ]
+  },
+  "Wassail": {
+    "trivia": "Staroanglický vánoční nápoj. Jméno pochází ze staroseverského „ves heill“, tedy buď zdráv — a koledování mu dodnes v Anglii říkají wassailing.",
+    "klicova_slova": [
+      "anglie",
+      "vanoce",
+      "cider",
+      "koleda",
+      "ves heill"
+    ]
+  },
+  "Watermelon Fizz": {
+    "trivia": "Meloun je nutné poctivě vypeckovat — jinak jsou v drinku hořké úlomky. Recept vydá na dvě až tři sklenice.",
+    "klicova_slova": [
+      "meloun",
+      "gin",
+      "leto",
+      "fizz",
+      "mixer"
+    ]
+  },
+  "Yellow Bird": {
+    "trivia": "Jméno má po karibské lidové písni Yellow Bird, kterou zpopularizovali Harry Belafonte i Chris Isaak.",
+    "klicova_slova": [
+      "karibik",
+      "pisen",
+      "belafonte",
+      "galliano",
+      "rum"
+    ]
+  },
+  "Zelená se Sprite": {
+    "trivia": "Peprmintka naředěná limonádou chutná jako tekutá žvýkačka. Na diskotékách devadesátek nepostradatelná.",
+    "klicova_slova": [
+      "zelena",
+      "sprite",
+      "diskoteka",
+      "devadesatky",
+      "zvykacka"
+    ]
+  },
+  "Zombie": {
+    "trivia": "Namíchal ho Donn Beach v Hollywoodu roku 1934. V jeho baru platil limit dva kusy na hosta a večer; recepturu tajil tak, že si směsi míchal předem do očíslovaných lahví.",
+    "klicova_slova": [
+      "tiki",
+      "donn beach",
+      "hollywood",
+      "rum",
+      "limit",
+      "1934"
+    ]
+  },
+  "Korma": {
+    "trivia": "Pivo s medovinou. Panák se dávkuje podle piva — malý do malého, velký do velkého.",
+    "klicova_slova": [
+      "medovina",
+      "pivo",
+      "michacka",
+      "sladke",
+      "hospoda"
+    ]
+  },
+  "Kožich medvěda": {
+    "trivia": "Pivo s Kofolou půl na půl. Tmavá barva a nasládlá chuť daly drinku jeho jméno.",
+    "klicova_slova": [
+      "kofola",
+      "pivo",
+      "medved",
+      "kozich",
+      "retro"
+    ]
+  },
+  "Alpský ryzlink": {
+    "trivia": "Jablečné čůčo s Alpou. Alpa dodala vínu sílu i aroma, ale zcela přebila jeho chuť — a do nápoje vůbec nepatří.",
+    "klicova_slova": [
+      "alpa",
+      "cuco",
+      "jablecne vino",
+      "bizar",
+      "folklor"
+    ]
+  },
+  "Skřetí saké": {
+    "trivia": "Bizár z dob, kdy se v hospodách kouřilo — zvětralé pivo nalité do použitého popelníku.",
+    "klicova_slova": [
+      "popelnik",
+      "kour",
+      "zvetrale pivo",
+      "bizar",
+      "hecovacka"
+    ]
+  },
+  "Multimíchačka": {
+    "trivia": "Panáky se seřadí na pult a pije se „napříč spektrem“ — od hnědého rumu a fernetu přes zelenou a vaječňák až po červenou griotku. Lidový humor dodává, že se člověk touhle paletou dokáže dokonale zmalovat.",
+    "klicova_slova": [
+      "paleta",
+      "socialismus",
+      "ritual",
+      "panaky",
+      "barvy",
+      "hospoda"
+    ]
+  },
+  "Anglický punč": {
+    "trivia": "Studený punč, který se týden macerouje v chladu a denně promíchává. Jediný z rodiny punčů, který se nepije horký.",
+    "klicova_slova": [
+      "studeny punc",
+      "macerace",
+      "zahradni oslava",
+      "leto",
+      "anglie"
+    ]
+  },
+  "Pařížský punč": {
+    "trivia": "Armaňak se přidává až při 85 °C — nad tuhle hranici by se alkohol začal odpařovat.",
+    "klicova_slova": [
+      "armanak",
+      "pariz",
+      "caj",
+      "citrusy",
+      "punc"
+    ]
+  },
+  "Punč ze sherry a čaje": {
+    "trivia": "Anglická specialita, ve které se potkává španělské sherry s anýzovým arakem z Blízkého východu.",
+    "klicova_slova": [
+      "anglie",
+      "sherry",
+      "arak",
+      "caj",
+      "punc"
     ]
   }
 }
