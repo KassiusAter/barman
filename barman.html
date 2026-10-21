@@ -656,13 +656,18 @@ function vykresliDrinky() {
 const NA_HEUREKU = new Set(["lihovina", "liker", "vino-vermut-sekt", "pivo", "sirup-sladidlo"]);
 const NA_ROHLIK = new Set(["nealko-mixer", "stava", "cerstve-mlecne"]);
 
+// Rohlík bez companyId=1 hledaný výraz nevyplní a ukáže jen chybu
+function rohlikHledani(dotaz) {
+  return "https://www.rohlik.cz/hledat?q=" + encodeURIComponent(dotaz) + "&companyId=1";
+}
+
 function nakupniOdkaz(s) {
   // „Triple sec / Cointreau (pomerančový likér)“ → „Triple sec“
   const dotaz = s.hledat || s.nazev.split("(")[0].split("/")[0].trim();
   // pole obchod přebíjí kategorii — ověřeno, co který obchod skutečně vede
   // (Rohlík má bezový sirup a med, ale ne grenadinu ani orgeat)
   if (s.obchod === "rohlik") return {
-    url: "https://www.rohlik.cz/hledat?q=" + encodeURIComponent(dotaz),
+    url: rohlikHledani(dotaz),
     kde: "Rohlíku", ikona: "🛒"
   };
   if (s.obchod === "heureka") return {
@@ -677,7 +682,7 @@ function nakupniOdkaz(s) {
     kde: "Heurece", ikona: "🔎"
   };
   if (rohlik) return {
-    url: "https://www.rohlik.cz/hledat?q=" + encodeURIComponent(dotaz),
+    url: rohlikHledani(dotaz),
     kde: "Rohlíku", ikona: "🛒"
   };
   return null;
