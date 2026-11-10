@@ -2,44 +2,47 @@
 
 **Zapiš si, co máš doma v baru — a hned vidíš, co si můžeš namíchat.**
 
-Jednosouborová webová aplikace (čisté HTML/CSS/JavaScript, žádné závislosti,
-žádný server) pro domácí barmany. Zaškrtáš suroviny, které vlastníš, a engine
+Webová aplikace bez instalace a bez serveru (čisté HTML/CSS/JavaScript, žádné
+závislosti) pro domácí barmany. Zaškrtáš suroviny, které vlastníš, a engine
 ti ukáže, které drinky zvládneš připravit hned, které jsou na dosah jedné až
 tří chybějících lahví — a kterou láhev koupit, aby ti odemkla nejvíc nových
 drinků.
 
 ## Funkce
 
-- **477 receptů**: oficiální IBA koktejly (Mojito, Negroni, Espresso Martini…),
-  světová klasika (Gin & Tonic, White Russian, B52…), celé rodiny variant
-  (Collins, spritz, Mule, radler, B-5x, pastis) a zejména **česká
-  hospodská a retro klasika** — Beton, Bavorák, Magické oko, Semafor, Mozek,
-  Vodníkovo sperma, Cesta do lesa, TGV, Kofila, Béžovice, multimíchačky
-  i Drátěnka. Nechybí ani horké drinky: grogy, punče, svařáky a kávy
-  s alkoholem.
+- **477 receptů**: 68 oficiálních IBA koktejlů (Mojito, Negroni, Espresso
+  Martini…), 195 receptů světové klasiky (Gin & Tonic, White Russian, B52…),
+  54 letních drinků, 46 párty drinků a zejména 114 kousků **české hospodské
+  a retro klasiky** — Beton, Bavorák, Magické oko, Semafor, Mozek, Vodníkovo
+  sperma, Cesta do lesa, TGV, Kofila, Béžovice, multimíchačky i Drátěnka.
+  Z toho 59 horkých drinků (grogy, punče, svařáky, kávy s alkoholem)
+  a 43 pivních mixů. Nabídku jde zúžit podle typu drinku.
 - **Tolerance nákupu 0–3**: posuvníkem určíš, kolik surovin jsi ochoten
   dokoupit; aplikace vypíše, co přesně chybí.
 - **Nákupní rádce**: „Kup Becherovku — odemkne 2 drinky hned, přiblíží 3 další.“
 - **Logické záměny surovin**: nemáš limetku, ale máš citron? Drink se nabídne
   se zřetelně vyznačenou domácí záměnou (citron ↔ limetka, cukr ↔ sirup ↔ med,
-  rumy mezi sebou, smetana ↔ mléko…).
+  rumy mezi sebou, smetana ↔ mléko…). Nealko drink nikdy nedostane
+  alkoholickou náhradu.
 - **Rozpoznávání obchodních značek**: napiš „Guinness“ a aplikace ví, že máš
   černé pivo; „zlatá Sierra“ znamená tequilu. Přes 880 značek, toleruje překlepy
   i skloňování.
-- **Záložka „Pro řidiče a děti"**: 24 nealko receptů na jednom místě —
+- **Záložka „Pro řidiče a děti“**: 24 nealko receptů na jednom místě —
   od Virgin Mary a Crodino Spritzu po dětské drinky s vrstvenými džusy
-  a přepínačem „jen pro děti". Nealkoholický sekt ani pivo se tu nikdy
-  nenahrazují alkoholickými.
-- **Nákup na jeden klik**: chybějící surovina je v detailu receptu odkazem
-  na vyhledávání — alkohol a sirupy míří na Heureku, potraviny a mixéry
-  na Rohlík.
-- **„Chutná mi"**: srdíčkem u suroviny označíš, co máš rád — drinky s ní
+  a přepínačem „jen pro děti“.
+- **Nákup na jeden klik**: chybějící surovina je v detailu receptu
+  i v nákupním rádci odkazem na vyhledávání — lihoviny míří na Heureku,
+  potraviny, mixéry a běžné sirupy na Rohlík.
+- **„Chutná mi“**: srdíčkem u suroviny označíš, co máš rád — drinky s ní
   se pak řadí na začátek nabídky.
 - **Vlastní suroviny**: domácí slivovice, meruňkovice, ořechovka — cokoli si
-  přidáš, eviduje se v inventáři.
-- **Trivia a chytré hledání**: každý drink má zajímavost a asociativní klíčová
-  slova — „hemingway“ najde Daiquiri, „lebowski“ White Russian, „švejk“ Šavli
-  meče, „flusanec“ Žabí hlen.
+  přidáš, eviduje se v inventáři; recepty s ní ale databáze nezná.
+- **Samozřejmosti se nezadávají**: cukr, sůl, pepř, led a voda se počítají
+  automaticky.
+- **Hledání podle názvu, přezdívky, suroviny i asociace**: „becherovka“ najde
+  všechny drinky, které ji obsahují; každý drink má navíc zajímavost
+  a klíčová slova — „hemingway“ najde Daiquiri, „lebowski“ White Russian,
+  „švejk“ Šavli meče, „flusanec“ Žabí hlen.
 - **Postup a servírování** u každého drinku: kroky přípravy, sklenice, ozdoba;
   47 drinků má fotografii, ostatní kreslenou SVG siluetu s barevnými vrstvami
   podle surovin (vrstvené panáky jako Semafor vypadají přesně tak, jak mají).
@@ -59,7 +62,7 @@ Nebo si stáhni repozitář a otevři **`barman.html`** v prohlížeči. Hotovo 
 
 **Jako jeden soubor ke stažení:**
 [`barman_komplet.html`](https://github.com/KassiusAter/barman/releases/latest/download/barman_komplet.html)
-(~1,5 MB, vše včetně fotek vloženo dovnitř). Stáhneš, otevřeš v prohlížeči
+(~1,7 MB, vše včetně fotek vloženo dovnitř). Stáhneš, otevřeš v prohlížeči
 a funguje i bez internetu — ideální na poslání kamarádovi. Najdeš ho vždy
 v [posledním vydání](https://github.com/KassiusAter/barman/releases/latest);
 v repozitáři schválně není, aby ho každá změna dat nenafukovala o další
@@ -70,12 +73,14 @@ megabajt. Generuje se příkazem `python3 sestav.py`.
 | Soubor | K čemu |
 |---|---|
 | `barman.html` | celá aplikace (UI) |
+| `index.html` | přesměrování na `barman.html` pro webovou verzi |
 | `engine.js` | logika: vyhodnocení inventáře, záměny, nákupní rádce, hledání |
 | `data/suroviny.json` | slovník 215 surovin + skupiny logických záměn |
 | `data/drinky.json` | 477 receptů (zdroj pravdy) |
 | `data/trivia.json` | zajímavosti a klíčová slova pro asociativní hledání |
 | `data/znacky.json` | obchodní názvy → obecné suroviny |
 | `data/data.js` | vygenerovaný balík dat pro prohlížeč (`sestav.py`) |
+| `data/obrazky.json` | který drink má kterou fotografii |
 | `data/img/` | fotografie drinků (TheCocktailDB) |
 | `data/test_engine.js` | testy enginu (`node data/test_engine.js`) |
 | `sestav.py` | jeden příkaz na všechno: kontrola dat, `data.js`, `barman_komplet.html`, testy |
