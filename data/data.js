@@ -1,4 +1,4 @@
-// Generováno skriptem sestav_data.py — needitovat ručně, upravuj JSONy.
+// Generováno skriptem sestav.py — needitovat ručně, upravuj JSONy.
 window.BARMAN_DATA = {
  "suroviny": [
   {

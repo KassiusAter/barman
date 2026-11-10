@@ -8,7 +8,7 @@ const Barman = require(path.join(__dirname, "..", "engine.js"));
 const drinky = JSON.parse(fs.readFileSync(path.join(__dirname, "drinky.json"))).drinky;
 const suroviny = JSON.parse(fs.readFileSync(path.join(__dirname, "suroviny.json"))).suroviny;
 
-/* přimíchat trivii stejně jako sestav_data.py */
+/* přimíchat trivii stejně jako sestav.py */
 const trivia = JSON.parse(fs.readFileSync(path.join(__dirname, "trivia.json")));
 drinky.forEach(d => {
   if (trivia[d.nazev]) {
@@ -175,6 +175,31 @@ v = Barman.vyhodnot(drinky, suroviny, ["rum-tuzemsky", "citron", "cukrovy-sirup"
 ok(!v.radce.some(r => r.id === "limetka" && r.odemkne > 0 &&
     v.hned.some(z => z.drink.nazev === "Daiquiri")),
   "rádce nepočítá Daiquiri mezi drinky odemykatelné limetkou (už jde přes citron)");
+
+/* ---- nealko drink nesmí dostat alkoholickou náhradu ---- */
+console.log("\n[nealko záměny] mošt ↔ cider");
+const pokusne = [
+  { nazev: "Pokusný mošt", nealko: true, suroviny: [{ id: "jablecny-most" }] },
+  { nazev: "Pokusný střik", suroviny: [{ id: "jablecny-most" }] }
+];
+v = Barman.vyhodnot(pokusne, suroviny, ["cider"], 0, { nahrady: NAHRADY });
+ok(!nazvy(v.hned).includes("Pokusný mošt"), "nealko drink se s ciderem místo moštu nenabídne");
+ok(nazvy(v.hned).includes("Pokusný střik"), "alkoholický drink záměnu moštu za cider dostane");
+
+/* ---- stavy surovin pro detail drinku ---- */
+v = Barman.vyhodnot(drinky, suroviny, ["rum-tuzemsky", "citron"], 3, { nahrady: NAHRADY });
+const mo = v.hned.concat(v.dokoupit, v.ostatni).find(z => z.drink.nazev === "Mojito");
+ok(mo && mo.stavy.length === mo.drink.suroviny.length &&
+  mo.stavy[0].nahrada === "rum-tuzemsky" && mo.stavy[2].mam === true,
+  "záznam nese stav každé suroviny (Mojito: rum přes záměnu, cukr je doma)");
+
+/* ---- hledání podle suroviny ---- */
+console.log("\n[hledání] podle suroviny");
+const sVodkou = drinky.filter(d => d.suroviny.some(s => s.id === "vodka")).length;
+ok(Barman.najdiDrinky(drinky, "vodka", suroviny).length >= sVodkou,
+  "„vodka“ najde všechny drinky s vodkou (" + sVodkou + ")");
+ok(Barman.najdiDrinky(drinky, "becherovka", suroviny).length >= 6,
+  "„becherovka“ najde drinky, které ji obsahují");
 
 console.log("\n" + (chyb === 0 ? "VŠECHNY TESTY PROŠLY ✓" : chyb + " TESTŮ SELHALO ✗"));
 process.exit(chyb === 0 ? 0 : 1);

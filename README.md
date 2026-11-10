@@ -24,7 +24,7 @@ drinků.
   se zřetelně vyznačenou domácí záměnou (citron ↔ limetka, cukr ↔ sirup ↔ med,
   rumy mezi sebou, smetana ↔ mléko…).
 - **Rozpoznávání obchodních značek**: napiš „Guinness“ a aplikace ví, že máš
-  černé pivo; „zlatá Sierra“ znamená tequilu. Přes 840 značek, toleruje překlepy
+  černé pivo; „zlatá Sierra“ znamená tequilu. Přes 880 značek, toleruje překlepy
   i skloňování.
 - **Záložka „Pro řidiče a děti"**: 24 nealko receptů na jednom místě —
   od Virgin Mary a Crodino Spritzu po dětské drinky s vrstvenými džusy
@@ -63,7 +63,7 @@ Nebo si stáhni repozitář a otevři **`barman.html`** v prohlížeči. Hotovo 
 a funguje i bez internetu — ideální na poslání kamarádovi. Najdeš ho vždy
 v [posledním vydání](https://github.com/KassiusAter/barman/releases/latest);
 v repozitáři schválně není, aby ho každá změna dat nenafukovala o další
-megabajt. Generuje se skriptem `python3 data/sestav_distribuci.py`.
+megabajt. Generuje se příkazem `python3 sestav.py`.
 
 ## Struktura projektu
 
@@ -75,15 +75,17 @@ megabajt. Generuje se skriptem `python3 data/sestav_distribuci.py`.
 | `data/drinky.json` | 477 receptů (zdroj pravdy) |
 | `data/trivia.json` | zajímavosti a klíčová slova pro asociativní hledání |
 | `data/znacky.json` | obchodní názvy → obecné suroviny |
-| `data/data.js` | vygenerovaný balík dat pro prohlížeč (`sestav_data.py`) |
+| `data/data.js` | vygenerovaný balík dat pro prohlížeč (`sestav.py`) |
 | `data/img/` | fotografie drinků (TheCocktailDB) |
 | `data/test_engine.js` | testy enginu (`node data/test_engine.js`) |
+| `sestav.py` | jeden příkaz na všechno: kontrola dat, `data.js`, `barman_komplet.html`, testy |
 
 ## Úprava receptů
 
 1. Edituj `data/drinky.json`, `data/suroviny.json` či `data/trivia.json`.
-2. Přegeneruj data: `python3 data/sestav_data.py`
-3. Obnov stránku. (Testy: `node data/test_engine.js`.)
+2. Spusť `python3 sestav.py` — zkontroluje data, přegeneruje `data/data.js`
+   i `barman_komplet.html` a pustí testy.
+3. Obnov stránku.
 
 ## Zdroje a poděkování
 

@@ -1,5 +1,8 @@
 # Projekt Barman — plán
 
+> **Historický dokument** z 30. 7. 2026 — původní záměr před stavbou aplikace.
+> Aktuální stav a rozsah popisuje `README.md`.
+
 **Cíl:** Aplikace, do které si uživatel zapíše svůj domácí bar (alkohol i nealko) a engine mu ukáže:
 1. jaké míchané drinky si může připravit **hned teď**,
 2. jaké drinky by mohl připravit, kdyby dokoupil **1, 2 nebo 3 suroviny** (tzv. tolerance),

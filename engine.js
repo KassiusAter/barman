@@ -21,7 +21,10 @@
    *   dokoupit  … drinky s 1..tolerance chybějícími surovinami (vzestupně)
    *   ostatni   … zbytek (chybí víc než tolerance)
    *   radce     … nákupní doporučení: [{ id, nazev, odemkne, priblizi }]
-   *   Každý záznam nese i pole zameny: [{ za, nahrada, zaNazev, nahradaNazev }].
+   *   Každý záznam nese i pole zameny: [{ za, nahrada, zaNazev, nahradaNazev }]
+   *   a pole stavy — pro každou surovinu receptu (i volitelnou, ve stejném
+   *   pořadí) { mam: bool, nahrada: id|null }; z něj kreslí detail drinku.
+   *   U nealko drinků se nikdy nenabízí alkoholická náhrada.
    */
   function vyhodnot(drinky, suroviny, inventar, tolerance, moznosti) {
     moznosti = moznosti || {};
@@ -57,16 +60,21 @@
       if (moznosti.typ && d.typ !== moznosti.typ) return;
 
       var chybi = [], zameny = [];
-      d.suroviny.forEach(function (s) {
-        if (s.volitelne || vlastni.has(s.id)) return;
+      var stavy = d.suroviny.map(function (s) {
+        if (vlastni.has(s.id)) return { mam: true, nahrada: null };
         var alt = (zamenitelne[s.id] || []).find(function (a) {
+          // nealko drink nesmí dostat alkoholickou náhradu (mošt → cider)
+          if (d.nealko && slovnik[a] && slovnik[a].alko) return false;
           return vlastni.has(a);
-        });
-        if (alt) zameny.push({
-          za: s.id, nahrada: alt,
-          zaNazev: nazevSuroviny(s.id), nahradaNazev: nazevSuroviny(alt)
-        });
-        else chybi.push(s.id);
+        }) || null;
+        if (!s.volitelne) {
+          if (alt) zameny.push({
+            za: s.id, nahrada: alt,
+            zaNazev: nazevSuroviny(s.id), nahradaNazev: nazevSuroviny(alt)
+          });
+          else chybi.push(s.id);
+        }
+        return { mam: false, nahrada: alt };
       });
 
       var zaznam = {
@@ -74,6 +82,7 @@
         chybi: chybi,
         chybiNazvy: chybi.map(nazevSuroviny),
         zameny: zameny,
+        stavy: stavy,
         // kolik surovin drinku má uživatel označené jako „chutná mi“
         oblibenych: d.suroviny.filter(function (s) {
           return oblibene.has(s.id);
@@ -137,17 +146,25 @@
 
   /**
    * Vyhledávání drinku podle názvu, lidových přezdívek (alt_nazvy),
-   * klíčových slov a textu trivie — bez ohledu na velikost písmen
-   * a diakritiku. Díky klíčovým slovům funguje i nepřesné zadání
+   * klíčových slov, textu trivie a názvů surovin — bez ohledu na velikost
+   * písmen a diakritiku. Díky klíčovým slovům funguje i nepřesné zadání
    * („hemingway“ → Daiquiri, „lebowski“ → White Russian).
+   *
+   * @param {Array} [suroviny] slovník surovin; je-li předán, „vodka“ najde
+   *   i všechny drinky, které vodku obsahují
    */
-  function najdiDrinky(drinky, dotaz) {
+  function najdiDrinky(drinky, dotaz, suroviny) {
     var q = normalizuj(dotaz);
     if (!q) return drinky.slice();
+    var nazvySurovin = {};
+    (suroviny || []).forEach(function (s) { nazvySurovin[s.id] = s.nazev; });
     return drinky.filter(function (d) {
       if (normalizuj(d.nazev).indexOf(q) !== -1) return true;
       var dalsi = (d.alt_nazvy || []).concat(d.klicova_slova || []);
       if (d.trivia) dalsi.push(d.trivia);
+      d.suroviny.forEach(function (s) {
+        if (nazvySurovin[s.id]) dalsi.push(nazvySurovin[s.id]);
+      });
       return dalsi.some(function (text) {
         return normalizuj(text).indexOf(q) !== -1;
       });
